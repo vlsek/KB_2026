@@ -1,6 +1,6 @@
 gui_begin 3360 945
 gui_object_begin button
-gui_object_position 1959 907 2025 937
+gui_object_position 1913 907 1979 937
 gui_object_name "divide_5"
 gui_object_frigid 0
 gui_object_hint "eng_windows_small.lng" "sep_hint"
@@ -10,7 +10,7 @@ gui_object_button_pressed "button_divide_onmouse.png" "" "" 0.000000 0 0.010000 
 gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
 gui_object_end
 gui_object_begin button
-gui_object_position 1886 907 1952 937
+gui_object_position 1840 907 1906 937
 gui_object_name "divide_4"
 gui_object_frigid 0
 gui_object_hint "eng_windows_small.lng" "sep_hint"
@@ -20,7 +20,7 @@ gui_object_button_pressed "button_divide_onpress.png" "" "" 0.000000 0 0.010000 
 gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
 gui_object_end
 gui_object_begin button
-gui_object_position 1814 907 1880 937
+gui_object_position 1768 907 1834 937
 gui_object_name "divide_3"
 gui_object_frigid 0
 gui_object_hint "eng_windows_small.lng" "sep_hint"
@@ -30,7 +30,7 @@ gui_object_button_pressed "button_divide_onpress.png" "" "" 0.000000 0 0.010000 
 gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
 gui_object_end
 gui_object_begin button
-gui_object_position 1742 907 1808 937
+gui_object_position 1696 907 1762 937
 gui_object_name "divide_2"
 gui_object_frigid 0
 gui_object_hint "eng_windows_small.lng" "sep_hint"
@@ -40,7 +40,7 @@ gui_object_button_pressed "button_divide_onmouse.png" "" "" 0.000000 0 0.010000 
 gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
 gui_object_end
 gui_object_begin button
-gui_object_position 1670 907 1736 937
+gui_object_position 1624 907 1690 937
 gui_object_name "divide_1"
 gui_object_frigid 0
 gui_object_hint "eng_windows_small.lng" "sep_hint"
@@ -52,7 +52,7 @@ gui_object_end
 gui_object_begin picture
 gui_object_picture ""
 gui_object_picture_angle 0.000000 0
-gui_object_position 1559 889 1638 904
+gui_object_position 1513 889 1592 904
 gui_object_name "picture_2"
 gui_object_frigid 0
 gui_object_hint "eng_!temp.lng" "btn_hero_EXR_line_hint"
@@ -60,40 +60,40 @@ gui_object_end
 gui_object_begin picture
 gui_object_picture ""
 gui_object_picture_angle 0.000000 1
-gui_object_position 1959 841 2025 925
+gui_object_position 1913 841 1979 925
 gui_object_name "hero_unit_hint_5"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture ""
 gui_object_picture_angle 0.000000 1
-gui_object_position 1886 840 1956 923
+gui_object_position 1840 840 1910 923
 gui_object_name "hero_unit_hint_4"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture ""
 gui_object_picture_angle 0.000000 1
-gui_object_position 1814 841 1880 925
+gui_object_position 1768 841 1834 925
 gui_object_name "hero_unit_hint_3"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture ""
 gui_object_picture_angle 0.000000 1
-gui_object_position 1742 841 1808 925
+gui_object_position 1696 841 1762 925
 gui_object_name "hero_unit_hint_2"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture ""
 gui_object_picture_angle 0.000000 1
-gui_object_position 1670 840 1736 925
+gui_object_position 1624 840 1690 925
 gui_object_name "hero_unit_hint_1"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin button
-gui_object_position 1418 827 1515 932
+gui_object_position 1372 827 1469 932
 gui_object_name "hero_butt"
 gui_object_frigid 0
 gui_object_button_normal "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
@@ -102,7 +102,7 @@ gui_object_button_pressed "mainpanel_hero_onpress.png" "" "" 0.000000 0 0.010000
 gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
 gui_object_end
 gui_object_begin button
-gui_object_position 1991 805 2022 836
+gui_object_position 1945 805 1976 836
 gui_object_name "reserve_open"
 gui_object_frigid 0
 gui_object_hint "eng_windows.lng" "btn_reserve_open_hint"
@@ -114,35 +114,35 @@ gui_object_end
 gui_object_begin picture
 gui_object_picture "unknown_picture.png"
 gui_object_picture_angle 0.000000 0
-gui_object_position 1967 907 1980 920
+gui_object_position 1921 907 1934 920
 gui_object_name "hero_umorale_5"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unknown_picture.png"
 gui_object_picture_angle 0.000000 0
-gui_object_position 1894 907 1907 920
+gui_object_position 1848 907 1861 920
 gui_object_name "hero_umorale_4"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unknown_picture.png"
 gui_object_picture_angle 0.000000 0
-gui_object_position 1822 907 1835 920
+gui_object_position 1776 907 1789 920
 gui_object_name "hero_umorale_3"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unknown_picture.png"
 gui_object_picture_angle 0.000000 0
-gui_object_position 1750 907 1763 920
+gui_object_position 1704 907 1717 920
 gui_object_name "hero_umorale_2"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unknown_picture.png"
 gui_object_picture_angle 0.000000 0
-gui_object_position 1678 907 1691 920
+gui_object_position 1632 907 1645 920
 gui_object_name "hero_umorale_1"
 gui_object_frigid 1
 gui_object_end
@@ -165,7 +165,7 @@ gui_object_end
 gui_object_begin picture
 gui_object_picture ""
 gui_object_picture_angle 0.000000 0
-gui_object_position 1565 893 1633 901
+gui_object_position 1519 893 1587 901
 gui_object_name "progress_pos"
 gui_object_frigid 0
 gui_object_end
@@ -233,21 +233,21 @@ gui_object_name "ukazatel"
 gui_object_frigid 0
 gui_object_end
 gui_object_begin simple_text
-gui_object_position 1527 844 1668 863
+gui_object_position 1481 844 1622 863
 gui_object_name "text_1"
 gui_object_frigid 1
 gui_object_hint "eng_windows.lng" "btn_name_hint"
 gui_object_text "" "map_hero_name" 0.010000 0.990000 0.010000 0.990000
 gui_object_end
 gui_object_begin simple_text
-gui_object_position 1555 871 1642 888
+gui_object_position 1509 871 1596 888
 gui_object_name "text_0"
 gui_object_frigid 1
 gui_object_hint "eng_windows.lng" "btn_level_hint"
 gui_object_text "" "map_level" 0.010000 0.990000 0.010000 0.990000
 gui_object_end
 gui_object_begin simple_text
-gui_object_position 1528 909 1673 926
+gui_object_position 1482 909 1627 926
 gui_object_name "hero_ldrshp"
 gui_object_frigid 1
 gui_object_text "" "map_ldrshp" 0.010000 0.990000 0.010000 0.990000
@@ -255,99 +255,99 @@ gui_object_end
 gui_object_begin picture
 gui_object_picture "unit_border1_onmouse.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1956 837 2029 928
+gui_object_position 1910 837 1983 928
 gui_object_name "ramka_5"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unit_border1_onmouse.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1884 837 1957 928
+gui_object_position 1838 837 1911 928
 gui_object_name "ramka_4"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unit_border1_onmouse.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1812 837 1885 928
+gui_object_position 1766 837 1839 928
 gui_object_name "ramka_3"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unit_border1_onmouse.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1740 837 1813 928
+gui_object_position 1694 837 1767 928
 gui_object_name "ramka_2"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unit_border1_onmouse.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1668 837 1741 928
+gui_object_position 1622 837 1695 928
 gui_object_name "ramka_1"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unit_border1_normal.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1668 837 1741 928
+gui_object_position 1622 837 1695 928
 gui_object_name "picture_0"
 gui_object_frigid 0
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unit_border1_normal.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1740 837 1813 928
+gui_object_position 1694 837 1767 928
 gui_object_name "picture_1"
 gui_object_frigid 0
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unit_border1_normal.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1812 837 1885 928
+gui_object_position 1766 837 1839 928
 gui_object_name "picture_2"
 gui_object_frigid 0
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unit_border1_normal.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1884 837 1957 928
+gui_object_position 1838 837 1911 928
 gui_object_name "picture_3"
 gui_object_frigid 0
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unit_border1_normal.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1956 837 2029 928
+gui_object_position 1910 837 1983 928
 gui_object_name "picture_4"
 gui_object_frigid 0
 gui_object_end
 gui_object_begin simple_text
-gui_object_position 1959 902 2024 924
+gui_object_position 1913 902 1978 924
 gui_object_name "huc_5"
 gui_object_frigid 1
 gui_object_text "" "mc5" 0.010000 0.990000 0.180000 0.990000
 gui_object_end
 gui_object_begin simple_text
-gui_object_position 1886 902 1951 924
+gui_object_position 1840 902 1905 924
 gui_object_name "huc_4"
 gui_object_frigid 1
 gui_object_text "" "mc4" 0.010000 0.990000 0.180000 0.990000
 gui_object_end
 gui_object_begin simple_text
-gui_object_position 1814 902 1879 924
+gui_object_position 1768 902 1833 924
 gui_object_name "huc_3"
 gui_object_frigid 1
 gui_object_text "" "mc3" 0.010000 0.994233 0.180000 0.990000
 gui_object_end
 gui_object_begin simple_text
-gui_object_position 1741 902 1807 924
+gui_object_position 1695 902 1761 924
 gui_object_name "huc_2"
 gui_object_frigid 1
 gui_object_text "" "mc2" 0.010000 0.990000 0.180000 0.990000
 gui_object_end
 gui_object_begin simple_text
-gui_object_position 1669 902 1735 924
+gui_object_position 1623 902 1689 924
 gui_object_name "huc_1"
 gui_object_frigid 1
 gui_object_text "" "mc1" 0.010000 0.990000 0.180000 0.990000
@@ -355,75 +355,75 @@ gui_object_end
 gui_object_begin picture
 gui_object_picture "unknown_picture.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1959 903 2025 925
+gui_object_position 1913 903 1979 925
 gui_object_name "hero_unit_poloska_5"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unknown_picture.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1886 903 1952 925
+gui_object_position 1840 903 1906 925
 gui_object_name "hero_unit_poloska_4"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unknown_picture.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1814 903 1880 925
+gui_object_position 1768 903 1834 925
 gui_object_name "hero_unit_poloska_3"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unknown_picture.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1742 903 1808 925
+gui_object_position 1696 903 1762 925
 gui_object_name "hero_unit_poloska_2"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unknown_picture.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1670 903 1736 925
+gui_object_position 1624 903 1690 925
 gui_object_name "hero_unit_poloska_1"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unknown_picture.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1959 840 2025 925
+gui_object_position 1913 840 1979 925
 gui_object_name "hero_unit_5"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unknown_picture.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1886 840 1952 925
+gui_object_position 1840 840 1906 925
 gui_object_name "hero_unit_4"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unknown_picture.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1814 840 1880 925
+gui_object_position 1768 840 1834 925
 gui_object_name "hero_unit_3"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unknown_picture.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1742 840 1808 925
+gui_object_position 1696 840 1762 925
 gui_object_name "hero_unit_2"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin picture
 gui_object_picture "unknown_picture.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1670 840 1736 925
+gui_object_position 1624 840 1690 925
 gui_object_name "hero_unit_1"
 gui_object_frigid 1
 gui_object_end
 gui_object_begin button
-gui_object_position 2834 889 2912 917
+gui_object_position 2092 889 2170 917
 gui_object_name "b_map"
 gui_object_frigid 0
 gui_object_hint "eng_windows.lng" "btn_map_hint"
@@ -433,7 +433,7 @@ gui_object_button_pressed "mpbutton_onpress.png" "" "map_map" 0.000000 1 0.01000
 gui_object_button_disabled "" "" "map_map" 0.000000 1 0.010000 0.990000 0.010000 0.990000
 gui_object_end
 gui_object_begin button
-gui_object_position 2834 847 2912 875
+gui_object_position 2092 847 2170 875
 gui_object_name "b_book"
 gui_object_frigid 0
 gui_object_hint "eng_windows.lng" "btn_magic_hint"
@@ -443,7 +443,7 @@ gui_object_button_pressed "mpbutton_onpress.png" "" "map_magic" 0.000000 1 0.010
 gui_object_button_disabled "" "" "map_magic" 0.000000 1 0.010000 0.990000 0.010000 0.990000
 gui_object_end
 gui_object_begin button
-gui_object_position 2046 889 2124 917
+gui_object_position 2000 889 2078 917
 gui_object_name "b_quests"
 gui_object_frigid 0
 gui_object_hint "eng_windows.lng" "btn_log_hint"
@@ -453,7 +453,7 @@ gui_object_button_pressed "mpbutton_onpress.png" "" "map_log" 0.000000 1 0.01000
 gui_object_button_disabled "" "" "map_log" 0.000000 1 0.010000 0.990000 0.010000 0.990000
 gui_object_end
 gui_object_begin button
-gui_object_position 2046 847 2124 875
+gui_object_position 2000 847 2078 875
 gui_object_name "b_hero"
 gui_object_frigid 0
 gui_object_hint "eng_windows.lng" "btn_char_hint"
@@ -483,35 +483,35 @@ gui_object_end
 gui_object_begin picture
 gui_object_picture "hub.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1671 840 1737 925
+gui_object_position 1625 840 1691 925
 gui_object_name "hub_1"
 gui_object_frigid 0
 gui_object_end
 gui_object_begin picture
 gui_object_picture "hub.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1743 840 1809 925
+gui_object_position 1697 840 1763 925
 gui_object_name "hub_2"
 gui_object_frigid 0
 gui_object_end
 gui_object_begin picture
 gui_object_picture "hub.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1815 840 1881 925
+gui_object_position 1769 840 1835 925
 gui_object_name "hub_3"
 gui_object_frigid 0
 gui_object_end
 gui_object_begin picture
 gui_object_picture "hub.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1887 840 1953 925
+gui_object_position 1841 840 1907 925
 gui_object_name "hub_4"
 gui_object_frigid 0
 gui_object_end
 gui_object_begin picture
 gui_object_picture "hub.png"
 gui_object_picture_angle 0.000000 1
-gui_object_position 1960 840 2026 925
+gui_object_position 1914 840 1980 925
 gui_object_name "hub_5"
 gui_object_frigid 0
 gui_object_end
@@ -553,7 +553,7 @@ gui_object_end
 gui_object_begin picture
 gui_object_picture "unknown_picture.png"
 gui_object_picture_angle 0.000000 0
-gui_object_position 1418 827 1522 943
+gui_object_position 1372 827 1476 943
 gui_object_name "her_face"
 gui_object_frigid 0
 gui_object_end
