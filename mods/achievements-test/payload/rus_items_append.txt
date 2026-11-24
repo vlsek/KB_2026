@@ -5,4 +5,4 @@ itm_medal_achievement_mental_madman_1_taken=^?^
 itm_medal_achievement_mental_madman_1_minfo=^?^
 itm_medal_achievement_mental_madman_1_mhint=^?^
 itm_medal_achievement_mental_madman_1_info=^?^Достижение. Нанести магией много урона за всю игру.
-itm_medal_achievement_mental_madman_1_hint=^?^Достижение: нанести магией 500 урона (тестовый порог).
+itm_medal_achievement_mental_madman_1_hint=^?^Достижение: нанести магией хотя бы 1 урон (тестовый порог).

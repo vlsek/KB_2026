@@ -15,7 +15,7 @@ medal_achievement_mental_madman_1 {
   use {}
   propbits=medal
   params {
-    max=500
+    max=1
     order=26
     param=0
     var=damage_magic

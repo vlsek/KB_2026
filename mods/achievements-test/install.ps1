@@ -70,4 +70,4 @@ $icons = Get-ChildItem $IconDir -Filter 'heroitem_achievement_mental_madman*.png
 if ($icons) { $icons | ForEach-Object { Copy-Item $_.FullName $mod -Force }; Write-Host "иконки скопированы в $mod" }
 else { Write-Warning "иконки не найдены в $IconDir — достижение сработает, но значок может быть пустым" }
 
-Write-Host "`nГотово. Запусти НОВУЮ игру или загрузи сохранение, проведи бой с магией (порог 500 урона магией за игру)."
+Write-Host "`nГотово. Запусти НОВУЮ игру или загрузи сохранение, проведи бой с магией (порог 1 урон магией — достаточно одного заклинания в бою)."
