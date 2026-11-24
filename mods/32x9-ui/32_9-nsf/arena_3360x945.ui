@@ -1,0 +1,373 @@
+gui_begin 3360 945
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 2243 943 2397 961
+gui_object_name "ap_hint"
+gui_object_frigid 0
+gui_object_hint "eng_battle.lng" "btn_AP_hint"
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 2330 17 2388 98
+gui_object_name "enemy_mana_hint"
+gui_object_frigid 0
+gui_object_hint "rus_battle.lng" "btn_battle_enemy_mana_hint"
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 2336 34 2381 58
+gui_object_name "enemy_mana_bonus"
+gui_object_frigid 1
+gui_object_text "" "enemy_mana_bonus" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 2335 76 2381 93
+gui_object_name "enemy_mana"
+gui_object_frigid 1
+gui_object_text "" "map_enemy_mana" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "addmana.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2340 75 2378 90
+gui_object_name "enemy_mana_podlojka"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 2355 109 2501 128
+gui_object_name "enemy_hero_name"
+gui_object_frigid 1
+gui_object_text "" "map_enemy_hero_name" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "toprightmanazaglushka.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2336 35 2382 72
+gui_object_name "enemy_mana_z_pos"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "mana21_empty.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2337 21 2381 65
+gui_object_name "enemy_mana_pos"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "topright3.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2286 0 2520 214
+gui_object_name "topright3"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2388 5 2466 114
+gui_object_name "enemy_face"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 840 34 885 58
+gui_object_name "rage_bonus_text"
+gui_object_frigid 1
+gui_object_text "" "rage_bonus" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 973 34 1018 58
+gui_object_name "mana_bonus_text"
+gui_object_frigid 1
+gui_object_text "" "mana_bonus" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 843 76 889 93
+gui_object_name "text_0"
+gui_object_frigid 1
+gui_object_text "" "map_rage" 0.000000 1.000000 0.000000 1.000000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 856 109 1002 128
+gui_object_name "text_0"
+gui_object_frigid 1
+gui_object_text "" "map_hero_name" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 978 76 1024 93
+gui_object_name "text_1"
+gui_object_frigid 1
+gui_object_text "" "map_mana" 0.000000 1.000000 0.000000 1.000000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "addmana.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 982 75 1020 90
+gui_object_name "mana_podlojka"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "addrage.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 848 75 886 90
+gui_object_name "rage_podlojka"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 840 17 893 98
+gui_object_name "picture_0"
+gui_object_frigid 0
+gui_object_hint "rus_battle.lng" "btn_battle_rage_hint"
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 970 17 1028 98
+gui_object_name "picture_1"
+gui_object_frigid 0
+gui_object_hint "rus_battle.lng" "btn_battle_mana_hint"
+gui_object_end
+gui_object_begin picture
+gui_object_picture "topleftmanazaglushka.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 978 35 1024 72
+gui_object_name "mana_z_pos"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "rage2_empty.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 843 20 890 67
+gui_object_name "rage_pos"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "mana21_empty.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 978 21 1022 65
+gui_object_name "mana_pos"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "topleft5.png"
+gui_object_picture_angle 0.000000 1
+gui_object_position 840 0 1074 214
+gui_object_name "picture_2"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 882 1 986 117
+gui_object_name "her_face"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin button
+gui_object_position 2025 851 2099 931
+gui_object_name "casket_button"
+gui_object_frigid 0
+gui_object_hint "rus_battle.lng" "btn_casket_hint"
+gui_object_button_normal "buttoncasket_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "buttoncasket_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "buttoncasket_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "buttoncasket_disabled.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 2329 868 2329 868
+gui_object_name "b_spec_e_3"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 2273 868 2273 868
+gui_object_name "b_spec_e_2"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 2217 868 2217 868
+gui_object_name "b_spec_e_1"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin button
+gui_object_position 2334 873 2377 917
+gui_object_name "b_spec_3"
+gui_object_frigid 0
+gui_object_button_normal "bpbutton_normal.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "bpbutton_onmouse.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "bpbutton_onpress.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "ba_darkness.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 2278 873 2321 917
+gui_object_name "b_spec_2"
+gui_object_frigid 0
+gui_object_button_normal "bpbutton_normal.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "bpbutton_onmouse.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "bpbutton_onpress.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "ba_darkness.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 2222 873 2265 917
+gui_object_name "b_spec_1"
+gui_object_frigid 0
+gui_object_button_normal "bpbutton_normal.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "bpbutton_onmouse.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "bpbutton_onpress.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "ba_darkness.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "bpbutton_normal.png"
+gui_object_picture_angle 0.000000 1
+gui_object_position 2329 868 2382 922
+gui_object_name "b_spec_r_3"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "bpbutton_normal.png"
+gui_object_picture_angle 0.000000 1
+gui_object_position 2217 868 2270 922
+gui_object_name "b_spec_r_1"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "bpbutton_normal.png"
+gui_object_picture_angle 0.000000 1
+gui_object_position 2273 868 2326 922
+gui_object_name "b_spec_r_2"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin button
+gui_object_position 2094 861 2171 935
+gui_object_name "b_book"
+gui_object_frigid 0
+gui_object_hint "rus_battle.lng" "btn_book_hint"
+gui_object_button_normal "buttonbook2_normal.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "buttonbook2_onmouse.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "buttonbook2_onpress.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "buttonbook2_disabled.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "bottomright4_long.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1965 829 2135 946
+gui_object_name "casket_podlozhka"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin button
+gui_object_position 2396 868 2449 922
+gui_object_name "b_postpone"
+gui_object_frigid 0
+gui_object_hint "rus_battle.lng" "btn_wait_hint"
+gui_object_button_normal "buttonwait_normal.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "buttonwait_onmouse.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "buttonwait_onpress.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "buttonwait_disable.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "bottomright4_short.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2033 829 2133 946
+gui_object_name "arena_panel_left_part"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin button
+gui_object_position 2453 868 2506 922
+gui_object_name "b_endmove"
+gui_object_frigid 0
+gui_object_hint "rus_battle.lng" "btn_def_hint"
+gui_object_button_normal "buttondefend_normal.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "buttondefend_onmouse.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "buttondefend_onpress.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "buttondefend_disable.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "bottomright4.png"
+gui_object_picture_angle 0.000000 1
+gui_object_position 2132 764 2520 946
+gui_object_name "bp_right"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin button
+gui_object_position 2225 872 2373 920
+gui_object_name "button_tactics"
+gui_object_frigid 0
+gui_object_button_normal "button_leave_normal.png" "" "btn_tactics" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "button_leave_onmouse.png" "" "btn_tactics" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "button_leave_onpress.png" "" "btn_tactics" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "btn_tactics" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin multitext
+gui_object_position 1052 860 1862 935
+gui_object_name "arena_hits_view"
+gui_object_frigid 0
+gui_object_multitext 0
+gui_object_end
+gui_object_begin button
+gui_object_position 852 874 905 928
+gui_object_name "b_escape"
+gui_object_frigid 0
+gui_object_hint "rus_battle.lng" "btn_sur_hint"
+gui_object_button_normal "buttonflee_normal.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "buttonflee_onmouse.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "buttonflee_onpress.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "buttonflee_disable.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 850 816 895 862
+gui_object_name "b_menu"
+gui_object_frigid 0
+gui_object_hint "rus_battle.lng" "btn_options_hint"
+gui_object_button_normal "buttonmenu_normal_disable.png" "" "menu" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "buttonmenu_onmouse.png" "" "menu" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "buttonmenu_onpress.png" "" "menu" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "buttonmenu_normal_disable.png" "" "menu" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1016 864 1044 894
+gui_object_name "b_up"
+gui_object_frigid 0
+gui_object_button_normal "buttonup_normal.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "buttonup_onmouse.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "buttonup_onpress.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "buttonup_disable2.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1016 905 1044 935
+gui_object_name "b_down"
+gui_object_frigid 0
+gui_object_button_normal "buttondown_normal.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "buttondown_onmouse.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "buttondown_onpress.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "buttondown_disable2.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 909 874 962 928
+gui_object_name "b_autofight"
+gui_object_frigid 0
+gui_object_hint "rus_battle.lng" "btn_auto_hint"
+gui_object_button_normal "buttonauto_normal.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "buttonauto_onmouse.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "buttonauto_onpress.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "buttonauto_disable.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "bottomleft.png"
+gui_object_picture_angle 0.000000 1
+gui_object_position 840 762 1016 946
+gui_object_name "picture_0"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "log02.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 997 852 1620 945
+gui_object_name "picture_3"
+gui_object_frigid 0
+gui_object_end
+gui_end

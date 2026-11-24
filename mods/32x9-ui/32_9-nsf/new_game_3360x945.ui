@@ -1,0 +1,299 @@
+gui_begin 3360 945
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 2165 59 2265 117
+gui_object_name "difficult_4_hit"
+gui_object_frigid 0
+gui_object_hint "eng_windows.lng" "nwg_level4_hint"
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 2061 59 2161 117
+gui_object_name "difficult_3_hit"
+gui_object_frigid 0
+gui_object_hint "eng_windows.lng" "nwg_level3_hint"
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1957 59 2057 117
+gui_object_name "difficult_2_hit"
+gui_object_frigid 0
+gui_object_hint "eng_windows.lng" "nwg_level2_hint"
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1853 59 1953 117
+gui_object_name "difficult_1_hit"
+gui_object_frigid 0
+gui_object_hint "eng_windows.lng" "nwg_level1_hint"
+gui_object_end
+gui_object_begin button_check
+gui_object_position 2203 61 2228 86
+gui_object_name "difficult_4"
+gui_object_frigid 0
+gui_object_button_unchecked_normal "preferences_b_unchecked_normal.png"
+gui_object_button_unchecked_focused "preferences_b_unchecked_onmouse.png"
+gui_object_button_unchecked_pressed "preferences_b_unchecked_onmouse.png"
+gui_object_button_unchecked_disabled "preferences_b_unchecked_normal.png"
+gui_object_button_checked_normal "preferences_b_checked_normal.png"
+gui_object_button_checked_focused "preferences_b_checked_onmouse.png"
+gui_object_button_checked_pressed "preferences_b_checked_onmouse.png"
+gui_object_button_checked_disabled "preferences_b_checked_normal.png"
+gui_object_end
+gui_object_begin button_check
+gui_object_position 2099 61 2124 86
+gui_object_name "difficult_3"
+gui_object_frigid 0
+gui_object_button_unchecked_normal "preferences_b_unchecked_normal.png"
+gui_object_button_unchecked_focused "preferences_b_unchecked_onmouse.png"
+gui_object_button_unchecked_pressed "preferences_b_unchecked_onmouse.png"
+gui_object_button_unchecked_disabled "preferences_b_unchecked_normal.png"
+gui_object_button_checked_normal "preferences_b_checked_normal.png"
+gui_object_button_checked_focused "preferences_b_checked_onmouse.png"
+gui_object_button_checked_pressed "preferences_b_checked_onmouse.png"
+gui_object_button_checked_disabled "preferences_b_checked_normal.png"
+gui_object_end
+gui_object_begin button_check
+gui_object_position 1995 61 2020 86
+gui_object_name "difficult_2"
+gui_object_frigid 0
+gui_object_button_unchecked_normal "preferences_b_unchecked_normal.png"
+gui_object_button_unchecked_focused "preferences_b_unchecked_onmouse.png"
+gui_object_button_unchecked_pressed "preferences_b_unchecked_onmouse.png"
+gui_object_button_unchecked_disabled "preferences_b_unchecked_normal.png"
+gui_object_button_checked_normal "preferences_b_checked_normal.png"
+gui_object_button_checked_focused "preferences_b_checked_onmouse.png"
+gui_object_button_checked_pressed "preferences_b_checked_onmouse.png"
+gui_object_button_checked_disabled "preferences_b_checked_normal.png"
+gui_object_end
+gui_object_begin button_check
+gui_object_position 1891 61 1916 86
+gui_object_name "difficult_1"
+gui_object_frigid 0
+gui_object_button_unchecked_normal "preferences_b_unchecked_normal.png"
+gui_object_button_unchecked_focused "preferences_b_unchecked_onmouse.png"
+gui_object_button_unchecked_pressed "preferences_b_unchecked_onmouse.png"
+gui_object_button_unchecked_disabled "preferences_b_unchecked_normal.png"
+gui_object_button_checked_normal "preferences_b_checked_normal.png"
+gui_object_button_checked_focused "preferences_b_checked_onmouse.png"
+gui_object_button_checked_pressed "preferences_b_checked_onmouse.png"
+gui_object_button_checked_disabled "preferences_b_checked_normal.png"
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 2136 96 2296 121
+gui_object_name "text_dif_4"
+gui_object_frigid 1
+gui_object_text "" "nwg_level4" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 2032 96 2192 121
+gui_object_name "text_dif_3"
+gui_object_frigid 1
+gui_object_text "" "nwg_level3" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1928 96 2088 121
+gui_object_name "text_dif_2"
+gui_object_frigid 1
+gui_object_text "" "nwg_level2" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1823 96 1983 121
+gui_object_name "text_dif_1"
+gui_object_frigid 1
+gui_object_text "" "nwg_level1" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "newgame_bg_black.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1843 50 2274 118
+gui_object_name "picture_2"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin button
+gui_object_position 2015 862 2163 910
+gui_object_name "nwg_cancel"
+gui_object_frigid 0
+gui_object_button_normal "button_leave_normal.png" "" "nwg_cancel" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "button_leave_onmouse.png" "" "nwg_cancel" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "button_leave_onpress.png" "" "nwg_cancel" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "nwg_cancel" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 2179 862 2327 910
+gui_object_name "nwg_continue"
+gui_object_frigid 0
+gui_object_button_normal "button_leave_normal.png" "" "nwg_cont" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "button_leave_onmouse.png" "" "nwg_cont" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "button_leave_onpress.png" "" "nwg_cont" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "nwg_cont" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "newgame_heraldry01.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2108 633 2218 753
+gui_object_name "nwg_herb_image"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin button
+gui_object_position 2222 655 2260 731
+gui_object_name "nwg_herb_right"
+gui_object_frigid 0
+gui_object_button_normal "inventory_button_right_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "inventory_button_right_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "inventory_button_right_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 2067 655 2105 731
+gui_object_name "nwg_herb_left"
+gui_object_frigid 0
+gui_object_button_normal "inventory_button_left_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "inventory_button_left_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "inventory_button_left_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1869 686 2036 710
+gui_object_name "nwg_text_field"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin button
+gui_object_position 1862 675 2043 713
+gui_object_name "nwg_text_control"
+gui_object_frigid 0
+gui_object_button_normal "newgame_text_field_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "newgame_text_field_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "newgame_text_field_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1846 448 2270 604
+gui_object_name "nwg_description"
+gui_object_frigid 1
+gui_object_text "" "nwg_opisalovo" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 2136 411 2255 427
+gui_object_name "text_7"
+gui_object_frigid 1
+gui_object_text "" "nwg_mage" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 2001 411 2118 427
+gui_object_name "text_6"
+gui_object_frigid 1
+gui_object_text "" "nwg_pal" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1863 411 1980 427
+gui_object_name "text_5"
+gui_object_frigid 1
+gui_object_text "" "nwg_qar" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 2129 325 2262 435
+gui_object_name "nwg_butt_mag"
+gui_object_frigid 0
+gui_object_button_normal "newgame_button_mage_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "newgame_button_mage_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "newgame_button_mage_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1992 327 2125 435
+gui_object_name "nwg_butt_pal"
+gui_object_frigid 0
+gui_object_button_normal "newgame_button_pal_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "newgame_button_pal_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "newgame_button_pal_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1855 327 1988 435
+gui_object_name "nwg_butt_war"
+gui_object_frigid 0
+gui_object_button_normal "newgame_button_war_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "newgame_button_war_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "newgame_button_war_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 2119 612 2219 628
+gui_object_name "text_4"
+gui_object_frigid 1
+gui_object_text "" "nwg_herb" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1906 612 2007 628
+gui_object_name "text_3"
+gui_object_frigid 1
+gui_object_text "" "nwg_name" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 2008 299 2109 315
+gui_object_name "text_2"
+gui_object_frigid 1
+gui_object_text "" "nwg_class" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1973 213 2137 261
+gui_object_name "text_0"
+gui_object_frigid 1
+gui_object_text "" "nwg_charcr" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1511 46 1848 93
+gui_object_name "text_0"
+gui_object_frigid 1
+gui_object_text "" "nwg_header" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "newgame_create_character.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1789 175 2335 831
+gui_object_name "picture_3"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "newgame_portrait_war.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 948 5 1893 1051
+gui_object_name "nwg_hero_image"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "theend_top.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 840 -74 2520 176
+gui_object_name "nwg_top"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "theend_bottom.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 840 751 2520 1001
+gui_object_name "nwg_bottom"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "newgame_bg_war.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 840 126 2520 887
+gui_object_name "nwg_bg"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "black_pixel.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 0 -100 3360 1050
+gui_object_name "bg_black_wide"
+gui_object_frigid 0
+gui_object_end
+gui_end

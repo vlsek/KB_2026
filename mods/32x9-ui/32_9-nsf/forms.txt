@@ -1,0 +1,511 @@
+game_records {
+    description=Game Records
+    ui=records.ui
+    form=game_records
+}
+
+splash_defeat {
+    description=Defeat splash screen
+    ui=splash_defeat.ui
+    form=splash_defeat
+}
+
+splash_victory {
+    description=Victory splash screen
+    ui=splash_victory.ui
+    form=splash_victory
+}
+
+game_credits {
+    description=Credits Screen
+    ui=credits.ui
+    1280x1024=credits_1280x1024.ui
+    1680x1050=credits_1680x1050.ui
+    1680x945=credits_1680x945.ui
+    3360x945=credits_3360x945.ui
+    form=game_credits
+}
+
+game_intro {
+    description=Intro
+    ui=intro_1280x960.ui
+    1280x1024=intro_1280x1024.ui
+    1680x1050=intro_1680x1050.ui
+    1680x945=intro_1680x945.ui
+    3360x945=intro_3360x945.ui
+    form=game_intro
+    sequence=intro_sequence.txt {}
+}
+
+nwg {
+    description=Options interface
+    ui=new_game.ui
+    1280x1024=new_game_1280x1024.ui
+    1680x1050=new_game_1680x1050.ui
+    1680x945=new_game_1680x945.ui
+    3360x945=new_game_3360x945.ui
+    form=nwg
+}
+
+bigmap {
+    description=Options interface
+    ui=bigmap.ui
+    form=bigmap
+}
+
+casket {
+    description=Options interface
+    ui=casket.ui
+    form=casket
+}
+
+options {
+    description=Options interface
+    ui=options.ui
+    form=options
+}
+
+dlg_to_the_reserve {
+    description=Not enough place dialog
+    ui=_to_the_reserve.ui
+    1280x1024=_to_the_reserve_1280x1024.ui
+    form=dialog
+}
+
+dlg_delete {
+
+    description=Delete troop
+    ui=deletion.ui
+    form=dialog
+}
+
+dlg_throw_out {
+    description=Throw out scroll
+    ui=throwout.ui
+    form=dialog
+}
+
+dlg_sell_scrolls {
+    description=Sell scrolls
+    ui=sell_scrolls.ui
+    form=dialog
+}
+
+
+reserve {
+    description=Reserve interface
+    ui=reserve.ui
+    form=reserve
+    above=map
+}
+
+chesspiece_hint {
+   description=dlg chesspiece hint
+   form=hint
+   ui=empty.ui
+   above=dlg_chesspiece
+}
+items_menu {
+    description=Items menu in hero window
+    form=popup_menu
+    ui=empty.ui
+}
+start {
+    description=start screen for demo
+    form=mmenu
+    ui=start.ui
+    1280x1024=start_1280x1024.ui
+    1680x1050=start_1680x1050.ui
+    1680x945=start_1680x945.ui
+    3360x945=start_3360x945.ui
+}
+loading {
+    description=loading screen
+    form=loading
+    ui=loading_1280x960.ui
+    1280x1024=loading_1280x1024.ui
+    1680x1050=loading_1680x1050.ui
+    1680x945=loading_1680x945.ui
+    3360x945=loading_3360x945.ui
+}
+spirit_dlg_hint {
+    description=Spirit hint
+    form=hint
+    ui=empty.ui
+    above=spiritinfo_dlg
+
+}
+spirit_info_hint {
+    description=Spirit hint
+    form=hint
+    ui=empty.ui
+    above=spiritinfo_ibox
+
+}
+
+hero_hint {
+    description=Hero hint
+    form=hint
+    ui=empty.ui
+    above=herwin
+}
+
+hero_building_hint {
+    description=Hero hint
+    form=hint
+    ui=empty.ui
+    above=building
+}
+
+spell_hint {
+    description=Spell hint
+    form=hint
+    ui=empty.ui
+    above=book
+}
+
+skill_hint {
+    description=Skill hint
+    form=hint
+    ui=empty.ui
+    above=herwin
+}
+
+arena_hint {
+    description=Spec abilka hint
+    form=hint
+    ui=empty.ui
+    above=arena
+}
+
+attack_hint {
+    description=Attack hint
+    form=hint
+    ui=empty.ui
+    above=arena
+}
+
+wsp_hint1 {
+
+    description=Army information
+    form=hint
+    ui=empty.ui
+    above=spmenu1
+}
+
+wsp_hint2 {
+
+    description=Army information
+    form=hint
+    ui=empty.ui
+    above=spmenu2
+}
+
+wsp_hint3 {
+
+    description=Army information
+    form=hint
+    ui=empty.ui
+    above=spmenu3
+}
+
+wsp_hint4 {
+
+    description=Army information
+    form=hint
+    ui=empty.ui
+    above=spmenu4
+}
+
+wsp_hint5 {
+
+    description=Army information
+    form=hint
+    ui=empty.ui
+    above=spmenu5
+}
+
+message_box {
+    description=message box form
+    form=mb
+    ui=empty.ui
+}
+level_up {
+    description=Level up window
+    ui=level_up.ui
+    form=dialog
+}
+sp_level_up {
+    description=Spirit level up window
+    ui=sp_level_up.ui
+    form=dialog
+}
+lose_few {
+    description=Lose-battle window
+    ui=lose_few.ui
+    form=dialog
+}
+lose_many {
+    description=Lose-battle window
+    ui=lose_many.ui
+    form=dialog
+}
+
+victory_few {
+    description=Lose-battle window
+    ui=victory_few.ui
+    form=dialog
+}
+victory_many {
+    description=Lose-battle window
+    ui=victory_many.ui
+    form=dialog
+}
+
+
+map {
+    description=Map interface
+    ui=map.ui
+    1280x1024=map_1280x1024.ui
+    1680x1050=map_1680x1050.ui
+    1680x945=map_1680x945.ui
+    3360x945=map_3360x945.ui
+    form=map
+//  hint_descriptor=mp_hint
+}
+
+arena {
+
+    description=Arena interface
+    ui=arena.ui
+    1280x1024=arena_1280x1024.ui
+    1680x1050=arena_1680x1050.ui
+    1680x945=arena_1680x945.ui
+    3360x945=arena_3360x945.ui
+    form=arena
+
+}
+
+mmenu {
+
+    description=Main menu
+    form=mmenu
+
+}
+
+dentry {
+    description=Developer's menu
+    ui=devmain.ui
+    form=dentry
+
+}
+
+
+army_info {
+
+    description=Army information
+    form=ibox
+    ui=empty.ui
+
+}
+
+info_chesspiece {
+
+    description=Chesspiece information
+    ui=info_chesspiece.ui
+    form=ibox
+
+}
+
+
+info_building {
+
+    description=Building information
+    ui=info_castle.ui
+    1280x1024=info_castle_1280x1024.ui
+    form=ibox
+
+}
+
+building {
+
+    description=Building
+    ui=town_1.ui
+    1280x1024=town_1_1280x1024.ui
+    1680x1050=town_1680x1050.ui
+    1680x945=town_1680x945.ui
+    3360x945=town_3360x945.ui
+    form=building
+    under=map
+}
+
+buy_from {
+
+    needface=1
+    form=building
+    decription=Buy from dialog form
+    ui=buy_from.ui
+}
+
+buy_from_s  {
+    needface=1
+    form=building
+    decription=Buy from dialog form
+    ui=buy_from_s.ui
+}
+
+dlg_chesspiece {
+
+    description=Chesspiece information dialog
+    ui=dlg_chesspiece.ui
+    form=dialog
+}
+
+dlg_buy {
+
+    description=Buy
+    ui=buy.ui
+    form=dialog
+}
+
+dlg_buy_scroll {
+    description=Buy scrolls form
+    ui=buy_scroll.ui
+    form=dialog
+}
+
+dlg_buy_item {
+    description=Buy items form
+    ui=buy_items.ui
+    form=dialog
+}
+
+dlg_drop_item {
+    description=Drop items form
+    ui=drop_items.ui
+    form=dialog
+}
+
+dlg_sale_item {
+    description=Sale items form
+    ui=sale_items.ui
+    form=dialog
+}
+
+dlg_use_item {
+    description=Use items form
+    ui=use_items.ui
+    form=dialog
+}
+
+dlg_split {
+
+    description=Split troop
+    ui=separation.ui
+    form=dialog
+}
+
+dlg_to_garrison {
+
+    description=Move army to garrison
+    ui=moving.ui
+    form=dialog
+}
+
+dlg_from_garrison {
+
+    description=Move army from garrison
+    ui=moving2.ui
+    form=dialog
+}
+
+dlg_army_reserve_moving {
+    description=Move between army \ garrison
+    ui=moving3.ui
+    form=dialog
+}
+
+herwin {
+    description=Hero window
+    ui=hero.ui
+    //1280x1024=hero_1280x1024.ui
+    //1680x1050=hero_1680x1050.ui
+    //1680x945=hero_1680x945.ui
+    form=hero
+}
+
+book {
+    description=Book
+    ui=book.ui
+    form=book
+}
+
+menu {
+    description=Menu
+    ui=menu.ui
+    form=menu
+}
+
+
+spmenu1 {
+    description=Spirit menu 1
+    ui=wspm_1.ui
+    form=spmenu
+}
+
+spmenu2 {
+    description=Spirit menu 2
+    ui=wspm_2.ui
+    form=spmenu
+}
+
+spmenu3 {
+    description=Spirit menu 3
+    ui=wspm_3.ui
+    form=spmenu
+}
+
+spmenu4 {
+    description=Spirit menu 4
+    ui=wspm_4.ui
+    form=spmenu
+}
+
+spmenu5 {
+    description=Spirit menu 5
+    ui=wspm_5.ui
+    form=spmenu
+}
+
+
+spiritinfo_dlg {
+
+    description=Information information dialog
+    ui=warspirit_dlg.ui
+    form=dialog
+}
+
+spiritinfo_ibox {
+
+    description=Information information infobox
+    ui=warspirit_info.ui
+    form=ibox
+}
+
+chat {
+    form=chat
+    description=Chat with npc window
+    ui=dialog.ui
+}
+
+save_load {
+    form=save_load
+    description=Save Load window
+    ui=save_load.ui
+}
+
+quests_journal {
+    form=quests_journal
+    description=Quests journal form
+    ui=quests_journal.ui
+}

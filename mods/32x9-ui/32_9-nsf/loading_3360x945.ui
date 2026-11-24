@@ -1,0 +1,50 @@
+gui_begin 3360 945
+gui_object_begin simple_text
+gui_object_position 1370 719 1983 844
+gui_object_name "loading_text"
+gui_object_frigid 1
+gui_object_text "" "" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "loading_logo_rus.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1498 79 1857 172
+gui_object_name "loading_logo"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "loading_center_01.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1545 255 1820 509
+gui_object_name "loading_center"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "loading_progressbar_border.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1471 209 1878 585
+gui_object_name "progressbar_border"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "loading_progressbar_07.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1525 261 1834 540
+gui_object_name "progressbar"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "loading_bg_03_1680.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 840 -55 2520 995
+gui_object_name "loading_bg"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "black_pixel.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 0 -100 3360 1050
+gui_object_name "bg_black_wide"
+gui_object_frigid 0
+gui_object_end
+gui_end

@@ -1,0 +1,89 @@
+gui_begin 3360 945
+gui_object_begin picture
+gui_object_picture "black_pixel.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 0 -90 3360 960
+gui_object_name "intro_black"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin button
+gui_object_position 2022 862 2170 910
+gui_object_name "intro_skip"
+gui_object_frigid 0
+gui_object_button_normal "button_leave_normal.png" "" "nwg_skip" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "button_leave_onmouse.png" "" "nwg_skip" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "button_leave_onpress.png" "" "nwg_skip" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "button_leave_normal.png" "" "nwg_skip" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 2179 862 2327 910
+gui_object_name "intro_continue"
+gui_object_frigid 0
+gui_object_button_normal "button_leave_normal.png" "" "nwg_cont" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "button_leave_onmouse.png" "" "nwg_cont" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "button_leave_onpress.png" "" "nwg_cont" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "nwg_cont" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1968 293 2297 763
+gui_object_name "intro_text"
+gui_object_frigid 1
+gui_object_text "" "intro_text1" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "intro_page1.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1155 68 1863 838
+gui_object_name "intro_page1"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "intro_page2.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1156 62 1865 856
+gui_object_name "intro_page2"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "intro_page3.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1137 65 1889 846
+gui_object_name "intro_page3"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "intro_page4.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1155 59 1852 833
+gui_object_name "intro_page4"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "theend_top.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 840 -74 2520 176
+gui_object_name "intro_top"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "theend_bottom.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 840 751 2520 1001
+gui_object_name "intro_bottom"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "intro_bg.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 840 -58 2520 877
+gui_object_name "intro_bg"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "black_pixel.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 0 -100 3360 1050
+gui_object_name "bg_black_wide"
+gui_object_frigid 0
+gui_object_end
+gui_end

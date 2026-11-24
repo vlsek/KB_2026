@@ -1,0 +1,17 @@
+# Секреты
+.env
+*.token
+*secret*
+# Файлы игры и архивы
+*.pak
+*.exe
+*.dll
+*.zip
+*.7z
+*.rar
+game/
+# Мусор
+.DS_Store
+Thumbs.db
+*.bak
+__pycache__/

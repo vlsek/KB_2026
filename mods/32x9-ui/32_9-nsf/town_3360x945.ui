@@ -1,0 +1,985 @@
+gui_begin 3360 945
+gui_object_begin picture
+gui_object_picture "hero_zaglushka1.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1955 31 2271 196
+gui_object_name "wife_zaglushka"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2169 123 2219 173
+gui_object_name "red_12"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2169 63 2219 113
+gui_object_name "red_11"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2012 123 2062 173
+gui_object_name "red_10"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2012 63 2062 113
+gui_object_name "red_9"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2226 499 2276 549
+gui_object_name "red_8"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2226 436 2276 486
+gui_object_name "red_7"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2226 372 2276 422
+gui_object_name "red_6"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2226 251 2276 301
+gui_object_name "red_5"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1957 499 2007 549
+gui_object_name "red_4"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1957 435 2007 485
+gui_object_name "red_3"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1957 372 2007 422
+gui_object_name "red_2"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1957 251 2007 301
+gui_object_name "red_1"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 2226 672 2275 691
+gui_object_name "tmss_6"
+gui_object_frigid 1
+gui_object_text "" "tn_tmss6" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 2170 672 2219 691
+gui_object_name "tmss_5"
+gui_object_frigid 1
+gui_object_text "" "tn_tmss5" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 2114 672 2163 691
+gui_object_name "tmss_4"
+gui_object_frigid 1
+gui_object_text "" "tn_tmss4" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 2058 672 2107 691
+gui_object_name "tmss_3"
+gui_object_frigid 1
+gui_object_text "" "tn_tmss3" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 2002 672 2051 691
+gui_object_name "tmss_2"
+gui_object_frigid 1
+gui_object_text "" "tn_tmss2" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1946 672 1995 691
+gui_object_name "tmss_1"
+gui_object_frigid 1
+gui_object_text "" "tn_tmss1" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 2222 631 2282 691
+gui_object_name "bck_6"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onmouse.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 2166 631 2226 691
+gui_object_name "bck_5"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 2110 631 2170 691
+gui_object_name "bck_4"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 2054 631 2114 691
+gui_object_name "bck_3"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1998 631 2058 691
+gui_object_name "bck_2"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1942 631 2002 691
+gui_object_name "bck_1"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button
+gui_object_position 2219 593 2285 625
+gui_object_name "inv_right"
+gui_object_frigid 0
+gui_object_button_normal "inventory_right_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "inventory_right_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "inventory_right_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "inventory_right_disabled.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1939 593 2005 625
+gui_object_name "inv_left"
+gui_object_frigid 0
+gui_object_button_normal "inventory_left_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "inventory_left_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "inventory_left_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "inventory_left_disabled.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "town_wide_left.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 840 -73 1040 816
+gui_object_name "picture_0"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "town_wide_right.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2320 -73 2520 816
+gui_object_name "picture_0"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin button
+gui_object_position 1294 546 1329 566
+gui_object_name "bfr_tr_right"
+gui_object_frigid 0
+gui_object_button_normal "bfd_arrowright_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "bfd_arrowright_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "bfd_arrowright_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "bfd_arrowright_disable.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1163 546 1198 566
+gui_object_name "bfr_tr_left"
+gui_object_frigid 0
+gui_object_button_normal "bfd_arrowleft_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "bfd_arrowleft_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "bfd_arrowleft_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "bfd_arrowleft_disable.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1364 348 1399 368
+gui_object_name "bfr_mag_right"
+gui_object_frigid 0
+gui_object_button_normal "bfd_arrowright_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "bfd_arrowright_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "bfd_arrowright_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "bfd_arrowright_disable.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1257 348 1292 368
+gui_object_name "bfr_mag_left"
+gui_object_frigid 0
+gui_object_button_normal "bfd_arrowleft_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "bfd_arrowleft_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "bfd_arrowleft_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "bfd_arrowleft_disable.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1196 348 1231 368
+gui_object_name "bfr_inv_right"
+gui_object_frigid 0
+gui_object_button_normal "bfd_arrowright_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "bfd_arrowright_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "bfd_arrowright_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "bfd_arrowright_disable.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1089 348 1124 368
+gui_object_name "bfr_inv_left"
+gui_object_frigid 0
+gui_object_button_normal "bfd_arrowleft_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "bfd_arrowleft_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "bfd_arrowleft_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "bfd_arrowleft_disable.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1220 760 1255 790
+gui_object_name "garrison_right"
+gui_object_frigid 0
+gui_object_button_normal "bfd_arrowright_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "bfd_arrowright_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "bfd_arrowright_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "bfd_arrowright_disable.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1005 760 1040 790
+gui_object_name "garrison_left"
+gui_object_frigid 0
+gui_object_button_normal "bfd_arrowleft_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "bfd_arrowleft_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "bfd_arrowleft_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "bfd_arrowleft_disable.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1060 181 1427 324
+gui_object_name "gov_star"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 2069 57 2163 177
+gui_object_name "slot_wife"
+gui_object_frigid 0
+gui_object_button_gt_normal ""
+gui_object_button_gt_focused "unit_border1_onmouse.png"
+gui_object_button_gt_pressed ""
+gui_object_button_gt_disabled ""
+gui_object_button_gt_podlozhka "inventory_slot_bg_wife01.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 2164 117 2224 177
+gui_object_name "slot_12"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 2164 57 2224 117
+gui_object_name "slot_11"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 2007 117 2067 177
+gui_object_name "slot_10"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 2007 57 2067 117
+gui_object_name "slot_9"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1332 490 1381 509
+gui_object_name "tmms_4"
+gui_object_frigid 1
+gui_object_text "" "tn_tmms4" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1271 490 1320 509
+gui_object_name "tmms_3"
+gui_object_frigid 1
+gui_object_text "" "tn_tmms3" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1332 410 1381 429
+gui_object_name "tmms_2"
+gui_object_frigid 1
+gui_object_text "" "tn_tmms2" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1271 410 1320 429
+gui_object_name "tmms_1"
+gui_object_frigid 1
+gui_object_text "" "tn_tmms1" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1164 490 1213 509
+gui_object_name "tmis_4"
+gui_object_frigid 1
+gui_object_text "" "tn_tmis4" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1103 490 1152 509
+gui_object_name "tmis_3"
+gui_object_frigid 1
+gui_object_text "" "tn_tmis3" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1164 410 1213 429
+gui_object_name "tmis_2"
+gui_object_frigid 1
+gui_object_text "" "tn_tmis2" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1103 410 1152 429
+gui_object_name "tmis_1"
+gui_object_frigid 1
+gui_object_text "" "tn_tmis1" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1329 511 1385 530
+gui_object_name "tmmc_4"
+gui_object_frigid 1
+gui_object_text "" "tn_tmmc4" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1268 511 1324 530
+gui_object_name "tmmc_3"
+gui_object_frigid 1
+gui_object_text "" "tn_tmmc3" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1330 431 1386 450
+gui_object_name "tmmc_2"
+gui_object_frigid 1
+gui_object_text "" "tn_tmmc2" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1269 431 1325 450
+gui_object_name "tmmc_1"
+gui_object_frigid 1
+gui_object_text "" "tn_tmmc1" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1161 511 1217 530
+gui_object_name "tmic_4"
+gui_object_frigid 1
+gui_object_text "" "tn_tmic4" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1100 511 1156 530
+gui_object_name "tmic_3"
+gui_object_frigid 1
+gui_object_text "" "tn_tmic3" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1161 431 1217 450
+gui_object_name "tmic_2"
+gui_object_frigid 1
+gui_object_text "" "tn_tmic2" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1100 431 1156 450
+gui_object_name "tmic_1"
+gui_object_frigid 1
+gui_object_text "" "tn_tmic1" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1328 451 1388 511
+gui_object_name "magic_4"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown "unknown_picture.png"
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1267 451 1327 511
+gui_object_name "magic_3"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown "unknown_picture.png"
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1328 371 1388 431
+gui_object_name "magic_2"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown "unknown_picture.png"
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1267 371 1327 431
+gui_object_name "magic_1"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown "unknown_picture.png"
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1160 451 1220 511
+gui_object_name "inv_4"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown "unknown_picture.png"
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1099 451 1159 511
+gui_object_name "inv_3"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown "unknown_picture.png"
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1160 371 1220 431
+gui_object_name "inv_2"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown "unknown_picture.png"
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1099 371 1159 431
+gui_object_name "inv_1"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown "unknown_picture.png"
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 2221 493 2281 553
+gui_object_name "slot_8"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_artefact"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg8.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 2221 430 2281 490
+gui_object_name "slot_7"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_belt_artefact"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg7.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 2221 366 2281 426
+gui_object_name "slot_6"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_shield_regalia"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg6.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 2221 245 2281 305
+gui_object_name "slot_5"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_regalia"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg5.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1952 493 2012 553
+gui_object_name "slot_4"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_boots"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg4.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1952 429 2012 489
+gui_object_name "slot_3"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_armor"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg3.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1952 366 2012 426
+gui_object_name "slot_2"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_weapon"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg2.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1952 245 2012 305
+gui_object_name "slot_1"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_helmet"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg1.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1320 634 1386 656
+gui_object_name "tuc_4"
+gui_object_frigid 1
+gui_object_text "" "tn_tuc4" 0.010000 0.990000 0.180000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1247 634 1313 656
+gui_object_name "tuc_3"
+gui_object_frigid 1
+gui_object_text "" "tn_tuc3" 0.010000 0.990000 0.180000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1174 634 1240 656
+gui_object_name "tuc_2"
+gui_object_frigid 1
+gui_object_text "" "tn_tuc2" 0.010000 0.990000 0.180000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1101 634 1167 656
+gui_object_name "tuc_1"
+gui_object_frigid 1
+gui_object_text "" "tn_tuc1" 0.010000 0.990000 0.180000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "greypixel.png"
+gui_object_picture_angle 0.000000 1
+gui_object_position 1321 635 1387 657
+gui_object_name "town_unit_poloska_4"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "greypixel.png"
+gui_object_picture_angle 0.000000 1
+gui_object_position 1248 635 1314 657
+gui_object_name "town_unit_poloska_3"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "greypixel.png"
+gui_object_picture_angle 0.000000 1
+gui_object_position 1175 635 1241 657
+gui_object_name "town_unit_poloska_2"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "greypixel.png"
+gui_object_picture_angle 0.000000 1
+gui_object_position 1102 635 1168 657
+gui_object_name "town_unit_poloska_1"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1318 569 1391 660
+gui_object_name "town_unit_4"
+gui_object_frigid 0
+gui_object_button_gt_normal "unit_border1_normal.png"
+gui_object_button_gt_focused "unit_border1_onmouse.png"
+gui_object_button_gt_pressed "unit_border1_onpress.png"
+gui_object_button_gt_disabled "unit_border1_normal.png"
+gui_object_button_gt_podlozhka "town_unitbg_01.png"
+gui_object_button_gt_unknown "unknown_picture.png"
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1245 569 1318 660
+gui_object_name "town_unit_3"
+gui_object_frigid 0
+gui_object_button_gt_normal "unit_border1_normal.png"
+gui_object_button_gt_focused "unit_border1_onmouse.png"
+gui_object_button_gt_pressed "unit_border1_onpress.png"
+gui_object_button_gt_disabled "unit_border1_normal.png"
+gui_object_button_gt_podlozhka "town_unitbg_01.png"
+gui_object_button_gt_unknown "unknown_picture.png"
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1172 569 1245 660
+gui_object_name "town_unit_2"
+gui_object_frigid 0
+gui_object_button_gt_normal "unit_border1_normal.png"
+gui_object_button_gt_focused "unit_border1_onmouse.png"
+gui_object_button_gt_pressed "unit_border1_onpress.png"
+gui_object_button_gt_disabled "unit_border1_normal.png"
+gui_object_button_gt_podlozhka "town_unitbg_01.png"
+gui_object_button_gt_unknown "unknown_picture.png"
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1099 569 1172 660
+gui_object_name "town_unit_1"
+gui_object_frigid 0
+gui_object_button_gt_normal "unit_border1_normal.png"
+gui_object_button_gt_focused "unit_border1_onmouse.png"
+gui_object_button_gt_pressed "unit_border1_onpress.png"
+gui_object_button_gt_disabled "unit_border1_normal.png"
+gui_object_button_gt_podlozhka "town_unitbg_01.png"
+gui_object_button_gt_unknown "unknown_picture.png"
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1337 769 1379 783
+gui_object_name "guc_3"
+gui_object_frigid 1
+gui_object_text "" "tn_guc3" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "greypixel.png"
+gui_object_picture_angle 0.000000 1
+gui_object_position 1333 768 1380 783
+gui_object_name "garrison_unit_poloska_3"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1283 769 1325 783
+gui_object_name "guc_2"
+gui_object_frigid 1
+gui_object_text "" "tn_guc2" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "greypixel.png"
+gui_object_picture_angle 0.000000 1
+gui_object_position 1278 768 1325 783
+gui_object_name "garrison_unit_poloska_2"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1229 770 1271 784
+gui_object_name "guc_1"
+gui_object_frigid 1
+gui_object_text "" "tn_guc1" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "greypixel.png"
+gui_object_picture_angle 0.000000 1
+gui_object_position 1224 769 1271 783
+gui_object_name "garrison_unit_poloska_1"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1331 733 1384 786
+gui_object_name "garrison_unit_3"
+gui_object_frigid 0
+gui_object_button_gt_normal "garrison_border_normal.png"
+gui_object_button_gt_focused "garrison_border_onmouse.png"
+gui_object_button_gt_pressed "garrison_border_onpress.png"
+gui_object_button_gt_disabled "garrison_border_normal.png"
+gui_object_button_gt_podlozhka "town_unitbg_02.png"
+gui_object_button_gt_unknown "unknown_picture.png"
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1276 733 1329 786
+gui_object_name "garrison_unit_2"
+gui_object_frigid 0
+gui_object_button_gt_normal "garrison_border_normal.png"
+gui_object_button_gt_focused "garrison_border_onmouse.png"
+gui_object_button_gt_pressed "garrison_border_onpress.png"
+gui_object_button_gt_disabled "garrison_border_normal.png"
+gui_object_button_gt_podlozhka "town_unitbg_02.png"
+gui_object_button_gt_unknown "unknown_picture.png"
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1221 733 1274 786
+gui_object_name "garrison_unit_1"
+gui_object_frigid 0
+gui_object_button_gt_normal "garrison_border_normal.png"
+gui_object_button_gt_focused "garrison_border_onmouse.png"
+gui_object_button_gt_pressed "garrison_border_onpress.png"
+gui_object_button_gt_disabled "garrison_border_normal.png"
+gui_object_button_gt_podlozhka "town_unitbg_02.png"
+gui_object_button_gt_unknown "unknown_picture.png"
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1244 714 1354 732
+gui_object_name "text_6"
+gui_object_frigid 1
+gui_object_text "" "tn_garrison" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "town_3slots.png"
+gui_object_picture_angle 0.000000 1
+gui_object_position 1208 701 1398 803
+gui_object_name "town_3slots"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1170 291 1313 311
+gui_object_name "tit_gov1"
+gui_object_frigid 1
+gui_object_text "" "tn_title1" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1114 180 1370 328
+gui_object_name "ruler1"
+gui_object_frigid 0
+gui_object_button_normal "town_governor1_normal.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "town_governor1_onmouse.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "town_governor1_onpress.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "town_governor1_normal.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 1
+gui_object_position 1195 184 1288 312
+gui_object_name "governor_1"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1320 661 1390 680
+gui_object_name "tmc_4"
+gui_object_frigid 1
+gui_object_text "" "tn_tmc4" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1249 661 1314 680
+gui_object_name "tmc_3"
+gui_object_frigid 1
+gui_object_text "" "tn_tmc3" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1174 661 1242 680
+gui_object_name "tmc_2"
+gui_object_frigid 1
+gui_object_text "" "tn_tmc2" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1101 661 1169 680
+gui_object_name "tmc_1"
+gui_object_frigid 1
+gui_object_text "" "tn_tmc1" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1604 733 1752 781
+gui_object_name "b_leave"
+gui_object_frigid 0
+gui_object_hint "english_button_hint.lng" "town_leave_hint"
+gui_object_button_normal "button_leave_normal.png" "" "tn_leave" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "button_leave_onmouse.png" "" "tn_leave" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "button_leave_onpress.png" "" "tn_leave" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "button_leave_normal.png" "" "tn_leave" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1099 547 1388 566
+gui_object_name "text_5"
+gui_object_frigid 1
+gui_object_text "" "tn_troops" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1268 350 1385 368
+gui_object_name "text_4"
+gui_object_frigid 1
+gui_object_text "" "tn_magic" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1100 350 1218 370
+gui_object_name "text_2"
+gui_object_frigid 1
+gui_object_text "" "tn_inv" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1115 71 1387 98
+gui_object_name "text_0"
+gui_object_frigid 1
+gui_object_text "" "tn_terr_name" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1109 25 1392 66
+gui_object_name "text_0"
+gui_object_frigid 1
+gui_object_text "" "tn_name" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "town_bg_9.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1040 -73 2320 -9
+gui_object_name "bg9"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "town_bg_8.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1040 -9 1493 215
+gui_object_name "bg7"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "town_bg_6.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1493 -9 1530 66
+gui_object_name "bg6"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "town_bg_5.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1828 -9 1880 85
+gui_object_name "bg5"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "town_bg_4.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1493 765 1579 816
+gui_object_name "bg4"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "town_bg_3.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1781 747 1880 816
+gui_object_name "bg3"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "town_bg_2.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1880 -9 2320 816
+gui_object_name "bg2"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "town_bg_1.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1040 215 1493 816
+gui_object_name "bg1"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 1
+gui_object_position 1464 -55 1891 815
+gui_object_name "background"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2016 197 2217 587
+gui_object_name "her_image"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "black_pixel.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 0 -99 3360 951
+gui_object_name "bg_black"
+gui_object_frigid 0
+gui_object_end
+gui_end

@@ -1,0 +1,71 @@
+gui_begin 3360 945
+gui_object_begin picture
+gui_object_picture "logo_bink.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1062 897 1094 928
+gui_object_name "logo4"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "logo_theengine.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1025 897 1057 928
+gui_object_name "logo3"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "logo_katauri.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 928 897 1019 928
+gui_object_name "logo2"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "logo_1c.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 876 897 922 928
+gui_object_name "logo1"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "start_kblogo_rus.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1736 29 2317 230
+gui_object_name "logo"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "credits_bg1_bottom_1680.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1742 887 2312 1001
+gui_object_name "bottom"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "credits_bg1_top_1680.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1755 -49 2325 191
+gui_object_name "top"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin multitext
+gui_object_position 1742 107 2310 967
+gui_object_name "text_credits"
+gui_object_frigid 0
+gui_object_multitext 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "credits_bg_1680.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 840 -49 2520 1001
+gui_object_name "bg"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "black_pixel.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 0 -100 3360 1050
+gui_object_name "bg_black_wide"
+gui_object_frigid 0
+gui_object_end
+gui_end

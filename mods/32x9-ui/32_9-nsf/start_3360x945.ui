@@ -1,0 +1,131 @@
+gui_begin 3360 945
+gui_object_begin picture
+gui_object_picture "start_kblogo_rus.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1402 21 1978 204
+gui_object_name "logo_kb"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "start_1clogo_eng.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1616 917 1662 945
+gui_object_name "logo_1c"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "start_kataurilogo.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1668 917 1747 945
+gui_object_name "logo_katauri"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1764 924 2307 948
+gui_object_name "text_copyright"
+gui_object_frigid 1
+gui_object_text "" "start_copyright" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1115 924 1470 948
+gui_object_name "text_version"
+gui_object_frigid 1
+gui_object_text "" "start_version" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1084 795 1321 919
+gui_object_name "but1"
+gui_object_frigid 0
+gui_object_button_normal "start_but1_norm.png" "eng_windows.lng" "start_b1" 0.000000 0 0.000000 1.000000 0.395161 1.000000
+gui_object_button_focused "start_but1_onmouse.png" "eng_windows.lng" "start_b1" 0.000000 0 0.000000 1.000000 0.193548 1.000000
+gui_object_button_pressed "start_but1_onpress.png" "eng_windows.lng" "start_b1" 0.000000 0 0.004219 1.000000 0.201613 1.000000
+gui_object_button_disabled "start_but1_norm.png" "eng_windows.lng" "start_b1" 0.000000 0 0.000000 1.000000 0.193548 1.000000
+gui_object_end
+gui_object_begin button
+gui_object_position 1301 817 1504 911
+gui_object_name "but2"
+gui_object_frigid 0
+gui_object_button_normal "start_but2_norm.png" "eng_windows.lng" "start_b2" 0.000000 0 0.000000 1.000000 0.361702 1.000000
+gui_object_button_focused "start_but2_onmouse.png" "eng_windows.lng" "start_b2" 0.000000 0 0.000000 1.000000 0.180851 1.000000
+gui_object_button_pressed "start_but2_onpress.png" "eng_windows.lng" "start_b2" 0.000000 0 0.004926 1.000000 0.191489 1.000000
+gui_object_button_disabled "start_but2_norm.png" "eng_windows.lng" "start_b2" 0.000000 0 0.000000 1.000000 0.180851 1.000000
+gui_object_end
+gui_object_begin button
+gui_object_position 1492 823 1696 910
+gui_object_name "but3"
+gui_object_frigid 0
+gui_object_button_normal "start_but3_norm.png" "eng_windows.lng" "start_b3" 0.000000 0 0.000000 1.000000 0.344828 1.000000
+gui_object_button_focused "start_but3_onmouse.png" "eng_windows.lng" "start_b3" 0.000000 0 0.000000 1.000000 0.172414 1.000000
+gui_object_button_pressed "start_but3_onpress.png" "eng_windows.lng" "start_b3" 0.000000 0 0.004902 1.000000 0.183908 1.000000
+gui_object_button_disabled "start_but3_norm.png" "eng_windows.lng" "start_b3" 0.000000 0 0.000000 1.000000 0.172414 1.000000
+gui_object_end
+gui_object_begin button
+gui_object_position 1672 823 1870 910
+gui_object_name "but4"
+gui_object_frigid 0
+gui_object_button_normal "start_but4_norm.png" "eng_windows.lng" "start_b4" 0.000000 0 0.000000 1.000000 0.344828 1.000000
+gui_object_button_focused "start_but4_onmouse.png" "eng_windows.lng" "start_b4" 0.000000 0 0.000000 1.000000 0.172414 1.000000
+gui_object_button_pressed "start_but4_onpress.png" "eng_windows.lng" "start_b4" 0.000000 0 0.005051 1.000000 0.183908 1.000000
+gui_object_button_disabled "start_but4_norm.png" "eng_windows.lng" "start_b4" 0.000000 0 0.000000 1.000000 0.172414 1.000000
+gui_object_end
+gui_object_begin button
+gui_object_position 1863 816 2062 913
+gui_object_name "but5"
+gui_object_frigid 0
+gui_object_button_normal "start_but5_norm.png" "eng_windows.lng" "start_b5" 0.000000 0 0.000000 1.000000 0.360825 1.000000
+gui_object_button_focused "start_but5_onmouse.png" "eng_windows.lng" "start_b5" 0.000000 0 0.000000 1.000000 0.185567 1.000000
+gui_object_button_pressed "start_but5_onpress.png" "eng_windows.lng" "start_b5" 0.000000 0 0.005025 1.000000 0.195876 1.000000
+gui_object_button_disabled "start_but5_norm.png" "eng_windows.lng" "start_b5" 0.000000 0 0.000000 1.000000 0.185567 1.000000
+gui_object_end
+gui_object_begin button
+gui_object_position 2048 795 2277 919
+gui_object_name "but6"
+gui_object_frigid 0
+gui_object_button_normal "start_but6_norm.png" "eng_windows.lng" "start_b6" 0.000000 0 0.000000 1.000000 0.395161 1.000000
+gui_object_button_focused "start_but6_onmouse.png" "eng_windows.lng" "start_b6" 0.000000 0 0.000000 1.000000 0.193548 1.000000
+gui_object_button_pressed "start_but6_onpress.png" "eng_windows.lng" "start_b6" 0.000000 0 0.004367 1.000000 0.201613 1.000000
+gui_object_button_disabled "start_but6_norm.png" "eng_windows.lng" "start_b6" 0.000000 0 0.000000 1.000000 0.193548 1.000000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "start_top.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1050 0 2330 106
+gui_object_name "top"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "start_bottom1.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1041 763 2321 960
+gui_object_name "bottom"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "start_bottom_left.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 845 829 1041 961
+gui_object_name "bottom_left"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "start_bottom_right.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2321 829 2517 961
+gui_object_name "bottom_right"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "start_bg_1680.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 840 -60 2520 990
+gui_object_name "bg"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "black_pixel.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 0 -100 3360 1050
+gui_object_name "bg_black_wide"
+gui_object_frigid 0
+gui_object_end
+gui_end

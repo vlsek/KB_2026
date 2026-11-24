@@ -1,0 +1,57 @@
+
+// Размер в метрах удаления групп объектов и их теней: для нормальной и низкой дальности прорисовки. При высокой дальности эти опции не должны работать.
+ClipDist {
+	Big {
+		Model=100, 75, 65
+		Shadow=100, 65, 55
+            BlendDelta=10
+	}
+	Average {
+		Model=100, 65, 55
+		Shadow=100, 60, 50
+            BlendDelta=5
+	}
+	Small {
+		Model=100, 55, 48
+		Shadow=100, 50, 43
+            BlendDelta=0
+	}
+}
+
+
+PITCH=40
+PITCH_MIN_DOWN=15    //20
+PITCH_MIN_UP=45     //30 cool 40 speed 35 default
+PITCH_MAX_DOWN=90
+PITCH_MAX_UP=90     //70
+DIST=18             //23 32 20
+DIST_MIN=5          //8
+DIST_MAX=36         //18 (was) ; 36 32 20
+FOV=50		// 30 40
+ADDHEIGHT=1
+ZNEAR=2       //3 //0.5
+ZFAR=150        //90 (was) ; 60 //90
+
+
+// arena cam props
+
+ARENA_FOV=35        //30.0
+ARENA_PITCH=35      //30.0 //
+ARENA_MIN_PITCH=30  //30.0
+ARENA_MAX_PITCH=40  //50.0
+ARENA_YAW=0.0       //0.0
+ARENA_DELTA_YAW=55.0    //45.0
+ARENA_DIST=23.3       //20
+ARENA_MIN_DIST=14.3 //16.0
+ARENA_MAX_DIST=23.9 //21.0
+ARENA_Z_NEAR=0.5        //0.5
+ARENA_Z_FAR=100.0       //100.0
+ARENA_POS_X=0.0        //0.0
+ARENA_POS_Y=-17.8        //-21.9 //
+ARENA_POS_Z=13.4		//13.4 //
+
+ARENA_WBOUND = 3.0
+ARENA_HBOUND = 3.0
+ARENA_HSPEED = 7.0
+ARENA_WSPEED = 7.0
+
