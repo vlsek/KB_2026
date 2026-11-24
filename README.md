@@ -25,7 +25,8 @@
 - 🗺️ [docs/ROADMAP.md](docs/ROADMAP.md) — цели и этапы
 - 📓 [docs/WORKLOG.md](docs/WORKLOG.md) — журнал: кто что сделал, что дальше
 - 🧭 [docs/DECISIONS.md](docs/DECISIONS.md) — принятые решения и почему
-- 🎮 [docs/GAME_NOTES.md](docs/GAME_NOTES.md) — что известно о структуре игры
+- 🎮 [docs/GAME_NOTES.md](docs/GAME_NOTES.md) — что известно о работе игры (камера, разрешения, UI)
+- 🗂️ [docs/GAME_STRUCTURE.md](docs/GAME_STRUCTURE.md) — структура папки игры, форматы файлов
 - 📋 [Issues](../../issues) — задачи, [Pull requests](../../pulls) — изменения
 
 ## Быстрый старт (установка мода 32:9)
