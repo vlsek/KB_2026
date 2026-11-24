@@ -6,9 +6,10 @@
 
 ## Что делает установка
 1. `config.txt`: `//undropable=0x0008` → `medal=0x0008` (бит medal, как в WotN).
-2. Кладёт `sessions\base\ses\achievements.txt`.
-3. Дописывает русские строки в конец `sessions\base\loc_ses\rus\rus_items.lng` (UTF-16).
-4. Копирует иконки в `data\mods\kb2026_achievements\`.
+2. `items.txt`: в начало добавляет строку `==achievements.txt` (без неё Legend файл не читает — это была причина «ничего не появилось» в первом тесте, v1).
+3. Кладёт `sessions\base\ses\achievements.txt`.
+4. Дописывает русские строки в конец `sessions\base\loc_ses\rus\rus_items.lng` (UTF-16).
+5. Копирует иконки в `data\mods\kb2026_achievements\`.
 Перед правкой — резервные копии `*.kb2026.bak`.
 
 ## Установка
@@ -32,3 +33,6 @@
 
 ## После успеха
 Поднять `max` до 500000 в `achievements.txt`, добавить остальные 11 универсальных (см. `docs/ACHIEVEMENTS.md`, группа A).
+
+## Где это должно показываться (открытый вопрос)
+В DS есть форма-книга `achievements` (страницы + кнопка закрыть) и всплывающие `post_achievement`/`new_achievement`; в `endgame.ui` — строка со счётом достижений. Кто открывает книгу — в `.ui` и Lua не нашлось, значит это делает движок. В Legend ни формы, ни кнопки нет. v1 проверяет только факт получения; UI — следующий шаг (форма в `forms.txt` + `.ui` из DS + кнопка).

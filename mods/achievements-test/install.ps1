@@ -35,7 +35,19 @@ if ($s -match 'medal=0x0008') {
   throw 'config.txt: не нашёл строку //undropable=0x0008 — версия файла другая, остановился (ничего не менял).'
 }
 
-# 2) achievements.txt
+# 2) items.txt: подключаем achievements.txt (в Legend такой строки нет; в DS/WotN она стоит в начале items.txt). Добавляем байтами в начало.
+$items = Join-Path $ses 'items.txt'
+Backup $items
+$ib = [IO.File]::ReadAllBytes($items)
+$is = $enc.GetString($ib)
+if ($is.Contains('==achievements.txt')) {
+  Write-Host 'items.txt: include уже есть'
+} else {
+  $ins = $enc.GetBytes("==achievements.txt`r`n")
+  [IO.File]::WriteAllBytes($items, [byte[]]($ins + $ib)); Write-Host 'items.txt: добавлено ==achievements.txt'
+}
+
+# 2b) achievements.txt
 Copy-Item (Join-Path $pay 'achievements.txt') (Join-Path $ses 'achievements.txt') -Force
 Write-Host 'achievements.txt скопирован'
 
