@@ -16,8 +16,8 @@
 
 .PARAMETER GamesRoot  Folder with the game folders. Default: current folder.
 .PARAMETER OutDir     Where to write. Default: Desktop\kb_owner_pack (or current folder if no Desktop).
-.PARAMETER Names      File names to collect as samples (exact names, no path, case-insensitive).
-.PARAMETER MaxMB      Skip sample files bigger than this. Default 2.
+.PARAMETER Names      File names to collect as samples (exact names, no path, case-insensitive). rus_*.lng give Russian names and conditions of medals.
+.PARAMETER MaxMB      Skip sample files bigger than this. Default 4.
 .PARAMETER FindPattern  Regex for the Legend search (T-01).
 .PARAMETER Skip       Steps to skip: any of samples, icons, find.
 
@@ -30,8 +30,9 @@ param(
     [string]$GamesRoot = (Get-Location).Path,
     [string]$OutDir = '',
     [string[]]$Names = @('addon_rewards.lua', 'medals.txt', 'records.txt', 'records_score_calc.txt',
-        'achievements.txt', 'achievement_large_entourage.lu'),
-    [double]$MaxMB = 2,
+        'achievements.txt', 'achievement_large_entourage.lu',
+        'rus_items.lng', 'rus_rewards.lng', 'rus_records.lng'),
+    [double]$MaxMB = 4,
     [string]$FindPattern = 'difficult|hardness|diff_level|highlight|show_?item|item_?hint|map_?hint',
     [ValidateSet('samples', 'icons', 'find')][string[]]$Skip = @()
 )
