@@ -21,12 +21,15 @@
   Если совпадений слишком много, добавь `-SkipPath "quest_|arena_"`. Результат - `Desktop\kb_find.txt`.
   **Прислать:** `kb_find.txt` (или первые ~200 строк). Контекст: [docs/MAP_ITEMS_SETTING.md](docs/MAP_ITEMS_SETTING.md), Issue #12.
 
-- [ ] **T-02 · агент 2 · `Get-KBManifest.ps1` - сравнение всех игр серии** (~10 мин, ❓ возможно, уже делал - тогда отметь и напиши)
-  ```powershell
-  cd "D:\Games\KB"   # папка, где лежат папки со ВСЕМИ играми
-  powershell -ExecutionPolicy Bypass -File "<репо>\tools\Get-KBManifest.ps1" -GamesRoot .
+- [ ] **T-11 · Claude · достать файлы-образцы медалей и достижений из новых игр** (~5 мин, нужен Python; игры не меняются)
+  Из корня репо (подставь свои пути). Если имён нет в игре, скрипт просто ничего не найдёт:
   ```
-  **Прислать:** `kb_manifests.zip` (или `REPORT.md`). Контекст: [docs/CROSS_GAME.md](docs/CROSS_GAME.md), раздел 0.
+  python tools\kb_extract.py "<D:\Games\KB>\Kings Bounty - Crossworlds" --out ref\crossworlds --name addon_rewards.lua medals.txt records.txt records_score_calc.txt
+  python tools\kb_extract.py "<D:\Games\KB>\KB The Legend EE" --out ref\legend --name records.txt records_score_calc.txt
+  python tools\kb_extract.py "<D:\Games\KB>\Kings Bounty Dark Side" --out ref\dark_side --name achievement_large_entourage.lu addon_rewards.lua achievements.txt records.txt
+  python tools\kb_extract.py "<D:\Games\KB>\King's Bounty Warriors of the North" --out ref\wotn --name addon_rewards.lua achievements.txt records.txt
+  ```
+  **Прислать:** папку `ref` одним zip (около 0,5 МБ). В репо эти файлы не кладём (это файлы игры). Контекст: [docs/SERIES_FINDINGS.md](docs/SERIES_FINDINGS.md).
 
 ## Блок 2. Тестовая КОПИЯ игры: достижения и медали (один заход)
 
@@ -76,6 +79,7 @@
 
 ## Закрыто (свежее сверху; агент переносит сюда после ответа владельца)
 
+- 2026-11-25 · T-02 (сравнение всех игр): владелец прислал общий манифест (`kb_manifest.py` на папку со всеми играми, 180 619 файлов). Отчёты - `docs/reports/`, выводы - `docs/SERIES_FINDINGS.md` (Claude). `Get-KBManifest.ps1` больше не нужен.
 - 2026-11-25 · мод 32:9 проверен владельцем, работает; журнал заданий и нижнее меню исправлены в v6 (агент 1). Issue #1.
 - 2026-11-25 · полный снимок структуры Legend (`dump_structure.ps1`) прислан и разобран (агент 2). Issue #10.
 - 2026-11-25 · кнопка достижений v7 протестирована: кнопка есть, но ничего не делает - в `kb.exe` Legend нет обработчика; v7 заморожен (агенты 1, 4, 5).

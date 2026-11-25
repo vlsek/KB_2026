@@ -47,3 +47,17 @@ python tools/kb_grep.py "<папка игры>" "SteamAPI|achiev" --regex --list
 
 ## Статус
 Проверено только на синтетических данных (два «игры» из zip). На реальных играх не запускалось (`status:needs-test`).
+
+## 4. Все игры одним манифестом и разрезание (Claude, Python)
+```
+python tools/kb_manifest.py "D:\Games\KB" --name all --out kb_manifests
+python tools/kb_split.py kb_manifests\all.manifest.json
+python tools/kb_compare.py kb_manifests\legend.manifest.json kb_manifests\wotn.manifest.json --out report_wotn.md
+```
+`kb_split.py` режет общий манифест по папкам игр. Этим способом владелец уже получил отчёты: [docs/reports/](reports/), выводы - [SERIES_FINDINGS.md](SERIES_FINDINGS.md). Запуск на реальных играх подтверждён (180 тыс. файлов, ошибок 0).
+
+## 5. Достать несколько файлов-образцов
+```
+python tools/kb_extract.py "<папка игры>" --out ref\crossworlds --name addon_rewards.lua medals.txt
+```
+Достаёт файлы по точному имени из обычных папок и из `.kfs` (без распаковки целиком, файлы больше 2 МБ пропускаются). Результат - файлы игры, в репо их не коммитим.
