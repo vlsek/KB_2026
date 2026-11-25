@@ -1,0 +1,122 @@
+﻿== C:\Program Files (x86)\Blefonix Studios\KB The Legend EE\kb.exe  (0 hits)
+== C:\Program Files (x86)\Blefonix Studios\KB The Legend EE\unins000.exe  (0 hits)
+== C:\Program Files (x86)\Blefonix Studios\King's Bounty Warriors of the North\KBWotN.exe  (52 hits)
+.?AVachievement_page_listener_c@?A0x1010a8c5@
+.?AVachievement_processing_c@@
+.?AVfr_c@game_form_achievements_c@@
+.?AVfr_c@game_form_new_achievement_c@@
+.?AVfr_c@game_form_post_achievement_c@@
+.?AVgame_form_achievements_c@@
+.?AVgame_form_new_achievement_c@@
+.?AVgame_form_post_achievement_c@@
+.?AVnew_achievement_processing_c@@
+.?AVpost_achievement_processing_c@@
+.?AVturn_achievement_delayed_c@?A0x1010a8c5@@
+achievement
+achievement.php
+achievement_bg.png
+achievement_close_0
+achievement_close_1
+achievement_close_2
+achievement_description
+achievement_elem_border.png
+achievement_ico
+achievement_name
+achievement_posted_fail
+achievement_posted_success
+achievement_unlocked
+achievements
+achievements.txt
+achievements_bar
+medal_achievement_adventurer_1
+medal_achievement_almost_sacred_1
+medal_achievement_big_gun_1
+medal_achievement_butcher_1
+medal_achievement_cormorant_1
+medal_achievement_enemy_dead_1
+medal_achievement_enemy_of_all_life_1
+medal_achievement_erik_winner_1
+medal_achievement_exterminator_1
+medal_achievement_favorite_valkyries_1
+medal_achievement_heartless_1
+medal_achievement_inspired_1
+medal_achievement_jewelry_lover_1
+medal_achievement_mage_commander_1
+medal_achievement_mental_madman_1
+medal_achievement_minion_of_valhalla_1
+medal_achievement_munchkin_1
+medal_achievement_nerd_1
+medal_achievement_nice_player_1
+medal_achievement_reliable_assistant_1
+medal_achievement_troubleseeker_1
+medal_achievement_true_warrior_1
+medal_achievement_winner_1
+new_achievement
+post_achievement
+== C:\Program Files (x86)\Blefonix Studios\King's Bounty Warriors of the North\unins000.exe  (0 hits)
+== C:\Program Files (x86)\Blefonix Studios\King's Bounty Warriors of the North\unins001.exe  (0 hits)
+== C:\Program Files (x86)\Blefonix Studios\King's Bounty Warriors of the North\__redist\ISI\scriptinterpreter.exe  (0 hits)
+== C:\Program Files (x86)\Blefonix Studios\Kings Bounty - Crossworlds\Editor.exe  (0 hits)
+== C:\Program Files (x86)\Blefonix Studios\Kings Bounty - Crossworlds\kb.exe  (0 hits)
+== C:\Program Files (x86)\Blefonix Studios\Kings Bounty - Crossworlds\Uninstall\unins000.exe  (0 hits)
+== C:\Program Files (x86)\Blefonix Studios\Kings Bounty - Crossworlds\_CommonRedist\DirectX\Jun2010\DXSETUP.exe  (0 hits)
+== C:\Program Files (x86)\Blefonix Studios\Kings Bounty Crossworlds - red sands\editor.exe  (0 hits)
+== C:\Program Files (x86)\Blefonix Studios\Kings Bounty Crossworlds - red sands\kb.exe  (0 hits)
+== C:\Program Files (x86)\Blefonix Studios\Kings Bounty Crossworlds - red sands\unins000.exe  (0 hits)
+== C:\Program Files (x86)\Blefonix Studios\Kings Bounty Dark Side\crashreporter.exe  (0 hits)
+== C:\Program Files (x86)\Blefonix Studios\Kings Bounty Dark Side\KBDarkside.exe  (49 hits)
+.?AVachievement_page_listener_c@?A0x3453c539@
+.?AVachievement_processing_c@@
+.?AVfr_c@game_form_achievements_c@@
+.?AVfr_c@game_form_new_achievement_c@@
+.?AVfr_c@game_form_post_achievement_c@@
+.?AVgame_form_achievements_c@@
+.?AVgame_form_new_achievement_c@@
+.?AVgame_form_post_achievement_c@@
+.?AVnew_achievement_processing_c@@
+.?AVpost_achievement_processing_c@@
+.?AVturn_achievement_delayed_c@?A0x3453c539@@
+\game\forms\ui_game_form_new_achievement.cpp
+achievement
+achievement_adventurer_1
+achievement_almost_sacred_1
+achievement_bg.png
+achievement_big_gun_1
+achievement_butcher_1
+achievement_cormorant_1
+achievement_description
+achievement_elem_border.png
+achievement_enemy_dead_1
+achievement_enemy_of_all_life_1
+achievement_erik_winner_1
+achievement_exterminator_1
+achievement_favorite_valkyries_1
+achievement_heartless_1
+achievement_ico
+achievement_inspired_1
+achievement_jewelry_lover_1
+achievement_mage_commander_1
+achievement_mental_madman_1
+achievement_minion_of_valhalla_1
+achievement_munchkin_1
+achievement_name
+achievement_nerd_1
+achievement_nice_player_1
+achievement_posted_fail
+achievement_posted_success
+achievement_reliable_assistant_1
+achievement_troubleseeker_1
+achievement_true_warrior_1
+achievement_unlocked
+achievement_winner_1
+achievements
+e\ui\game\forms\ui_game_form_achievements.cpp
+game\forms\ui_game_form_post_achievement.cpp
+new_achievement
+post_achievement
+== C:\Program Files (x86)\Blefonix Studios\Kings Bounty Dark Side\KBDarksideStart.exe  (0 hits)
+== C:\Program Files (x86)\Blefonix Studios\Kings Bounty Dark Side\language_setup.exe  (0 hits)
+== C:\Program Files (x86)\Blefonix Studios\Kings Bounty Dark Side\unins000.exe  (0 hits)
+== C:\Program Files (x86)\Blefonix Studios\Kings Bounty Dark Side\unins001.exe  (0 hits)
+== C:\Program Files (x86)\Blefonix Studios\Kings Bounty Dark Side\redist\wic_x64_enu.exe  (0 hits)
+== C:\Program Files (x86)\Blefonix Studios\Kings Bounty Dark Side\redist\wic_x86_enu.exe  (0 hits)
