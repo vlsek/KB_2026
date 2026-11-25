@@ -1,0 +1,14 @@
+
+//==== medal-slots-test (KB_2026, agent 5)
+itm_medal_test_rank1_name=Тест: медаль, ранг 1
+itm_medal_test_rank1_taken=^?^
+itm_medal_test_rank1_minfo=^?^
+itm_medal_test_rank1_mhint=^?^
+itm_medal_test_rank1_info=^?^Тестовая медаль ранга 1 (проверка слотов).
+itm_medal_test_rank1_hint=^?^Тестовая медаль ранга 1.
+itm_medal_test_rank2_name=Тест: медаль, ранг 2
+itm_medal_test_rank2_taken=^?^
+itm_medal_test_rank2_minfo=^?^
+itm_medal_test_rank2_mhint=^?^
+itm_medal_test_rank2_info=^?^Тестовая медаль ранга 2 (проверка слотов).
+itm_medal_test_rank2_hint=^?^Тестовая медаль ранга 2.

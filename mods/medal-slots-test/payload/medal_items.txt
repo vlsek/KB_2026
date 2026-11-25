@@ -1,0 +1,35 @@
+
+medal_test_rank1 {
+  category=o
+  image=heroitem_achievement_mental_madman.png
+  hint_config=object_item
+  label=itm_medal_test_rank1_name
+  hint=itm_medal_test_rank1_hint
+  information_label=
+  maphint=
+  mapinfo=
+  price=10
+  maxcount=0
+  level=1
+  race=human
+  medclass=-1
+  use {}
+  propbits=medal
+}
+medal_test_rank2 {
+  category=o
+  image=heroitem_achievement_mental_madman.png
+  hint_config=object_item
+  label=itm_medal_test_rank2_name
+  hint=itm_medal_test_rank2_hint
+  information_label=
+  maphint=
+  mapinfo=
+  price=10
+  maxcount=0
+  level=1
+  race=human
+  medclass=-1
+  use {}
+  propbits=medal
+}
