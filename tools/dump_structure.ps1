@@ -1,7 +1,7 @@
 <#
-  Снимок структуры папки игры (для проекта KB_2026).
-  Использование:  powershell -ExecutionPolicy Bypass -File .\dump_structure.ps1 -GameRoot "C:\путь\к\игре"
-  Ничего не меняет, только читает. В выводе — относительные пути.
+  Snapshot of a game folder structure (for the KB_2026 project).
+  Usage:  powershell -ExecutionPolicy Bypass -File .\dump_structure.ps1 -GameRoot "C:\path\to\game"
+  Changes nothing, read only. Output uses relative paths.
 #>
 param(
   [string]$GameRoot = ".",
@@ -11,7 +11,7 @@ param(
 $root = (Resolve-Path -LiteralPath $GameRoot).Path.TrimEnd('\')
 New-Item -ItemType Directory -Force -Path $OutDir | Out-Null
 
-Write-Host "Сканирую $root ..."
+Write-Host "Scanning $root ..."
 $files = Get-ChildItem -LiteralPath $root -Recurse -File -Force -ErrorAction SilentlyContinue
 
 $rows = foreach ($f in $files) {
@@ -26,7 +26,7 @@ $rows = foreach ($f in $files) {
   }
 }
 
-# 1. Сводка: папка + расширение
+# 1. Summary: folder + extension
 $rows | Group-Object Dir, Ext | ForEach-Object {
   $first = $_.Group[0]
   [pscustomobject]@{
@@ -39,15 +39,15 @@ $rows | Group-Object Dir, Ext | ForEach-Object {
   }
 } | Sort-Object Dir, Ext | Export-Csv -Path "$OutDir\summary.csv" -NoTypeInformation -Encoding UTF8
 
-# 2. Дерево папок до глубины 3
+# 2. Folder tree up to depth 3
 $dirs = Get-ChildItem -LiteralPath $root -Recurse -Directory -Force -Depth 2 -ErrorAction SilentlyContinue
 $dirs | ForEach-Object {
   $rel = $_.FullName.Substring($root.Length).TrimStart('\')
   $cnt = (Get-ChildItem -LiteralPath $_.FullName -File -Force -ErrorAction SilentlyContinue | Measure-Object).Count
-  "{0}  ({1} файлов)" -f $rel, $cnt
+  "{0}  ({1} files)" -f $rel, $cnt
 } | Sort-Object | Out-File -FilePath "$OutDir\top_levels.txt" -Encoding UTF8
 
-# 3. Полный список
+# 3. Full listing
 $rows | Select-Object Path, Size, Date | Export-Csv -Path "$OutDir\full_listing.csv" -NoTypeInformation -Encoding UTF8
 
-Write-Host "Готово: $OutDir (summary.csv, top_levels.txt, full_listing.csv)"
+Write-Host "Done: $OutDir (summary.csv, top_levels.txt, full_listing.csv)"

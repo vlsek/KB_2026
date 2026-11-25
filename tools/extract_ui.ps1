@@ -1,5 +1,5 @@
-<# Достаёт все *.ui и resolutions.txt из data.kfs в папку kb_ui и пакует в kb_ui.zip на рабочем столе.
-   Использование: powershell -ExecutionPolicy Bypass -File .\extract_ui.ps1 -Kfs "C:\...\data\data.kfs" #>
+<# Extracts all *.ui and resolutions.txt from data.kfs into folder kb_ui and zips it to kb_ui.zip on the desktop.
+   Usage: powershell -ExecutionPolicy Bypass -File .\extract_ui.ps1 -Kfs "C:\...\data\data.kfs" #>
 param([string]$Kfs, [string]$OutDir = "$env:USERPROFILE\Desktop\kb_ui")
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 New-Item -ItemType Directory -Force $OutDir | Out-Null

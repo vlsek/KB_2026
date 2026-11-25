@@ -1,7 +1,7 @@
-<# Достаёт картинки интерфейса достижений из interface_textures.kfs игры-донора (Воин Севера / Dark Side) в папку мода.
-   Использование:
+<# Extracts achievement UI images from interface_textures.kfs of a donor game (Warriors of the North / Dark Side) into the mod folder.
+   Usage:
      powershell -ExecutionPolicy Bypass -File .\extract_assets.ps1 -Kfs "...\King's Bounty Warriors of the North\data\interface_textures.kfs" -OutDir "...\KB The Legend EE\data\mods\16_9-nsf"
-   Ничего не удаляет, существующие файлы не перезаписывает. Если какой-то картинки нет в этом архиве — выведет её имя. #>
+   Deletes nothing, does not overwrite existing files. Prints the name of any image missing from this archive. #>
 param([Parameter(Mandatory=$true)][string]$Kfs, [Parameter(Mandatory=$true)][string]$OutDir)
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 $want = @(
@@ -19,7 +19,7 @@ foreach ($e in $z.Entries) { if ($want -contains $e.Name) { $found[$e.Name] = $e
 foreach ($n in $want) {
   if ($found.ContainsKey($n)) {
     $dst = Join-Path $OutDir $n
-    if (-not (Test-Path $dst)) { [IO.Compression.ZipFileExtensions]::ExtractToFile($found[$n], $dst); Write-Host "ok   $n" } else { Write-Host "есть $n" }
-  } else { Write-Host "НЕТ  $n (искать в textures.kfs или в другой игре)" }
+    if (-not (Test-Path $dst)) { [IO.Compression.ZipFileExtensions]::ExtractToFile($found[$n], $dst); Write-Host "ok   $n" } else { Write-Host "have $n" }
+  } else { Write-Host "MISS $n (look in textures.kfs or in another game)" }
 }
 $z.Dispose()
