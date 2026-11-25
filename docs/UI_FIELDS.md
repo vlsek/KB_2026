@@ -34,3 +34,25 @@ DS и WotN: присланные архивы содержали только `t
 
 ## Нужно от владельца
 Извлечь `.ui` из `declarations.kfs` у Dark Side и WotN (`tools/extract_ui.ps1 -Kfs ...\data\declarations.kfs`) и прислать zip. Там 180 `.ui` и поля достижений WotN.
+
+---
+## Дополнение (WotN и Dark Side, 2026-11-25): готовый интерфейс достижений
+Из `declarations.kfs` DS/WotN (141 и 181 `.ui`). Файлы игр не коммитим.
+
+| Что | Файлы / объекты | Заметки |
+|---|---|---|
+| Книга достижений | `achievements.ui` (окно 1081×765, фон `achievement_bg.png`, заголовок `achievement_caption`, листание `next_page`/`prev_page`, закрыть `b_cancel`) | страницы заполняет движок/Lua ❓ |
+| Всплывашка «Новое достижение» | `new_achievement.ui` (460×350: `achievement_unlocked`, `achievement_name`, `achievement_description`, кнопки публикации `b_publish_fb/tw/vk`) | публикацию в соцсети убрать ❓ |
+| Награды в карточке героя | `hero.ui`: `reward__1..15` (WotN) / `reward__1..20` (DS), `reward_level_N`, `achievements_bar` (полоса прогресса!), `achievement_close_0..2`, `heroitem_achievement_close` | в CW/RS только 10 слотов, здесь 15–20 |
+| Итог игры | `endgame*.ui`: `text_score`, `text_days`, `text_kills`, `text_losses`, `text_achievements`, `text_difficulty`, `text_titul` | есть и версия `endgame_1680x945.ui` |
+| Рекорды | `records.ui`: статистика героя (`rec_*`, 39–44 поля) | см. ниже |
+
+### Статистика, которую игра уже считает (`records.ui`, Legend)
+`rec_battle_num` (боёв), `rec_enemy_killed`, `rec_heroes_killed`, `rec_bosses_killed`, `rec_body_count`, `rec_damage_sum/units/magic/spirits`, `rec_quest`, `rec_units_best`, `rec_units_percent`, `rec_money`, `rec_crystal`, `rec_mana`, `rec_rage`, `rec_leadership`, `rec_attack`, `rec_defence`, `rec_intellect`, `rec_level`, `rec_runes*`, `rec_wife*`, `rec_spirit*` и др.
+В WotN/DS/CW добавлены `rec_damage_pet`, `rec_rewards_title`, `rec_titul` (CW ещё `rec_pet_*`).
+Значит счётчики для достижений **уже есть в движке** — не нужно придумывать свои.
+
+## Сколько всего «может быть сделано»: источники порогов
+1. **Оригинальные достижения Legend в Steam** (все с реальными порогами; сводка из [руководства Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3688037422)): золото 100 000 / 500 000 / 1 000 000; лидерство 5 000 / 10 000 / 15 000 / 20 000; уровни 10 / 20 / 30; мана 50 / 75 / 100; ярость 50 / 75 / 100; армия ≥1 000 существ; 100 заданий; 6 бывших жён; пройти за ≤30 дней; урон >1 000 за удар; семь воплощений Хааса; сюжетные (12), браки (6), сложность (4), классы (3), квестовые.
+2. **Данные самой игры** (`sessions\base`): число заданий (`.qst` 122), карт (`.loc`), существ, предметов — максимум считается по файлам, а не «из головы». Задача агента 4/5.
+3. **Статистика с форумов** (идея владельца): общих сводок «статистика на конец игры» пока не найдено. Попытки: блог StopGame (прохождение мага «без потерь»: 30 боёв к 2-му дню, 100 боёв в 1 раунд, ~1 000 000 золота к 7-му дню, 25 уровень к 14-му дню) — полной итоговой таблицы нет; Seaward.Ru (редирект, не прочитан); Fantlab. Нужны ссылки/архивы от владельца (Wayback).
