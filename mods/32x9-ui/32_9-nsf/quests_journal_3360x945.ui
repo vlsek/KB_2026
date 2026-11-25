@@ -1,0 +1,118 @@
+gui_begin 3360 945
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1478 662 1762 689
+gui_object_name "hit_history_on_off"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1484 46 1893 87
+gui_object_name "text_0"
+gui_object_frigid 1
+gui_object_text "" "quests_list" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1467 108 1900 273
+gui_object_name "quests_rect"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin multitext
+gui_object_position 1474 295 1901 633
+gui_object_name "stages_view"
+gui_object_frigid 0
+gui_object_multitext 0
+gui_object_end
+gui_object_begin button
+gui_object_position 1905 602 1927 626
+gui_object_name "task_sc_down"
+gui_object_frigid 0
+gui_object_button_normal "quests_scrollarrow_bottom_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "quests_scrollarrow_bottom_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "quests_scrollarrow_bottom_onpres.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "quests_scrollarrow_bottom_disabled.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1905 291 1927 315
+gui_object_name "task_sc_up"
+gui_object_frigid 0
+gui_object_button_normal "quests_scrollarrow_top_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "quests_scrollarrow_top_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "quests_scrollarrow_top_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "quests_scrollarrow_top_disabled.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "quests_scroll_bg.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1905 315 1929 603
+gui_object_name "task_sc_bg"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin button
+gui_object_position 1905 249 1927 273
+gui_object_name "quest_sc_down"
+gui_object_frigid 0
+gui_object_button_normal "quests_scrollarrow_bottom_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "quests_scrollarrow_bottom_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "quests_scrollarrow_bottom_onpres.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "quests_scrollarrow_bottom_disabled.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1905 105 1927 129
+gui_object_name "quest_sc_up"
+gui_object_frigid 0
+gui_object_button_normal "quests_scrollarrow_top_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "quests_scrollarrow_top_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "quests_scrollarrow_top_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "quests_scrollarrow_top_disabled.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "quests_scroll_bg.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1905 129 1929 249
+gui_object_name "quest_sc_bg"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1511 668 1838 684
+gui_object_name "text_1"
+gui_object_frigid 1
+gui_object_text "" "quests_history" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1482 662 1507 687
+gui_object_name "history_off"
+gui_object_frigid 0
+gui_object_button_normal "quests_history_unchecked_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "quests_history_unchecked_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "quests_history_unchecked_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1482 662 1507 687
+gui_object_name "history_on"
+gui_object_frigid 0
+gui_object_button_normal "quests_history_checked_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "quests_history_checked_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "quests_history_checked_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1867 641 1917 693
+gui_object_name "b_ok"
+gui_object_frigid 0
+gui_object_button_normal "quests_button_ok_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "quests_button_ok_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "quests_button_ok_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "quests_button_ok_disabled.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "quests_bg.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1400 24 1960 725
+gui_object_name "picture_0"
+gui_object_frigid 0
+gui_object_end
+gui_end

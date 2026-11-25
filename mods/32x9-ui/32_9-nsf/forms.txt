@@ -508,4 +508,5 @@ quests_journal {
     form=quests_journal
     description=Quests journal form
     ui=quests_journal.ui
+    3360x945=quests_journal_3360x945.ui
 }
