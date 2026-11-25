@@ -6,6 +6,7 @@
   Run ONCE in the folder that contains all game folders (for example
   C:\Program Files (x86)\Blefonix Studios). The script:
     1. finds the games by folder name (legend, crossworlds, red_sands, wotn, dark_side);
+       (also copies the small third-party mods from Legend data\mods: *.txt, *.kfs and a file list of each .kfs -> ref\legend_mods\)
     2. T-11: copies small sample files (medals, rewards, records, achievements)
        from the game folders and from inside .kfs archives -> ref\<game>\;
     3. T-12: extracts interface icons (png) from interface_textures.kfs -> png\<game>\;
@@ -31,7 +32,8 @@ param(
     [string]$OutDir = '',
     [string[]]$Names = @('addon_rewards.lua', 'medals.txt', 'records.txt', 'records_score_calc.txt',
         'achievements.txt', 'achievement_large_entourage.lu',
-        'rus_items.lng', 'rus_rewards.lng', 'rus_records.lng'),
+        'rus_items.lng', 'rus_rewards.lng', 'rus_records.lng',
+        'familiar_logic.lua', 'familiar_text.lua', 'familiar_talents.lua', 'familiar_dialog.lua', 'addon_pet.lua'),
     [double]$MaxMB = 4,
     [string]$FindPattern = 'difficult|hardness|diff_level|highlight|show_?item|item_?hint|map_?hint',
     [ValidateSet('samples', 'icons', 'find')][string[]]$Skip = @()
@@ -131,6 +133,37 @@ if ($Skip -notcontains 'samples') {
         Say ("    {0,-18} {1} file(s)" -f $g.Id, $cnt) $(if ($cnt -gt 0) { 'Green' } else { 'DarkYellow' })
     }
     Say ''
+}
+
+# ---- third-party mods in Legend data\mods (familiar, evil eye): small files, owner's own copies
+if ($Skip -notcontains 'samples') {
+    $leg = $games | Where-Object { $_.Id -eq 'legend' } | Select-Object -First 1
+    if ($leg) {
+        $modsDir = Join-Path $leg.Dir 'data\mods'
+        if (Test-Path -LiteralPath $modsDir) {
+            Say '  [mods] Legend data\mods (third-party mods)' Yellow
+            $dstM = Join-Path $OutDir 'ref\legend_mods'
+            New-Item -ItemType Directory -Force -Path $dstM | Out-Null
+            $cntM = 0
+            foreach ($f in @(Get-ChildItem -LiteralPath $modsDir -File -Force -ErrorAction SilentlyContinue)) {
+                if ($f.Length -gt 3MB) { continue }
+                if ($f.Extension -ine '.txt' -and $f.Extension -ine '.kfs') { continue }
+                try { Copy-Item -LiteralPath $f.FullName -Destination (Join-Path $dstM $f.Name) -Force; $cntM++ }
+                catch { $problems.Add("mod copy failed: $($f.Name) ($($_.Exception.Message))") }
+                if ($f.Extension -ieq '.kfs') {
+                    $z = $null
+                    try { $z = [IO.Compression.ZipFile]::OpenRead($f.FullName) } catch { $problems.Add("mod not a zip: $($f.Name)"); continue }
+                    try {
+                        $z.Entries | ForEach-Object { [pscustomobject]@{ Path = $_.FullName; Size = $_.Length } } |
+                            Export-Csv -LiteralPath (Join-Path $dstM ($f.Name + '.listing.csv')) -NoTypeInformation -Encoding UTF8
+                    } finally { $z.Dispose() }
+                }
+            }
+            $stat['samples'] += $cntM
+            Say ("    legend_mods        {0} file(s)" -f $cntM) $(if ($cntM -gt 0) { 'Green' } else { 'DarkYellow' })
+            Say ''
+        }
+    }
 }
 
 # ---- T-12: icons
