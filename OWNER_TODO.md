@@ -31,6 +31,16 @@
   ```
   **Прислать:** папку `ref` одним zip (около 0,5 МБ). В репо эти файлы не кладём (это файлы игры). Контекст: [docs/SERIES_FINDINGS.md](docs/SERIES_FINDINGS.md).
 
+- [ ] **T-12 · агент 1 · достать родные иконки интерфейса для панели статистики** (~5 мин; игры не меняются; тот же `tools/extract_png.ps1`, ASCII)
+  Из папки со всеми играми (`C:\Program Files (x86)\Blefonix Studios`), подставь пути при необходимости:
+  ```powershell
+  Set-ExecutionPolicy -Scope Process Bypass -Force
+  & "<репо>\tools\extract_png.ps1" -Pattern "^(hero_bg18|records_.*|mainpanel_12|mana4_empty|rage1_empty|mana21_empty|rage2_empty)\.png$" -Kfs "KB The Legend EE\data\interface_textures.kfs"
+  $k = @(Get-ChildItem -Recurse -Filter interface_textures.kfs -Path "Kings Bounty - Crossworlds","Kings Bounty Crossworlds - red sands","King's Bounty Warriors of the North","Kings Bounty Dark Side" | ForEach-Object { $_.FullName })
+  & "<репо>\tools\extract_png.ps1" -Pattern "^(heroitem_medal_.*|heroitem_achievement.*|reward_.*|achievements_bar.*|hero_pet.*)\.png$" -Kfs $k
+  ```
+  **Прислать:** `Desktop\kb_png` одним zip. Зачем: вырезать из них значки атаки/защиты/ярости/маны и иконки медалей в стиле игры (мои нарисованные `mods/stats-panel/32_9-nsf/stat_*.png` - заглушки, выглядят простовато).
+
 ## Блок 2. Тестовая КОПИЯ игры: достижения и медали (один заход)
 
 Ставить по порядку, у каждого мода своя инструкция в README. Если игра перестала стартовать - снимать по одному в обратном порядке (`uninstall.ps1`).
@@ -63,6 +73,10 @@
   Сначала, если ещё стоит v7: удалить из `data\mods\32_9-nsf` файлы `hero.ui`, `achievements_*`, `new_achievement_*` и блоки `achievements`/`new_achievement` из `forms.txt`. Затем положить `hero.ui` из `mods/medal-slots-ui`. [README](mods/medal-slots-ui/README.md)
   **Прислать:** скриншот окна героя (закрывают ли слоты рисунок фона?). Слоты пока пустые и серые - это нормально (этап 2 ждёт T-04).
 
+- [ ] **T-13 · агент 1 · `mods/stats-panel` - иконки и поля на синих полосах нижней панели (после T-08)**
+  Делать только если T-08 показал, что игра заполняет `rec_*` на карте; иначе пропустить. `map_3360x945.ui` и `stat_*.png` из `mods/stats-panel/32_9-nsf` положить в `data\mods\32_9-nsf\` (заменяет файл из T-08, бэкап оставить). [README](mods/stats-panel/README.md)
+  **Прислать:** скриншот нижней панели и какие ячейки пустые. Иконки временные (см. T-12).
+
 ## Блок 4. Графика (по желанию, по одному пункту, с откатом)
 
 - [ ] **T-10 · агент 5 · план из [docs/GRAPHICS_RESEARCH.md](docs/GRAPHICS_RESEARCH.md), пункты 1-3** (бэкап `game.ini`, `r_filter 5`, тени)
@@ -73,7 +87,9 @@
 - [ ] **Q-01 · агент 2** Что именно показывает игра на лёгкой сложности: мерцание/подсветку предметов, значки на миникарте или подсказки при наведении?
 - [ ] **Q-02 · агент 5** Сколько медалей должно быть видно в слотах героя: все полученные или избранные (6 слотов)?
 - [ ] **Q-03 · агент 1** Уточнить запрос про «три панели арены» (что именно хотелось на широком экране).
-- [ ] **Q-04 · агент 4/5 (необязательно)** Ссылки на архивные темы форумов со статистикой прохождений (Seaward.Ru, Fantlab, 1С, kb.heroes-centrum.com), если помнишь названия.
+- [x] **Q-04 · агент 4/5 (необязательно)** (найдено: heroesworld.ru, см. Q-05) Ссылки на архивные темы форумов со статистикой прохождений (Seaward.Ru, Fantlab, 1С, kb.heroes-centrum.com), если помнишь названия.
+- [ ] **Q-05 · агент 1 · форум рекордов с цифрами конца игры** (тема https://heroesworld.ru/topic/4779/rekordy-rytsarej-korolevstva/)
+  Текст прочитан, итоги в [docs/FORUM_STATS.md](docs/FORUM_STATS.md); почти все таблицы - скриншоты. Прислать скриншоты таблиц из первого поста (там вложенный архив) и вложения StelS_46 (Яндекс.Диск) - агент прочитает цифры (убийства, бои, армия, ярость/мана) для порогов достижений.
 
 ---
 
