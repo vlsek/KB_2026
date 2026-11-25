@@ -59,3 +59,45 @@
 - Байтовые форматы `.bms/.bma/.bsa/.cms/.atom/.ptb/.csh/.stream`.
 - Какие поля интерфейс получает от движка (список имён в `.ui` — что можно показывать на панели).
 - Откуда игра берёт картинки мода (папка мода или только `.kfs`).
+
+---
+
+## Полный снимок (2026-11-24, The Legend, сборка с changelog до 2.2.0, файлы от 2017)
+
+Источник: `summary.csv`, `top_levels.txt`, `full_listing.csv` от владельца. Всего 5382 файла, ~5,7 ГБ.
+Уточнение к разделам выше: `loc_data` и `models` на самом деле лежат **внутри архивов** `data\loc_data.kfs` и `data\models.kfs`; то, что владелец видел раньше, было распаковкой.
+
+### Корень
+`kb.exe` (13 МБ), `binkw32.dll` (Bink-видео), `libcef.dll` + `icudt.dll` (Chromium Embedded ❓ зачем), `LuaIDE.dll` + `SciLexer.dll` (встроенный Lua-редактор ❓), `KBVistaShellSupport.dll`, `GameuxInstallHelper.dll`, `curver.txt`, `unins000.*` (установщик).
+
+### `data\` — архивы и настройки
+| Файл | МБ | Что внутри ❓ |
+|---|---|---|
+| `textures.kfs` | 309 | текстуры |
+| `sounds.kfs` | 164 | звуки |
+| `interface_textures.kfs` | 136 | текстуры интерфейса |
+| `animation.kfs` | 97 | анимации |
+| `models.kfs` | 53 | модели (`.bms/.bma/.bsa/.cms`) |
+| `sky.kfs` | 50 | небо |
+| `data.kfs` | 44 | данные |
+| `loc_data.kfs` | 7 | локализованные ресурсы (логотипы, озвучка вступления) |
+Плюс `app.ini`, `default.ini`, `game.ini`, `fonts.cfg`, `calibri.ttf`, `music\` (37 `.ogg`), `video\` (11 `.bik`, 6 `.ogm`).
+Формат `.kfs`: проверено агентом 4 - это обычный ZIP (см. `docs/KFS_FORMAT.md`, `tools/kfs_unpack.py`).
+
+### `data\mods\` — система модов уже есть
+Рядом с нашей папкой `16_9-nsf` лежат три чужих мода в виде пары `<мод>.kfs` + `<мод>.txt`: `KBMaster_1.3.1_for_1.7`, `mod_17_master_101_familiar`, `mod_17_Master_129_add_exp_limit`. Формат `.txt`-манифеста — изучить.
+
+### `sessions\base\` — логика игры (почти всё открытым текстом)
+| Папка | Файлов | Что |
+|---|---|---|
+| `ses\` | 3472 | `.lua` (43), `.lu` (254), `.txt` (34: `items`, `spells`, `skills`, `hero`, `morale`, `config`, `records`, `embryos`, `camera`…), `.loc` (2172), `.qst` (122), `.chat` (405), `.act` (347), `.hero` (90), `.strg` (5) |
+| `loc_ses\` | 1616 | локализация `eng`, `rus`, `ukr` (`.lng`, диалоги и квесты) |
+| `locations\` | 183 | `.stream`, 4,3 ГБ — данные локаций |
+
+Известные `.lua` в `ses\`: `logic`, `logic_hero`, `logic_units`, `arena`, `spells*`, `skills`, `special_attacks`, `item_use`, `item_fight`, `combat_log`, `quest_log`, `pawn`, `boss`, `spirit_*`, `unit_features`.
+`records.txt` и `records_score_calc.txt` — вероятно, рекорды/подсчёт очков ❓. **Файлов с «achiev» в имени нет**: достижения оригинала, если они есть, лежат внутри `.kfs` или в Lua.
+
+### Что это значит для проекта
+- Баланс, предметы, заклинания, скиллы, квесты, UI-логику можно править текстом и Lua, без работы с бинарными форматами.
+- Образцы для достижений искать в Lua/`ses` новых игр; у оригинала хуки, вероятно, в `logic*.lua`, `quest_log.lua`, `combat_log.lua` ❓.
+- Для графики и моделей достаточно распаковать `.kfs` как zip.

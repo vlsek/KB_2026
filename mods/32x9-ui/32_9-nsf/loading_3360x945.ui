@@ -29,7 +29,7 @@ gui_object_end
 gui_object_begin picture
 gui_object_picture "loading_progressbar_07.png"
 gui_object_picture_angle 0.000000 0
-gui_object_position 1525 261 1834 540
+gui_object_position 1525 258 1834 537
 gui_object_name "progressbar"
 gui_object_frigid 0
 gui_object_end

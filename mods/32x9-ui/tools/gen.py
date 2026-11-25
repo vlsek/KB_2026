@@ -1,10 +1,14 @@
 import sys, os, re
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ui_nudge import nudge
 src, dst = sys.argv[1], sys.argv[2]
 OLD_W, H, NEW_W = 1680, 945, 3360
 DX = (NEW_W - OLD_W) // 2
 os.makedirs(dst, exist_ok=True)
 
 STRETCH = {"black_pixel.png", "border.png"}   # fills / vignette: stretch to full width
+# Per-screen fixes on top of the plain +DX shift: {screen: [(object_name, dx, dy), ...]}
+NUDGE = {"loading": [("progressbar", 0, -3)]}  # ring sat ~3 px too low in its groove (owner, 2026-11-25)
 FILL = {"start", "loading", "credits", "intro", "new_game"}  # add black backdrop
 
 def conv(name):
@@ -35,7 +39,11 @@ def conv(name):
                     "gui_object_frigid 0",
                     "gui_object_end"]
         out.append(ln)
-    open(f"{dst}/{name}_3360x945.ui", "w", newline="").write("\r\n".join(out))
+    text = "\r\n".join(out)
+    for oname, ndx, ndy in NUDGE.get(name, []):
+        text, cnt = nudge(text, oname, ndx, ndy)
+        print(name, "nudged", oname, (ndx, ndy), "x", cnt)
+    open(f"{dst}/{name}_3360x945.ui", "w", newline="").write(text)
     print(name, "stretched:", n_ext)
 
 names = ["arena", "credits", "intro", "loading", "map", "new_game", "start", "town"]
