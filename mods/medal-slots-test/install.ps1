@@ -12,6 +12,14 @@ $pay  = Join-Path $PSScriptRoot 'payload'
 foreach ($p in @($hero,$ach,$lng)) { if (-not (Test-Path $p)) { throw "File not found: $p (check -GameDir; install achievements-test first)" } }
 $enc = [Text.Encoding]::GetEncoding(28591)   # latin1: lossless bytes
 
+# 0) preflight: check hero.txt BEFORE touching anything, so a failure really changes nothing
+$heroPat = '(\bitems\s*\{\r\n)(\s*\})'
+$heroText = $enc.GetString([IO.File]::ReadAllBytes($hero))
+if (-not $heroText.Contains('medal_test_rank1')) {
+  $heroCount = [regex]::Matches($heroText,$heroPat).Count
+  if ($heroCount -ne 3) { throw "hero.txt: expected 3 empty items blocks, found $heroCount - different file version, stopped (nothing changed)." }
+}
+
 function Backup($path) {
   $bak = "$path.kb2026mst.bak"
   if (-not (Test-Path $bak)) { Copy-Item $path $bak; Write-Host "backup: $bak" }
@@ -43,9 +51,7 @@ Backup $hero
 $hs = $enc.GetString([IO.File]::ReadAllBytes($hero))
 if ($hs.Contains('medal_test_rank1')) { Write-Host 'hero.txt: start item already present' }
 else {
-  $pat = '(\bitems\s*\{\r\n)(\s*\})'
-  $n = [regex]::Matches($hs,$pat).Count
-  if ($n -ne 3) { throw "hero.txt: expected 3 empty items blocks, found $n - different file version, stopped (nothing changed)." }
+  $pat = $heroPat
   $new = [regex]::Replace($hs,$pat,('$1            medal_test_rank1=1' + "`r`n" + '$2'))
   [IO.File]::WriteAllBytes($hero, $enc.GetBytes($new))
   Write-Host 'hero.txt: start/items patched (3 classes)'
