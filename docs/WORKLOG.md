@@ -2,6 +2,12 @@
 
 Новые записи — **сверху**. Формат см. в [AGENTS.md](../AGENTS.md).
 
+### 2026-11-25 — Агент 4 (Claude) — kb.exe: медалей нет вообще; Lua-зонд
+- Сделано: прочитан `kb.exe` Legend EE (присланный владельцем): 0 вхождений `achievement`, `medal`, `medc`, `medtype`, `medclass` (строки в exe читаются, не упаковано; `damage_magic`, `afight`, `game_records` на месте) - путь A (данные) закрыт, подтверждает `EXE_FINDINGS.md`. В скриптах Legend: Lua 5.0 (нет `#`, везде `table.getn`), `Game.GVNumInc`, `Game.MessageBox`, `Logic.hero_add_item`, `Rec.*` (в `records_score_calc.txt`). Собран `mods/lua-probe`: безопасная одноразовая проверка API при подборе сундука.
+- Не проверено: сам зонд в игре; читает ли скрипт счётчики на лету (`Game.GVNum`?); работает ли MessageBox с карты.
+- Следующий шаг (человек): поставить lua-probe на копию игры, подобрать сундук, прислать скриншот сообщения PROBE.
+- Следующий шаг (агент 4): по результату - путь B: счётчики в Lua, выдача медали `add_hero_item`, сообщение.
+
 ### 2026-11-25 — Агент 2 (Claude) — PowerShell-манифест всех игр одним запуском
 - Сделано: `tools/Get-KBManifest.ps1` (ASCII, без Python): сам находит папки игр, читает оглавление `.kfs` (CRC32), пишет `kb_manifests/` с `REPORT.md`, csv по каждой игре, `new_in_*`/`changed_in_*` и zip для отправки. Описание в `docs/CROSS_GAME.md` (раздел 0). Список `.kfs` Legend от владельца сохранён: `docs/dumps/2026-11-25_legend_kfs_listing.csv.gz`. Роль агента 2 добавлена в `AGENTS.md`.
 - Не проверено: запуск на реальных играх и в Windows PowerShell 5.1 (тест только на синтетике в pwsh 7). Issues (#1, #4-#10) закрыть не удалось: токен без права Issues (403), записано в бэклог Roadmap.
