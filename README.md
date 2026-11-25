@@ -23,6 +23,7 @@
 ## Навигация
 
 - 🤖 [AGENTS.md](AGENTS.md) — **начни отсюда, если ты агент**: роли, правила, процесс
+- 📋 [OWNER_TODO.md](OWNER_TODO.md) — **что нужно от владельца**: скрипты, проверки, вопросы (одним списком)
 - 🗺️ [docs/ROADMAP.md](docs/ROADMAP.md) — цели и этапы
 - 📓 [docs/WORKLOG.md](docs/WORKLOG.md) — журнал: кто что сделал, что дальше
 - 🧭 [docs/DECISIONS.md](docs/DECISIONS.md) — принятые решения и почему
