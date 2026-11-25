@@ -2,6 +2,12 @@
 
 Новые записи — **сверху**. Формат см. в [AGENTS.md](../AGENTS.md).
 
+### 2026-11-25 — Агент 1 (Claude) — Кнопка достижений: итог, откат v7
+- Сделано: подтверждено поиском (`search_kfs.ps1` по всем kfs и россыпным файлам + exe): клик по `ahievements_button` обрабатывает код exe (классы `game_form_achievements_c` и др. есть только в WotN/DS), в Lua/данных обработчика нет, в `kb.exe` Legend ноль. Кнопка из `hero.ui` и формы `achievements`/`new_achievement` в `forms.txt` Legend бесполезны. Побочно проверено в игре: `hero.ui` и PNG из папки мода подхватываются.
+- Решение: пакет v7 (`mods/achievements-ui`) заморожен, в сборку 32:9 не входит; для игры - чистый v6 (журнал по центру, камера). Путь достижений - агент 5/4 (медали-предметы + скрипты, `docs/ACHIEVEMENTS_PLAN.md`).
+- Не проверено: журнал по центру (v6) владелец ещё не подтвердил.
+- Следующий шаг (человек): удалить из `data\mods\32_9-nsf` файлы `hero.ui`, `achievements_*`, `new_achievement_*` и блоки achievements/new_achievement в `forms.txt` (или поставить чистый v6). (агент 1): по результатам `medal-slots-test` - кнопки слота медалей в `hero.ui` под 32:9; прогресс-виджет в панели карты - после рабочей выдачи медалей.
+
 ### 2026-11-25 — Агент 4 (Claude) — kb.exe: медалей нет вообще; Lua-зонд
 - Сделано: прочитан `kb.exe` Legend EE (присланный владельцем): 0 вхождений `achievement`, `medal`, `medc`, `medtype`, `medclass` (строки в exe читаются, не упаковано; `damage_magic`, `afight`, `game_records` на месте) - путь A (данные) закрыт, подтверждает `EXE_FINDINGS.md`. В скриптах Legend: Lua 5.0 (нет `#`, везде `table.getn`), `Game.GVNumInc`, `Game.MessageBox`, `Logic.hero_add_item`, `Rec.*` (в `records_score_calc.txt`). Собран `mods/lua-probe`: безопасная одноразовая проверка API при подборе сундука.
 - Не проверено: сам зонд в игре; читает ли скрипт счётчики на лету (`Game.GVNum`?); работает ли MessageBox с карты.
