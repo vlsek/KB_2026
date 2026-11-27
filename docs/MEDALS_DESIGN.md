@@ -133,3 +133,10 @@ Practical next UI experiment: use the already-working item-grant path to award a
 
 В Legend `Game` API, который виден в скриптах и APIPROBE, не содержит найденного вызова вроде OpenForm/ShowForm; exe также не содержит специальных achievement-form классов. Поэтому отдельную кнопочно-открываемую форму пока нельзя считать подтверждённой. Перспективнее пробовать постоянно видимую панель внутри уже поддерживаемого `hero.ui`: добавить графику/слоты для медалей, затем проверить, может ли UI привязаться к сохранённому рангу или к автоматически добавляемым предметам. Если динамическая панель не читается из GVNum, инвентарный знак остаётся надёжным индикатором, а бонус всё равно независим.
 
+
+## UI form probe regression (2026-11-27)
+
+The custom form test using `Scenario.formsolo("kb26_medal_screen")` broke the map HUD after the APIPROBE dialogs were dismissed: the map remained visible but the rest of the game UI disappeared. The UI experiment was rolled back in `KB_test_copy` from `.kb2026panel.bak` backups; the custom form, text generator, and localization changes were removed. The permanent rank, inventory badge, bonus, and APIPROBE remain.
+
+Conclusion: `Scenario.formsolo` is a root-form transition (confirmed by its in-game side effect), not a safe modal overlay for this use. Do not call it for an achievement panel on the active map. Next UI probe should use a proven modal mechanism such as `Game.InvokeMsgBox`, or attach a panel to an existing supported form without changing the root form; any future UI experiment must have a tested return-to-map path before owner testing.
+
