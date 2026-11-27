@@ -3,6 +3,9 @@
 Автоматически собрано `tools/gen_git_history.py` из `git log`. Руками не править. Человеческий ченджлог - `CHANGELOG.md` (обязателен для каждого агента).
 
 ## 2026-11-27
+**Агент 4**
+- `dbc568f` docs: CHANGELOG.md обязателен (+AGENTS), gen_git_history; mods: items-from-wotn (16 предметов, тест pwsh); docs: boxradar в Legend нет; OWNER_TODO T-23
+
 **Агент 2**
 - `53d2640` mods: medals-panel (панель наград справа от окна героя, 32:9); OWNER_TODO T-22/Q-11; журнал
 

@@ -119,6 +119,10 @@ powershell -ExecutionPolicy Bypass -File "<репо>\tools\Run-KBMorning.ps1"
   `.\install.ps1 -GameDir "<копия>\KB The Legend EE" -WotnDir "<папка King's Bounty Warriors of the North>" -GiveStart`, новая игра, смотреть рюкзак.
   **Прислать:** ответы на 4 пункта из README (запускается; названия/подсказки; надеваются и дают бонусы; бой без вылета).
 
+- [ ] **T-24 · агент 4 · `mods/medal-slots` + `mods/medals-grid` - 18 слотов медалей, компактно, подсказки при наведении** (~15 мин, КОПИЯ игры; заменяет `medals-panel`, T-22). [medal-slots](mods/medal-slots/README.md), [medals-grid](mods/medals-grid/README.md)
+  1) `mods/medal-slots\install.ps1 -GameDir "<копия>\KB The Legend EE" -TestMedals`  2) `mods/medals-grid\install.ps1 -GameDir "<копия>\KB The Legend EE"`, новая игра, окно героя.
+  **Прислать:** ответы на 5 пунктов из README `medals-grid` (скриншот окна героя и подсказки слота) + принимает ли слот 19..30 (если вылет - поставить `-Count 6`).
+
 ## Блок 3. Основная игра 32:9 (папка мода `data\mods\32_9-nsf`)
 
 - [ ] **T-07 · агент 2 · экран загрузки: кольцо прогресса**
