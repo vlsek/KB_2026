@@ -68,6 +68,15 @@ powershell -ExecutionPolicy Bypass -File "<репо>\tools\Run-KBMorning.ps1"
   ```
   **Прислать:** `tex_inventory\SUMMARY.md` (маленький файл) и, по желанию, `inventory.csv`. Контекст: [docs/TEXTURES_UPSCALE.md](docs/TEXTURES_UPSCALE.md).
 
+- [ ] **T-20 · Claude · официальный билд Legend 2026 (Steam) для сравнения** (~30 мин, только если у тебя есть Legend в Steam; ничего не покупаем ради этого)
+  Контекст: в июне 2026 вышло официальное обновление с достижениями, широким экраном и камерой ([docs/LEGEND_OFFICIAL_ACHIEVEMENTS.md](docs/LEGEND_OFFICIAL_ACHIEVEMENTS.md)). Если у тебя есть Steam-копия: установи её **в отдельную папку** (не поверх нашей EE) на ветке по умолчанию; затем из корня репо:
+  ```
+  python tools\kb_manifest.py "<папка Steam-Legend>" --name legend_steam --out kb_manifests
+  python tools\kb_manifest.py "<D:\Games\KB>\KB The Legend EE" --name legend --out kb_manifests
+  python tools\kb_compare.py kb_manifests\legend.manifest.json kb_manifests\legend_steam.manifest.json --out report_legend_steam.md
+  ```
+  **Прислать:** `report_legend_steam.md` и папку `ref` из `python tools\kb_extract.py "<папка Steam-Legend>" --out ref\legend_steam --name achievements.txt records.txt` (если файлов нет, скрипт ничего не найдёт, это тоже ответ). Если Legend у тебя не в Steam, пропусти и ответь на Q-09.
+
 ## Блок 2. Тестовая КОПИЯ игры: достижения и медали (один заход)
 
 Ставить по порядку, у каждого мода своя инструкция в README. Если игра перестала стартовать - снимать по одному в обратном порядке (`uninstall.ps1`).
@@ -132,6 +141,8 @@ powershell -ExecutionPolicy Bypass -File "<репо>\tools\Run-KBMorning.ps1"
 
 ---
 - [ ] **Q-08 · агент 4 · предметы на карте и сложность (Issue #12)**: что именно пропадает на высокой сложности - мерцание предметов, значки на карте или подсказки при наведении? В данных Legend я связи со сложностью не нашёл (`docs/MAP_ITEMS_SETTING.md`), нужен точный симптом. Ответить текстом.
+
+- [ ] **Q-09 · Claude** Откуда у тебя Legend: Steam, GOG или другое? И какая версия (последняя строка в `extra\changelog`)? Продолжаем на старой EE-сборке (как сейчас) или переходим на официальную 2026 года, если там уже есть широкий экран и достижения? Контекст: [docs/LEGEND_OFFICIAL_ACHIEVEMENTS.md](docs/LEGEND_OFFICIAL_ACHIEVEMENTS.md), [docs/OTHER_MODS.md](docs/OTHER_MODS.md). Ответить текстом.
 
 ## Закрыто (свежее сверху; агент переносит сюда после ответа владельца)
 

@@ -54,3 +54,9 @@
 - [ ] Небо (`sky.kfs`), затем осторожно интерфейс
 - [ ] Список достижений Legend с порогами: `docs/ACHIEVEMENTS_LEGEND_PROPOSAL.md` (ждёт Q-06, Q-07 и тестов T-04..T-06)
 - [ ] Сводная таблица достижений серии с рекомендациями «брать / не брать»: `docs/ACHIEVEMENTS_MASTER.md` (агент 3); медали с порогами - после T-14
+
+## Этап 8 — Идеи из модов и официального обновления 2026 (Claude, 2026-11-27)
+- [ ] Сравнить официальный Steam-билд Legend 2026 с нашей EE (T-20): UI, камера, достижения, Lua-хуки ([LEGEND_OFFICIAL_ACHIEVEMENTS.md](LEGEND_OFFICIAL_ACHIEVEMENTS.md))
+- [ ] Выровнять список медалей с официальным списком достижений (45 известных, [legend_official_achievements.csv](legend_official_achievements.csv))
+- [ ] ReShade-пресет King's Shades как необязательный шаг `gfx-preset` ([OTHER_MODS.md](OTHER_MODS.md))
+- [ ] Идеи интерфейса из KBGUI и Slim GUI (Crossworlds) для панели карты и 32:9
