@@ -1,5 +1,5 @@
-# KB_2026 lua-api-dump: ONE harmless call in logic_hero.lua (scn_hero_takebox = opening a chest/box) that writes the list of
-# script API functions to <game folder>\kb2026_apidump.txt. Changes no game rules.
+# KB_2026 lua-api-dump: one diagnostic call on chest opening. Displays a focused Lua API probe in game message boxes.
+# The 2017 EE Lua sandbox has no file-writing API. Changes no game rules.
 # Usage:  .\install.ps1 -GameDir "C:\Program Files (x86)\Blefonix Studios\KB The Legend EE"   (as administrator if the game is in Program Files)
 # Backup: logic_hero.lua.kb2026api.bak. Remove: .\uninstall.ps1 -GameDir ... (removes only its own lines, other mods stay)
 param([Parameter(Mandatory=$true)][string]$GameDir)
@@ -15,8 +15,14 @@ $bak = "$lua.kb2026api.bak"
 if (-not (Test-Path -LiteralPath $bak)) { Copy-Item -LiteralPath $lua -Destination $bak; Write-Host "backup: $bak" }
 $outFile = ((Join-Path $GameDir 'kb2026_apidump.txt') -replace '\\', '/')
 $payload = $enc.GetString([IO.File]::ReadAllBytes((Join-Path $PSScriptRoot 'payload\apidump.lua')))
-$payload = $payload.Replace('@@OUTFILE@@', $outFile).Replace("`r`n", "`n").Replace("`n", "`r`n")
-$s = $s.Replace($needle, $needle + "`r`n    kb2026_apidump(`"takebox`") -- KB2026-APIDUMP-CALL")
+$payload = $payload.Replace("`r`n", "`n").Replace("`n", "`r`n")
+$call = '    kb2026_apidump(`"takebox`") -- KB2026-APIDUMP-CALL'
+$achCall = '    kb2026_check_ach(`"takebox`")'
+if ($s.Contains($achCall)) {
+  $s = $s.Replace($achCall, $achCall + "`r`n" + $call)
+} else {
+  $s = $s.Replace($needle, $needle + "`r`n" + $call)
+}
 $s = $s + "`r`n-- KB2026-APIDUMP-BEGIN`r`n" + $payload + "`r`n-- KB2026-APIDUMP-END`r`n"
 [IO.File]::WriteAllBytes($lua, $enc.GetBytes($s))
 Write-Host "Done. Start the game, load a save, open any chest/box on the map. A message APIDUMP ... appears; the file is: $outFile"
