@@ -34,7 +34,7 @@ function kb2026_apidump(tag)
     add("lua_version=" .. tostring(_VERSION))
     add("io=[" .. names_of(io) .. "]")
     add("os=[" .. names_of(os) .. "]")
-    local terms = {"item", "artifact", "artefact", "equip", "slot", "hero", "inventory", "medal", "reward", "quest", "add", "remove", "get", "set", "take", "object", "bag"}
+    local terms = {"item", "artifact", "artefact", "equip", "slot", "inventory", "medal", "reward"}
     local namespaces = {"Game", "Logic", "Obj", "Bonus", "Hero"}
     for i = 1, table.getn(namespaces) do
       local name = namespaces[i]
