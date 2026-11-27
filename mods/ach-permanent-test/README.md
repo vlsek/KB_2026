@@ -53,3 +53,18 @@ Rollback this optional stage:
 .\mods\ach-permanent-test\uninstall_rank_token.ps1 -GameDir "$env:USERPROFILE\Desktop\KB_test_copy\KB The Legend EE"
 ```
 
+
+## Optional: test a custom medal screen
+
+The Legend APIPROBE exposed `Scenario.formsolo`; Legend scripts use it to switch to the map form. `install_ui_panel_probe.ps1` registers a small `form=dialog` screen and opens it on chest interaction. Its text generator reads the saved medal rank and current Intellect. It is a feasibility probe, not the finished art/layout.
+
+With the game closed, run the installer against the test copy:
+
+```powershell
+.\mods\ach-permanent-test\install_ui_panel_probe.ps1 -GameDir "$env:USERPROFILE\Desktop\KB_test_copy\KB The Legend EE"
+```
+
+Restart the game, load the current test save (rank already unlocked), and open any unopened chest. The one-time medal/stat reward should not repeat; the custom screen should show rank I and current Intellect. Close with Cancel/Esc; APIPROBE may then appear. Send screenshots of the custom screen and any error.
+
+Rollback with `uninstall_ui_panel_probe.ps1`; it restores the exact four backups and deletes the probe UI.
+
