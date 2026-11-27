@@ -13,11 +13,10 @@ $needle = 'function scn_hero_takebox ( param )'
 if (-not $s.Contains($needle)) { throw 'scn_hero_takebox not found - file differs, nothing changed.' }
 $bak = "$lua.kb2026api.bak"
 if (-not (Test-Path -LiteralPath $bak)) { Copy-Item -LiteralPath $lua -Destination $bak; Write-Host "backup: $bak" }
-$outFile = ((Join-Path $GameDir 'kb2026_apidump.txt') -replace '\\', '/')
 $payload = $enc.GetString([IO.File]::ReadAllBytes((Join-Path $PSScriptRoot 'payload\apidump.lua')))
 $payload = $payload.Replace("`r`n", "`n").Replace("`n", "`r`n")
-$call = '    kb2026_apidump(`"takebox`") -- KB2026-APIDUMP-CALL'
-$achCall = '    kb2026_check_ach(`"takebox`")'
+$call = '    kb2026_apidump("takebox") -- KB2026-APIDUMP-CALL'
+$achCall = '    kb2026_check_ach("takebox")'
 if ($s.Contains($achCall)) {
   $s = $s.Replace($achCall, $achCall + "`r`n" + $call)
 } else {
@@ -25,5 +24,5 @@ if ($s.Contains($achCall)) {
 }
 $s = $s + "`r`n-- KB2026-APIDUMP-BEGIN`r`n" + $payload + "`r`n-- KB2026-APIDUMP-END`r`n"
 [IO.File]::WriteAllBytes($lua, $enc.GetBytes($s))
-Write-Host "Done. Start the game, load a save, open any chest/box on the map. A message APIDUMP ... appears; the file is: $outFile"
-Write-Host 'Send that file (it is a plain list of function names, about 50-200 KB).'
+Write-Host 'Done. Start a NEW game and open a chest/box. APIPROBE messages show filtered item/slot APIs and safe query results.'
+Write-Host 'If ach-lua is installed, the probe is placed after its test grant so item queries observe the granted medal.'
