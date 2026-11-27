@@ -107,3 +107,13 @@
 
 ### Рекомендация
 Оставить предметный вариант как целевую интеграцию, пока не закрыта проверка автоэкипировки/пазов. Параллельно строить медали вокруг независимого источника истины — сохранённого ранга. Тогда предмет/значок становится лишь представлением ранга; если экипировка окажется тупиком, тот же прогресс, автонаграда, бонус и повышение этапов продолжат работать без переделки системы.
+
+## Prototype 1: saved-rank reward on chest (2026-11-27)
+
+Implemented as `mods/ach-permanent-test/` for manual testing in `KB_test_copy`:
+- Reuses the existing `scn_hero_takebox` callback; does not add a new item or alter item databases.
+- On the first chest, checks saved rank `kb26_perm_chest_medal_rank`; if rank is 0, adds +1 Intellect with the existing `Logic.hero_lu_item` setter, increments rank with `Game.GVNumInc`, and shows a one-time message.
+- Later chests should be no-ops once rank is 1. User should verify the message/stat and repeat behavior manually.
+- Installer is intentionally restricted to a game path ending in `KB_test_copy\KB The Legend EE`; it replaces only the old achievement callback block, preserves the chest hook/APIDUMP, and creates a side-by-side backup. Rollback restores that backup.
+
+This first probe validates the event → saved rank → one-time bonus → notification chain. It does not yet add a persistent achievement icon or journal; that is the next UI step after the owner confirms this progression path works in-game.
