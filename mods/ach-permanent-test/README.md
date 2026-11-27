@@ -34,3 +34,22 @@ Tell us: whether the message appeared, Intellect before/after, and whether a sec
 ```
 
 Rollback restores the exact `logic_hero.lua` captured immediately before this prototype was installed.
+
+## Optional: persistent rank badge in the backpack
+
+The first test confirmed the stat reward but had no lasting UI badge. This second probe adds an unwearable quest item named `Достижение: испытание сундука I` to the same first-chest reward. It uses the existing quest-medal icon and Russian item strings. The bonus remains a direct permanent stat change; the item only marks the rank.
+
+After the original prototype is installed, close the game and run:
+
+```powershell
+.\mods\ach-permanent-test\install_rank_token.ps1 -GameDir "$env:USERPROFILE\Desktop\KB_test_copy\KB The Legend EE"
+```
+
+Start a new game, note Intellect, open the first chest, then inspect the Quest/backpack item area for the new badge. Confirm the bonus is still +1 and the badge appears once. This stage tests whether item UI can serve as the persistent achievement display; it does not create a dedicated medal strip.
+
+Rollback this optional stage:
+
+```powershell
+.\mods\ach-permanent-test\uninstall_rank_token.ps1 -GameDir "$env:USERPROFILE\Desktop\KB_test_copy\KB The Legend EE"
+```
+
