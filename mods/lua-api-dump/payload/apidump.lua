@@ -42,6 +42,19 @@ function kb2026_apidump(tag)
         add(name .. "=[" .. selected_names(_G[name], terms) .. "]")
       end
     end
+    local function result_text(label, ok, value)
+      local detail = tostring(value)
+      if type(value) == "table" then detail = "table:" .. names_of(value) end
+      add(label .. "=" .. tostring(ok) .. ":" .. type(value) .. ":" .. detail)
+    end
+    local ok1, v1 = pcall(function() return Logic.hero_lu_slots() end)
+    result_text("CALL hero_lu_slots()", ok1, v1)
+    local ok2, v2 = pcall(function() return Logic.hero_lu_item_on_body("medal_test_ok") end)
+    result_text("CALL hero_lu_item_on_body(medal_test_ok)", ok2, v2)
+    local ok3, v3 = pcall(function() return Logic.hero_lu_item("medal_test_ok", "count") end)
+    result_text("CALL hero_lu_item(medal_test_ok,count)", ok3, v3)
+    local ok4, v4 = pcall(function() return Logic.hero_lu_item_query("medal_test_ok") end)
+    result_text("CALL hero_lu_item_query(medal_test_ok)", ok4, v4)
     local text = table.concat(out, "\n")
     local chunk_size = 1200
     local total = string.len(text)
