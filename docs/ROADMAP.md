@@ -60,3 +60,10 @@
 - [ ] Выровнять список медалей с официальным списком достижений (45 известных, [legend_official_achievements.csv](legend_official_achievements.csv))
 - [ ] ReShade-пресет King's Shades как необязательный шаг `gfx-preset` ([OTHER_MODS.md](OTHER_MODS.md))
 - [ ] Идеи интерфейса из KBGUI и Slim GUI (Crossworlds) для панели карты и 32:9
+
+## Этап 9 — Медали-ачивки полноценно + KBMaster (Claude, 2026-11-27)
+- [ ] Проект и требования R1-R7: [MEDALS_DESIGN.md](MEDALS_DESIGN.md). Готово: слоты `mslot`. Ждёт `kb2026_apidump.txt` (T-21): автонадевание, замена по рангу, запрет снятия
+- [ ] Эксперимент M-1: реальная медаль Crossworlds в Legend (принимает ли `propbits=medal`)
+- [ ] 6 типов слотов `mslot1..6` с подсказками «что за медаль и за что» (ждёт Q-10)
+- [ ] Всплывающее окно «медаль получена» (`Game.InvokeMsgBox`)
+- [ ] Вернуть KBMaster (1.3.1 + familiar + exp_limit) на копию и перенести наши моды в формат подмода Master: [KBMASTER_PLAN.md](KBMASTER_PLAN.md), T-21

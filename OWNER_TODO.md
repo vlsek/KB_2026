@@ -77,6 +77,17 @@ powershell -ExecutionPolicy Bypass -File "<репо>\tools\Run-KBMorning.ps1"
   ```
   **Прислать:** `report_legend_steam.md` и папку `ref` из `python tools\kb_extract.py "<папка Steam-Legend>" --out ref\legend_steam --name achievements.txt records.txt` (если файлов нет, скрипт ничего не найдёт, это тоже ответ). Если Legend у тебя не в Steam, пропусти и ответь на Q-09.
 
+- [ ] **T-21 · Claude · вернуть KBMaster на копию и прислать файлы для разбора** (~20 мин; только тестовая КОПИЯ `KB_test_copy`, Python нужен; основная игра не меняется)
+  Зачем: [docs/KBMASTER_PLAN.md](docs/KBMASTER_PLAN.md) и [docs/MEDALS_DESIGN.md](docs/MEDALS_DESIGN.md). Без этих файлов я не могу сделать медали совместимыми с Master и не могу решить автонадевание.
+  1) **Верни три пары файлов Master в `data\mods` копии**: `KBMaster_1.3.1_for_1.7.kfs` + `.txt`, `mod_17_master_101_familiar.kfs` + `mod_17_Master_101_familiar.txt`, `mod_17_Master_129_add_exp_limit.kfs` + `.txt` (из резервной копии или первой установки; в снимке 25.11 они там были). Если резервной копии нет, напиши, откуда брал, я подскажу, где искать.
+  2) Из корня репо (подставь свои пути):
+  ```
+  python tools\kb_extract.py "C:\Users\NewHero\Desktop\KB_test_copy\KB The Legend EE" --out ref\kbmaster --name KBMaster_1.3.1_for_1.7.txt mod_17_Master_101_familiar.txt mod_17_Master_129_add_exp_limit.txt master_cfg_129.txt master_cfg_101.txt master_itm_101.txt master_tex_101.txt 129.mod Master_add_exp_limit.lua hero.txt config.txt
+  copy "C:\Users\NewHero\Desktop\KB_test_copy\KB The Legend EE\kb2026_apidump.txt" ref\kbmaster\
+  ```
+  **Прислать:** папку `ref\kbmaster` одним zip (около 0,1 МБ). Там же `kb2026_apidump.txt` (список Lua-функций: от него зависят автонадевание медали, замена при повышении ранга и окно «получена»). Это файлы игры и модов сообщества, в репо не кладём.
+  3) Если хочешь сразу проверить, что Master вернулся: запусти копию, открой окно героя и карту, скажи, есть ли кнопка Master и «избранные заклинания», есть ли наши 6 слотов и работает ли фамильяр.
+
 ## Блок 2. Тестовая КОПИЯ игры: достижения и медали (один заход)
 
 Ставить по порядку, у каждого мода своя инструкция в README. Если игра перестала стартовать - снимать по одному в обратном порядке (`uninstall.ps1`).
@@ -143,6 +154,8 @@ powershell -ExecutionPolicy Bypass -File "<репо>\tools\Run-KBMorning.ps1"
 - [ ] **Q-08 · агент 4 · предметы на карте и сложность (Issue #12)**: что именно пропадает на высокой сложности - мерцание предметов, значки на карте или подсказки при наведении? В данных Legend я связи со сложностью не нашёл (`docs/MAP_ITEMS_SETTING.md`), нужен точный симптом. Ответить текстом.
 
 - [ ] **Q-09 · Claude** Откуда у тебя Legend: Steam, GOG или другое? И какая версия (последняя строка в `extra\changelog`)? Продолжаем на старой EE-сборке (как сейчас) или переходим на официальную 2026 года, если там уже есть широкий экран и достижения? Контекст: [docs/LEGEND_OFFICIAL_ACHIEVEMENTS.md](docs/LEGEND_OFFICIAL_ACHIEVEMENTS.md), [docs/OTHER_MODS.md](docs/OTHER_MODS.md). Ответить текстом.
+
+- [ ] **Q-10 · Claude** Медали-слоты: какие 6 «семей» ставим первыми (по одной на слот, ранги повышаются в том же слоте)? Моё предложение: золото (Золотой запас), лидерство (Полководец), уровень (Опытный герой), мана (Архимаг), ярость (Берсерк), задания (Исполнитель поручений). Остальные ачивки либо в рюкзак как обычные квестовые предметы, либо расширяем окно героя до большего числа слотов. Что выбираешь? Подробности: [docs/MEDALS_DESIGN.md](docs/MEDALS_DESIGN.md). Ответить текстом.
 
 ## Закрыто (свежее сверху; агент переносит сюда после ответа владельца)
 
