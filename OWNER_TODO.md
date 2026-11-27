@@ -115,6 +115,10 @@ powershell -ExecutionPolicy Bypass -File "<репо>\tools\Run-KBMorning.ps1"
   `.\install.ps1 -GameDir "<копия>\KB The Legend EE" -Level 1` (потом, если ок, `-Level 2`). Запустить игру, посмотреть землю вдали и тени на карте и арене.
   **Прислать:** запускается ли; 1-2 скриншота; FPS до/после, если есть; артефакты.
 
+- [ ] **T-23 · агент 4 · `mods/items-from-wotn` - 16 предметов из WotN** (~15 мин, КОПИЯ игры; нужна папка WotN). [README](mods/items-from-wotn/README.md)
+  `.\install.ps1 -GameDir "<копия>\KB The Legend EE" -WotnDir "<папка King's Bounty Warriors of the North>" -GiveStart`, новая игра, смотреть рюкзак.
+  **Прислать:** ответы на 4 пункта из README (запускается; названия/подсказки; надеваются и дают бонусы; бой без вылета).
+
 ## Блок 3. Основная игра 32:9 (папка мода `data\mods\32_9-nsf`)
 
 - [ ] **T-07 · агент 2 · экран загрузки: кольцо прогресса**
