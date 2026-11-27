@@ -1,0 +1,1441 @@
+gui_begin 3360 945
+gui_object_begin button_gt
+gui_object_position 2362 126 2422 186
+gui_object_name "slot_13"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_artefact"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg8.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 2362 210 2422 270
+gui_object_name "slot_14"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_artefact"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg8.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 2362 294 2422 354
+gui_object_name "slot_15"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_artefact"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg8.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 2362 378 2422 438
+gui_object_name "slot_16"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_artefact"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg8.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 2362 462 2422 522
+gui_object_name "slot_17"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_artefact"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg8.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 2362 546 2422 606
+gui_object_name "slot_18"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_artefact"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg8.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hero_wife_zaglushka.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1440 47 1799 236
+gui_object_name "wife_zaglushka"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1625 166 1675 216
+gui_object_name "red_12"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1625 105 1675 155
+gui_object_name "red_11"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1468 166 1518 216
+gui_object_name "red_10"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1468 105 1518 155
+gui_object_name "red_9"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1854 528 1904 578
+gui_object_name "red_8"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1854 464 1904 514
+gui_object_name "red_7"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1854 400 1904 450
+gui_object_name "red_6"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1854 280 1904 330
+gui_object_name "red_5"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1468 528 1518 578
+gui_object_name "red_4"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1468 464 1518 514
+gui_object_name "red_3"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1468 400 1518 450
+gui_object_name "red_2"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "slot_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1468 280 1518 330
+gui_object_name "red_1"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1856 702 1905 721
+gui_object_name "tmss_8"
+gui_object_frigid 1
+gui_object_text "" "tn_tmss8" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1800 702 1849 721
+gui_object_name "tmss_7"
+gui_object_frigid 1
+gui_object_text "" "tn_tmss7" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1744 702 1793 721
+gui_object_name "tmss_6"
+gui_object_frigid 1
+gui_object_text "" "tn_tmss6" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1688 702 1737 721
+gui_object_name "tmss_5"
+gui_object_frigid 1
+gui_object_text "" "tn_tmss5" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1632 702 1681 721
+gui_object_name "tmss_4"
+gui_object_frigid 1
+gui_object_text "" "tn_tmss4" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1576 702 1625 721
+gui_object_name "tmss_3"
+gui_object_frigid 1
+gui_object_text "" "tn_tmss3" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1521 702 1570 721
+gui_object_name "tmss_2"
+gui_object_frigid 1
+gui_object_text "" "tn_tmss2" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1464 702 1513 721
+gui_object_name "tmss_1"
+gui_object_frigid 1
+gui_object_text "" "tn_tmss1" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1851 661 1911 721
+gui_object_name "bck_8"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1795 661 1855 721
+gui_object_name "bck_7"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1739 661 1799 721
+gui_object_name "bck_6"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1683 661 1743 721
+gui_object_name "bck_5"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1627 661 1687 721
+gui_object_name "bck_4"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1571 661 1631 721
+gui_object_name "bck_3"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1515 661 1575 721
+gui_object_name "bck_2"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1459 661 1519 721
+gui_object_name "bck_1"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button
+gui_object_position 1740 836 1780 858
+gui_object_name "inventory_sort2"
+gui_object_frigid 0
+gui_object_button_normal "inventory_sort2_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "inventory_sort2_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "inventory_sort2_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1588 836 1628 858
+gui_object_name "inventory_sort1"
+gui_object_frigid 0
+gui_object_button_normal "inventory_sort1_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "inventory_sort1_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "inventory_sort1_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1785 839 1906 856
+gui_object_name "inventory_sort2_text"
+gui_object_frigid 0
+gui_object_text "" "hero_sort3" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1633 839 1737 856
+gui_object_name "inventory_sort1_text"
+gui_object_frigid 0
+gui_object_text "" "hero_sort2" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1459 839 1579 856
+gui_object_name "inventory_sort0_text"
+gui_object_frigid 0
+gui_object_text "" "hero_sort1" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hero_inventory_bg.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1444 662 1926 871
+gui_object_name "inventory_open_bg"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin button
+gui_object_position 1651 627 1717 653
+gui_object_name "inv_open"
+gui_object_frigid 0
+gui_object_button_normal "inventory_open_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "inventory_open_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "inventory_open_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "inventory_open_disabled.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1651 627 1717 653
+gui_object_name "inv_close"
+gui_object_frigid 0
+gui_object_button_normal "inventory_close_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "inventory_close_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "inventory_close_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "inventory_close_disabled.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1848 624 1914 656
+gui_object_name "inv_right"
+gui_object_frigid 0
+gui_object_button_normal "inventory_right_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "inventory_right_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "inventory_right_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "inventory_right_disabled.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1456 624 1522 656
+gui_object_name "inv_left"
+gui_object_frigid 0
+gui_object_button_normal "inventory_left_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "inventory_left_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "inventory_left_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "inventory_left_disabled.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1849 786 1893 806
+gui_object_name "divide_6"
+gui_object_frigid 0
+gui_object_hint "eng_windows_small.lng" "sep_hint"
+gui_object_button_normal "button_divide2_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "button_divide2_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "button_divide2_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1849 841 1893 861
+gui_object_name "divide_7"
+gui_object_frigid 0
+gui_object_hint "eng_windows_small.lng" "sep_hint"
+gui_object_button_normal "button_divide2_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "button_divide2_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "button_divide2_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1473 837 1539 867
+gui_object_name "divide_1"
+gui_object_frigid 0
+gui_object_hint "eng_windows_small.lng" "sep_hint"
+gui_object_button_normal "button_divide_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "button_divide_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "button_divide_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1545 837 1611 867
+gui_object_name "divide_2"
+gui_object_frigid 0
+gui_object_hint "eng_windows_small.lng" "sep_hint"
+gui_object_button_normal "button_divide_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "button_divide_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "button_divide_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1618 837 1684 867
+gui_object_name "divide_3"
+gui_object_frigid 0
+gui_object_hint "eng_windows_small.lng" "sep_hint"
+gui_object_button_normal "button_divide_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "button_divide_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "button_divide_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1691 837 1757 867
+gui_object_name "divide_4"
+gui_object_frigid 0
+gui_object_hint "eng_windows_small.lng" "sep_hint"
+gui_object_button_normal "button_divide_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "button_divide_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "button_divide_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1764 837 1830 867
+gui_object_name "divide_5"
+gui_object_frigid 0
+gui_object_hint "eng_windows_small.lng" "sep_hint"
+gui_object_button_normal "button_divide_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "button_divide_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "button_divide_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 2150 108 2240 153
+gui_object_name "rune_hint_3"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "rune_magic_hint"
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 2048 100 2138 145
+gui_object_name "rune_hint_2"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "rune_mind_hint"
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1949 108 2039 153
+gui_object_name "rune_hint_1"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "rune_might_hint"
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hero_zaglushka2.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1101 547 1440 871
+gui_object_name "spirits_zaglushka"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1134 146 1233 254
+gui_object_name "her_heraldy"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1765 769 1831 855
+gui_object_name "hero_unit_hint_5"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1692 770 1758 855
+gui_object_name "hero_unit_hint_4"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1619 769 1685 855
+gui_object_name "hero_unit_hint_3"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1546 770 1612 855
+gui_object_name "hero_unit_hint_2"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1473 770 1539 855
+gui_object_name "hero_unit_hint_1"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin button
+gui_object_position 1141 556 1215 636
+gui_object_name "casket_button"
+gui_object_frigid 0
+gui_object_hint "rus_arena.lng" "btn_casket_hint"
+gui_object_button_normal "buttoncasket_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "buttoncasket_onmouse.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "buttoncasket_onpress.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "buttoncasket_disabled.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1852 840 1893 855
+gui_object_name "ruc_2"
+gui_object_frigid 1
+gui_object_text "" "res_ruc2" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1852 786 1893 801
+gui_object_name "ruc_1"
+gui_object_frigid 1
+gui_object_text "" "res_ruc1" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "greypixel.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1847 839 1894 854
+gui_object_name "reserve_unit_poloska_2"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "greypixel.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1847 785 1894 800
+gui_object_name "reserve_unit_poloska_1"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1845 804 1898 857
+gui_object_name "reserve_unit_2"
+gui_object_frigid 0
+gui_object_button_gt_normal "garrison_border_normal.png"
+gui_object_button_gt_focused "garrison_border_onmouse.png"
+gui_object_button_gt_pressed "garrison_border_onpress.png"
+gui_object_button_gt_disabled "garrison_border_normal.png"
+gui_object_button_gt_podlozhka "town_unitbg_02.png"
+gui_object_button_gt_unknown "unknown_picture.png"
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1845 750 1898 803
+gui_object_name "reserve_unit_1"
+gui_object_frigid 0
+gui_object_button_gt_normal "garrison_border_normal.png"
+gui_object_button_gt_focused "garrison_border_onmouse.png"
+gui_object_button_gt_pressed "garrison_border_onpress.png"
+gui_object_button_gt_disabled "garrison_border_normal.png"
+gui_object_button_gt_podlozhka "town_unitbg_02.png"
+gui_object_button_gt_unknown "unknown_picture.png"
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1771 837 1784 850
+gui_object_name "hero_umorale_5"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1698 837 1711 850
+gui_object_name "hero_umorale_4"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1625 837 1638 850
+gui_object_name "hero_umorale_3"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1552 837 1565 850
+gui_object_name "hero_umorale_2"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1479 837 1492 850
+gui_object_name "hero_umorale_1"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1523 101 1620 222
+gui_object_name "slot_wife"
+gui_object_frigid 0
+gui_object_button_gt_normal ""
+gui_object_button_gt_focused "unit_border1_onmouse.png"
+gui_object_button_gt_pressed ""
+gui_object_button_gt_disabled ""
+gui_object_button_gt_podlozhka "inventory_slot_bg_wife01.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1620 161 1680 221
+gui_object_name "slot_12"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1620 100 1680 160
+gui_object_name "slot_11"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1463 161 1523 221
+gui_object_name "slot_10"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_normal.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1463 100 1523 160
+gui_object_name "slot_9"
+gui_object_frigid 0
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg0.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1247 206 1392 254
+gui_object_name "picture_8"
+gui_object_frigid 0
+gui_object_hint "rus_button_hint.lng" "btn_hero_leadership_hint"
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 2039 158 2149 179
+gui_object_name "text_1"
+gui_object_frigid 1
+gui_object_text "" "hero_skills" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1472 745 1898 768
+gui_object_name "text_0"
+gui_object_frigid 1
+gui_object_text "" "hero_army" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1956 764 2039 801
+gui_object_name "hero_skills_red_sheet"
+gui_object_frigid 0
+gui_object_hint "rus_button_hint.lng" "btn_hero_might"
+gui_object_button_normal "" "" "skill_might" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "hero_skills_onmouse_red.png" "" "skill_might" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "" "" "skill_might" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "skill_might" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 2055 764 2138 801
+gui_object_name "hero_skills_green_sheet"
+gui_object_frigid 0
+gui_object_hint "rus_button_hint.lng" "btn_hero_mind"
+gui_object_button_normal "" "" "skill_mind" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "hero_skills_onmouse_green.png" "" "skill_mind" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "" "" "skill_mind" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "skill_mind" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 2154 764 2237 801
+gui_object_name "hero_skills_blue_sheet"
+gui_object_frigid 0
+gui_object_hint "rus_button_hint.lng" "btn_hero_magic"
+gui_object_button_normal "" "" "skill_magic" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "hero_skills_onmouse_blue.png" "" "skill_magic" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "" "" "skill_magic" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "skill_magic" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hero_skills_bg_red.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1941 179 2252 814
+gui_object_name "hero_skills_red_bg"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hero_skills_bg_green.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1941 179 2252 814
+gui_object_name "hero_skills_green_bg"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1265 174 1378 184
+gui_object_name "progress_pos"
+gui_object_frigid 0
+gui_object_hint "rus_button_hint.lng" "btn_hero_EXR_line_hint"
+gui_object_end
+gui_object_begin picture
+gui_object_picture "rage2_empty.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1246 431 1293 478
+gui_object_name "rage_pos"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "mana21_empty.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1349 431 1393 475
+gui_object_name "mana_pos"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unit_border1_onmouse.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1762 766 1835 857
+gui_object_name "ramka_5"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unit_border1_normal.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1762 766 1835 857
+gui_object_name "picture_8"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unit_border1_onmouse.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1689 766 1762 857
+gui_object_name "ramka_4"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unit_border1_normal.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1689 766 1762 857
+gui_object_name "picture_6"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unit_border1_onmouse.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1616 766 1689 857
+gui_object_name "ramka_3"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unit_border1_normal.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1616 766 1689 857
+gui_object_name "picture_5"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unit_border1_onmouse.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1543 766 1616 857
+gui_object_name "ramka_2"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unit_border1_normal.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1543 766 1616 857
+gui_object_name "picture_3"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unit_border1_onmouse.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1470 766 1543 857
+gui_object_name "ramka_1"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unit_border1_normal.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1470 766 1543 857
+gui_object_name "picture_0"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1764 835 1830 857
+gui_object_name "huc_5"
+gui_object_frigid 1
+gui_object_text "" "mc5" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1765 833 1831 855
+gui_object_name "hero_unit_poloska_5"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1691 835 1757 857
+gui_object_name "huc_4"
+gui_object_frigid 1
+gui_object_text "" "mc4" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1692 833 1758 855
+gui_object_name "hero_unit_poloska_4"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1618 835 1684 857
+gui_object_name "huc_3"
+gui_object_frigid 1
+gui_object_text "" "mc3" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1619 833 1685 855
+gui_object_name "hero_unit_poloska_3"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1545 835 1611 857
+gui_object_name "huc_2"
+gui_object_frigid 1
+gui_object_text "" "mc2" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1546 833 1612 855
+gui_object_name "hero_unit_poloska_2"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1472 835 1538 857
+gui_object_name "huc_1"
+gui_object_frigid 1
+gui_object_text "" "mc1" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1473 833 1539 855
+gui_object_name "hero_unit_poloska_1"
+gui_object_frigid 1
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1763 767 1830 852
+gui_object_name "hero_unit_5"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1690 767 1757 852
+gui_object_name "hero_unit_4"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1617 767 1684 852
+gui_object_name "hero_unit_3"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1544 767 1611 852
+gui_object_name "hero_unit_2"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1471 767 1538 852
+gui_object_name "hero_unit_1"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hub.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1763 767 1830 852
+gui_object_name "hub_5"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hub.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1690 767 1757 852
+gui_object_name "hub_4"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hub.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1617 767 1684 852
+gui_object_name "hub_3"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hub.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1544 767 1611 852
+gui_object_name "hub_2"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hub.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1471 767 1538 852
+gui_object_name "hub_1"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 2185 124 2223 142
+gui_object_name "text_runa_3"
+gui_object_frigid 1
+gui_object_hint "english_button_hint.lng" "btn_hero_rune3_hint"
+gui_object_text "" "hero_runa_3" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 2083 114 2124 138
+gui_object_name "text_runa_2"
+gui_object_frigid 1
+gui_object_hint "english_button_hint.lng" "btn_hero_rune2_hint"
+gui_object_text "" "hero_runa_2" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1984 120 2023 138
+gui_object_name "text_runa_1"
+gui_object_frigid 1
+gui_object_hint "english_button_hint.lng" "btn_hero_rune1_hint"
+gui_object_text "" "hero_runa_1" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 2039 82 2149 103
+gui_object_name "text_0"
+gui_object_frigid 1
+gui_object_text "" "hero_runes" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1849 523 1909 583
+gui_object_name "slot_8"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_artefact"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg8.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1849 459 1909 519
+gui_object_name "slot_7"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_belt_artefact"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg7.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1849 395 1909 455
+gui_object_name "slot_6"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_shield_regalia"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg6.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1849 275 1909 335
+gui_object_name "slot_5"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_regalia"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg5.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1463 523 1523 583
+gui_object_name "slot_4"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_boots"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg4.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1463 459 1523 519
+gui_object_name "slot_3"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_armor"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg3.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1463 395 1523 455
+gui_object_name "slot_2"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_weapon"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg2.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin button_gt
+gui_object_position 1463 275 1523 335
+gui_object_name "slot_1"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "hero_slot_helmet"
+gui_object_button_gt_normal "inventory_slot_normal.png"
+gui_object_button_gt_focused "inventory_slot_onmouse.png"
+gui_object_button_gt_pressed "inventory_slot_onpress.png"
+gui_object_button_gt_disabled "inventory_slot_disabled.png"
+gui_object_button_gt_podlozhka "inventory_slot_bg1.png"
+gui_object_button_gt_unknown ""
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1137 88 1152 103
+gui_object_name "her_face"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1328 421 1414 524
+gui_object_name "picture_9"
+gui_object_frigid 0
+gui_object_hint "english_button_hint.lng" "btn_hero_mana_hint"
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1223 421 1311 525
+gui_object_name "picture_8"
+gui_object_frigid 0
+gui_object_hint "rus_button_hint.lng" "btn_hero_rage_hint"
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1124 421 1213 520
+gui_object_name "picture_7"
+gui_object_frigid 0
+gui_object_hint "english_button_hint.lng" "btn_hero_gold_hint"
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1340 277 1405 380
+gui_object_name "picture_6"
+gui_object_frigid 0
+gui_object_hint "rus_button_hint.lng" "btn_hero_intellect_hint"
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1239 277 1304 376
+gui_object_name "picture_5"
+gui_object_frigid 0
+gui_object_hint "rus_button_hint.lng" "btn_hero_defense_hint"
+gui_object_end
+gui_object_begin picture
+gui_object_picture ""
+gui_object_picture_angle 0.000000 0
+gui_object_position 1137 277 1202 373
+gui_object_name "picture_4"
+gui_object_frigid 0
+gui_object_hint "rus_button_hint.lng" "btn_hero_attack_hint"
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1167 792 1193 812
+gui_object_name "spl3"
+gui_object_frigid 1
+gui_object_text "" "hero_wsp3_l" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1312 792 1338 812
+gui_object_name "spl4"
+gui_object_frigid 1
+gui_object_text "" "hero_wsp4_l" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1312 689 1338 709
+gui_object_name "spl2"
+gui_object_frigid 1
+gui_object_text "" "hero_wsp2_l" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1167 689 1193 709
+gui_object_name "spl1"
+gui_object_frigid 1
+gui_object_text "" "hero_wsp1_l" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1336 755 1416 846
+gui_object_name "b_spirit4"
+gui_object_frigid 0
+gui_object_button_normal "hero_warspirit_thedeath_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1190 755 1270 846
+gui_object_name "b_spirit3"
+gui_object_frigid 0
+gui_object_button_normal "hero_warspirit_thedeath_normal.png" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1336 652 1414 743
+gui_object_name "b_spirit2"
+gui_object_frigid 0
+gui_object_hint "rus_button_hint.lng" "btn_hero_Spirit2_hint"
+gui_object_button_normal "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1191 651 1269 742
+gui_object_name "b_spirit1"
+gui_object_frigid 0
+gui_object_hint "rus_button_hint.lng" "btn_hero_Spirit1_hint"
+gui_object_button_normal "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "" "" "" 0.000000 0 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hero_warspirit_leftpart1.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1272 776 1354 840
+gui_object_name "herwsp_l4"
+gui_object_frigid 0
+gui_object_hint "rus_casket.lng" "wspl4"
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hero_warspirit_leftpart1.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1126 776 1208 840
+gui_object_name "herwsp_l3"
+gui_object_frigid 0
+gui_object_hint "rus_casket.lng" "wspl3"
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hero_warspirit_leftpart1.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1272 674 1354 738
+gui_object_name "herwsp_l2"
+gui_object_frigid 0
+gui_object_hint "rus_casket.lng" "wspl2"
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hero_warspirit_leftpart1.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1127 673 1209 737
+gui_object_name "herwsp_l1"
+gui_object_frigid 0
+gui_object_hint "rus_casket.lng" "wspl1"
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1272 760 1354 776
+gui_object_name "spn4"
+gui_object_frigid 1
+gui_object_text "" "hero_wsp4_n" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1126 760 1208 776
+gui_object_name "spn3"
+gui_object_frigid 1
+gui_object_text "" "hero_wsp3_n" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1272 657 1354 673
+gui_object_name "spn2"
+gui_object_frigid 1
+gui_object_text "" "hero_wsp2_n" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1126 657 1208 673
+gui_object_name "spn1"
+gui_object_frigid 1
+gui_object_text "" "hero_wsp1_n" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hero_warspirit_empty.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1126 665 1268 743
+gui_object_name "herwsp_e1"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hero_warspirit_empty.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1126 767 1268 845
+gui_object_name "herwsp_e3"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hero_warspirit_empty.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1272 767 1414 845
+gui_object_name "herwsp_e4"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hero_warspirit_empty.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1272 664 1414 742
+gui_object_name "herwsp_e2"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1218 593 1403 610
+gui_object_name "text_3"
+gui_object_frigid 1
+gui_object_text "" "hero_casket" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1232 500 1306 516
+gui_object_name "text_rage"
+gui_object_frigid 1
+gui_object_text "" "hero_rage_num" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1233 483 1307 499
+gui_object_name "text_0"
+gui_object_frigid 1
+gui_object_text "" "hero_rage" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 1774 554 1851 628
+gui_object_name "b_book"
+gui_object_frigid 0
+gui_object_hint "rus_hero.lng" "btn_hero_book_hint"
+gui_object_button_normal "buttonbook2_normal.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "buttonbook2_onmouse.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "buttonbook2_onpress.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "buttonbook2_disabled.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin button
+gui_object_position 2039 841 2159 869
+gui_object_name "b_ok"
+gui_object_frigid 0
+gui_object_button_normal "buttonok_normal.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_focused "buttonok_onmouse.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_pressed "buttonok_onpress.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_button_disabled "buttonok_normal.png" "" "" 0.000000 1 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1334 500 1408 516
+gui_object_name "text_mana"
+gui_object_frigid 1
+gui_object_text "" "hero_mana_num" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1235 493 1309 509
+gui_object_name "text_17"
+gui_object_frigid 1
+gui_object_text "" "hero_crystals_num" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1130 500 1204 516
+gui_object_name "text_money"
+gui_object_frigid 1
+gui_object_text "" "hero_money_num" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1334 483 1408 499
+gui_object_name "text_15"
+gui_object_frigid 1
+gui_object_text "" "hero_mana" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1235 476 1309 492
+gui_object_name "text_14"
+gui_object_frigid 1
+gui_object_text "" "hero_cryst" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1130 483 1204 499
+gui_object_name "text_13"
+gui_object_frigid 1
+gui_object_text "" "hero_money" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1347 356 1401 372
+gui_object_name "text_intellect"
+gui_object_frigid 1
+gui_object_text "" "hero_intellect_num" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1246 356 1300 372
+gui_object_name "text_defense"
+gui_object_frigid 1
+gui_object_text "" "hero_defense_num" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1143 356 1197 372
+gui_object_name "text_attack"
+gui_object_frigid 1
+gui_object_text "" "hero_attack_num" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1330 339 1420 356
+gui_object_name "text_9"
+gui_object_frigid 1
+gui_object_text "" "hero_intellect" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1228 339 1318 356
+gui_object_name "text_8"
+gui_object_frigid 1
+gui_object_text "" "hero_defense" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1125 339 1215 355
+gui_object_name "text_7"
+gui_object_frigid 1
+gui_object_text "" "hero_attack" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1303 233 1419 255
+gui_object_name "text_herolead1"
+gui_object_frigid 1
+gui_object_text "" "hero_ldrshp1" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1303 211 1420 233
+gui_object_name "text_herolead"
+gui_object_frigid 1
+gui_object_hint "rus_hero.lng" "btn_hero_leadership_hint"
+gui_object_text "" "hero_ldrshp" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1248 139 1413 163
+gui_object_name "text_herole"
+gui_object_frigid 1
+gui_object_text "" "hero_level" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin simple_text
+gui_object_position 1114 98 1426 118
+gui_object_name "text_herona"
+gui_object_frigid 1
+gui_object_text "" "hero_hero_name" 0.010000 0.990000 0.010000 0.990000
+gui_object_end
+gui_object_begin picture
+gui_object_picture "hero_bg18.png"
+gui_object_picture_angle 0.000000 1
+gui_object_position 1040 -8 2320 952
+gui_object_name "picture_0"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "unknown_picture.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 1530 236 1850 614
+gui_object_name "her_image"
+gui_object_frigid 0
+gui_object_end
+gui_object_begin picture
+gui_object_picture "medals_panel_bg.png"
+gui_object_picture_angle 0.000000 0
+gui_object_position 2340 60 2770 632
+gui_object_name "medals_panel_bg"
+gui_object_frigid 1
+gui_object_end
+gui_end
