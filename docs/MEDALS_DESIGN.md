@@ -117,3 +117,12 @@ Implemented as `mods/ach-permanent-test/` for manual testing in `KB_test_copy`:
 - Installer is intentionally restricted to a game path ending in `KB_test_copy\KB The Legend EE`; it replaces only the old achievement callback block, preserves the chest hook/APIDUMP, and creates a side-by-side backup. Rollback restores that backup.
 
 This first probe validates the event → saved rank → one-time bonus → notification chain. It does not yet add a persistent achievement icon or journal; that is the next UI step after the owner confirms this progression path works in-game.
+
+## Manual prototype result and persistent UI fallback (2026-11-27)
+
+The owner tested the no-item chest prototype in `KB_test_copy`: the rank-I popup appeared, Intellect increased by 1, and a second chest did not increase it again. This confirms the event → notification → direct permanent stat bonus → duplicate guard in-game.
+
+One correction to the earlier UI idea: Legend's executable has no achievement-book/new-achievement form classes, and its `hero.ui` does not have the later games' `reward__N` medal display slots. A custom achievements book or direct medal strip therefore is not established by merely adding `.ui`/`forms.txt`; the engine-side bindings are absent/unproven.
+
+Practical next UI experiment: use the already-working item-grant path to award a non-equippable rank token into the backpack, while applying the permanent bonus through `Logic.hero_lu_item`. On rank-up, remove the old token and grant the next rank token, so the visible item itself reflects the current stage. This avoids autoequip entirely. It is less convenient than dedicated fixed medal slots, but gives a persistent visual badge using the existing inventory UI. Before generalizing, test one token item and confirm it renders in the backpack and can be safely replaced on upgrade.
+
