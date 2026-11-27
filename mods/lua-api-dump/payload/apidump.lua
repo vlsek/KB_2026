@@ -55,31 +55,53 @@ function kb2026_apidump(tag)
     local wrote = "no"
     local write_error = ""
     local out_path = "@@OUTFILE@@"
-    if io and io.open then
-      local open_ok, f, open_err = pcall(io.open, out_path, "w")
-      if open_ok and f then
-        local write_ok, write_result = pcall(function()
-          local w, we = f:write(text)
-          if not w then error(we or "file write failed") end
-          local c, ce = f:close()
-          if not c then error(ce or "file close failed") end
-          return true
-        end)
-        if write_ok and write_result then
+    -- Some game builds expose io.open but return file handles without methods.
+    -- Prefer Lua's default-output API when available.
+    if io and type(io.output) == "function" and type(io.write) == "function" and type(io.close) == "function" then
+      local output_ok, output_result, output_err = pcall(io.output, out_path)
+      if output_ok and output_result then
+        local write_ok, write_result = pcall(io.write, text)
+        local close_ok, close_result, close_err = pcall(io.close)
+        if write_ok and write_result and close_ok and close_result then
           wrote = out_path .. " bytes=" .. string.len(text)
         else
-          write_error = tostring(write_result)
-          pcall(function() f:close() end)
+          if not write_ok then write_error = tostring(write_result)
+          elseif not close_ok then write_error = tostring(close_result)
+          else write_error = tostring(close_err or "io.write/io.close returned no result") end
         end
       else
-        if open_ok then
-          write_error = tostring(open_err or "io.open returned no file")
-        else
-          write_error = tostring(f)
-        end
+        if output_ok then write_error = tostring(output_err or "io.output returned no file")
+        else write_error = tostring(output_result) end
       end
     else
-      write_error = "io.open unavailable (io=" .. type(io) .. ")"
+      write_error = "io.output/io.write/io.close unavailable"
+    end
+    -- Fallback for builds where io.open returns a normal Lua file handle.
+    if wrote == "no" and io and type(io.open) == "function" then
+      local open_ok, f, open_err = pcall(io.open, out_path, "w")
+      if open_ok and f then
+        local method = nil
+        local method_ok, method_value = pcall(function() return f.write end)
+        if method_ok then method = method_value end
+        if type(method) == "function" then
+          local write_ok, write_result = pcall(method, f, text)
+          local close_method = nil
+          local close_ok, close_value = pcall(function() return f.close end)
+          if close_ok then close_method = close_value end
+          local closed, close_result = false, nil
+          if type(close_method) == "function" then closed, close_result = pcall(close_method, f) end
+          if write_ok and write_result and closed then
+            wrote = out_path .. " bytes=" .. string.len(text)
+            write_error = ""
+          else
+            write_error = tostring((not write_ok and write_result) or (not closed and close_result) or "file handle write/close failed")
+          end
+        else
+          write_error = "io.open handle has no write method; io output API failed: " .. write_error
+        end
+      else
+        write_error = tostring((open_ok and open_err) or f or "io.open failed")
+      end
     end
     local head = "APIDUMP lines=" .. table.getn(out) .. " chars=" .. string.len(text) .. " file=" .. wrote .. " error=" .. write_error
     if wrote == "no" then
