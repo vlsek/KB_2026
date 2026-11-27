@@ -53,14 +53,35 @@ function kb2026_apidump(tag)
     add("GLOBAL_FUNCTIONS " .. table.concat(gf, " "))
     local text = table.concat(out, "\n")
     local wrote = "no"
+    local write_error = ""
+    local out_path = "@@OUTFILE@@"
     if io and io.open then
-      local o2, f = pcall(function() return io.open("@@OUTFILE@@", "w") end)
-      if o2 and f then
-        pcall(function() f:write(text); f:close() end)
-        wrote = "@@OUTFILE@@"
+      local open_ok, f, open_err = pcall(io.open, out_path, "w")
+      if open_ok and f then
+        local write_ok, write_result = pcall(function()
+          local w, we = f:write(text)
+          if not w then error(we or "file write failed") end
+          local c, ce = f:close()
+          if not c then error(ce or "file close failed") end
+          return true
+        end)
+        if write_ok and write_result then
+          wrote = out_path .. " bytes=" .. string.len(text)
+        else
+          write_error = tostring(write_result)
+          pcall(function() f:close() end)
+        end
+      else
+        if open_ok then
+          write_error = tostring(open_err or "io.open returned no file")
+        else
+          write_error = tostring(f)
+        end
       end
+    else
+      write_error = "io.open unavailable (io=" .. type(io) .. ")"
     end
-    local head = "APIDUMP lines=" .. table.getn(out) .. " chars=" .. string.len(text) .. " file=" .. wrote
+    local head = "APIDUMP lines=" .. table.getn(out) .. " chars=" .. string.len(text) .. " file=" .. wrote .. " error=" .. write_error
     if wrote == "no" then
       local pos = 1
       local n = 0
