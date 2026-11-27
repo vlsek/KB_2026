@@ -10,7 +10,7 @@
     4. Snapshot of your MAIN game: ini files, data\mods list, leftovers of the frozen v7 mod, PC info.
     5. TEST COPY of The Legend EE (about 6 GB, asked first). Your main game is NEVER modified.
     6. Installs the current trial mods into the COPY: achievements-test, ach-lua (Lua medals), UI v6 + loading ring (T-07),
-       map-stats-test (T-08), medal-slots-ui (T-09).
+       map-stats-test (T-08), medal-slots-ui (T-09), lua-api-dump (list of Lua functions -> kb2026_apidump.txt in the zip).
     7. Starts the copy of the game, shows a short checklist, takes screenshots (8 s countdown),
        asks short questions (y/n/text) and writes results.txt.
     8. Optional graphics round (T-10 / T-18) on the copy via mods\gfx-preset level 2 (game.ini backup, restored after).
@@ -436,6 +436,7 @@ if ($script:CopyGame) {
         New-Item -ItemType Directory -Force -Path $logDir | Out-Null
         $list = @('achievements-test')
         if ($WithProbe) { $list += 'lua-probe' } else { $list += 'ach-lua' }
+        $list += 'lua-api-dump'
         if ($WithSlotsTest) { $list += 'medal-slots-test' }
         foreach ($m in $list) {
             $inst = Join-Path (Join-Path (Join-Path $repo 'mods') $m) 'install.ps1'
@@ -503,6 +504,8 @@ if ($script:CopyGame -and -not $NoGame) {
         Say '  3. Map: look at the bottom panel (grid of 4 x 6 test cells).' 'White'
         Say '  4. Start ONE battle and cast at least one spell (magic damage). After the battle open ANY chest/box on the map.' 'White'
         Say '     Expected (ach-lua): a message "Achievement: High Mage" and a test medal in the backpack (arrows under the inventory row).' 'White'
+        Say '     Also (lua-api-dump): one more window "APIDUMP lines=... file=..." - note whether it appeared.' 'White'
+        Say '     In a NEW game: is the test medal already ON one of the 6 right slots, or only in the backpack?' 'White'
         Say '  5. Save, load, watch the loading screen ring. Look at the backpack again.' 'White'
         Say ''
         $exe = Join-Path $script:CopyGame 'kb.exe'
@@ -522,6 +525,8 @@ if ($script:CopyGame -and -not $NoGame) {
         Rec 'AL-1' ('ach-lua message after spell + chest: ' + (Ask '  AL-1: message "Achievement: High Mage" after a spell battle + opening a chest? (y/n/text)' '?'))
         Rec 'AL-2' ('test medal in backpack after that: ' + (Ask '  AL-2: a test medal appeared in the backpack? (y/n)' '?'))
         Rec 'AL-3' ('medal survives save/load: ' + (Ask '  AL-3: still in the backpack after save and load? (y/n)' '?'))
+        Rec 'AD-1' ('APIDUMP window appeared: ' + (Ask '  AD-1: window "APIDUMP lines=... file=..." appeared after opening a chest? (y/n/text)' '?'))
+        Rec 'MS-1' ('new game: medal on a slot or in backpack: ' + (Ask '  MS-1: at the start of a NEW game the test medal is: on a slot (13-18) / in the backpack / absent' '?'))
         Rec 'T-07' ('loading ring: ' + (Ask '  T-07: ring on the loading screen: ok / higher / lower (+ about how many px)' '?'))
         Rec 'T-08' ('map cells with values: ' + (Ask '  T-08: which cells of the map panel show a value (e.g. 1.1, 1.2)? or none' '?'))
         Rec 'T-09' ('medal slots cover the background: ' + (Ask '  T-09: do the 6 empty slots cover important artwork of the hero window? (y/n/describe)' '?'))
@@ -574,6 +579,13 @@ Step '9. Collect and pack' {
         }
         Set-Content -LiteralPath (Join-Path $script:OutPath 'changed_in_copy.txt') -Value $chg -Encoding UTF8
         Say ('  files changed in the copy: ' + $chg.Count)
+    }
+    if ($script:CopyGame) {
+        $ad = Join-Path $script:CopyGame 'kb2026_apidump.txt'
+        if ((Test-Path -LiteralPath $ad) -and ((Get-Item -LiteralPath $ad).Length -lt 6MB)) {
+            Copy-Item -LiteralPath $ad -Destination (Join-Path $script:OutPath 'kb2026_apidump.txt') -Force
+            Say '  collected kb2026_apidump.txt (Lua API list)' 'Green'
+        }
     }
     # screenshots made by Win+PrtScn during the run
     try {
