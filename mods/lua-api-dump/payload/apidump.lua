@@ -55,8 +55,15 @@ function kb2026_apidump(tag)
       end
       add(label .. "=" .. tostring(ok) .. ":" .. type(value) .. ":" .. detail)
     end
-    local ok1, v1 = pcall(function() return Logic.h_slots() end)
-    result_text("CALL h_slots()", ok1, v1)
+    result_text("FIELD Logic.h_slots", true, Logic.h_slots)
+    if type(rawget) == "function" then result_text("FIELD rawget h_slots", true, rawget(Logic, "h_slots")) end
+    local pair_value = nil
+    for k, v in pairs(Logic) do if tostring(k) == "h_slots" then pair_value = v end end
+    result_text("PAIR h_slots", type(pair_value) == "function", pair_value)
+    if type(pair_value) == "function" then
+      local ok1, v1 = pcall(function() return pair_value() end)
+      result_text("CALL pair h_slots()", ok1, v1)
+    end
     local ok2, v2 = pcall(function() return Logic.hero_lu_item_on_body("medal_test_ok") end)
     result_text("CALL hero_lu_item_on_body(medal_test_ok)", ok2, v2)
     local ok3, v3 = pcall(function() return Logic.hero_lu_item("medal_test_ok", "count") end)
