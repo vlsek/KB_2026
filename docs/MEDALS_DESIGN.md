@@ -126,3 +126,10 @@ One correction to the earlier UI idea: Legend's executable has no achievement-bo
 
 Practical next UI experiment: use the already-working item-grant path to award a non-equippable rank token into the backpack, while applying the permanent bonus through `Logic.hero_lu_item`. On rank-up, remove the old token and grant the next rank token, so the visible item itself reflects the current stage. This avoids autoequip entirely. It is less convenient than dedicated fixed medal slots, but gives a persistent visual badge using the existing inventory UI. Before generalizing, test one token item and confirm it renders in the backpack and can be safely replaced on upgrade.
 
+
+## Развязка UI и бонусов (2026-11-27)
+
+Да: ранг достижения — источник состояния, а медаль/иконка UI и характеристический бонус — независимые эффекты одного события. Тест уже подтвердил отдельно: значок-медаль появляется как предмет без надевания; Intellect получает +1; повторный сундук не повторяет награду. В рабочем коде нужно держать один сохранённый ранг семьи, а затем запускать независимые обработчики (выдать/обновить видимый знак, показать unlock notice, начислить выбранный бонус или не начислять его).
+
+В Legend `Game` API, который виден в скриптах и APIPROBE, не содержит найденного вызова вроде OpenForm/ShowForm; exe также не содержит специальных achievement-form классов. Поэтому отдельную кнопочно-открываемую форму пока нельзя считать подтверждённой. Перспективнее пробовать постоянно видимую панель внутри уже поддерживаемого `hero.ui`: добавить графику/слоты для медалей, затем проверить, может ли UI привязаться к сохранённому рангу или к автоматически добавляемым предметам. Если динамическая панель не читается из GVNum, инвентарный знак остаётся надёжным индикатором, а бонус всё равно независим.
+
