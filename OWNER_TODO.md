@@ -119,9 +119,7 @@ powershell -ExecutionPolicy Bypass -File "<репо>\tools\Run-KBMorning.ps1"
   `.\install.ps1 -GameDir "<копия>\KB The Legend EE" -WotnDir "<папка King's Bounty Warriors of the North>" -GiveStart`, новая игра, смотреть рюкзак.
   **Прислать:** ответы на 4 пункта из README (запускается; названия/подсказки; надеваются и дают бонусы; бой без вылета).
 
-- [ ] **T-24 · агент 4 · 18 слотов медалей и подсказки** (~5 мин, КОПИЯ игры; уже установлено Codex 2026-11-27)
-  Ничего дополнительно не устанавливай. Запусти `C:/Users/NewHero/Desktop/KB_test_copy/KB The Legend EE/kb.exe` (можно загрузить текущее сохранение) и открой окно героя. Панель справа должна показывать 18 пазов, сетка 6×3. Наведи курсор на несколько пазов из каждого ряда, в том числе 19 и 30: должны появляться русские названия достижений и условия, а не стандартное «Артефакт». Если в рюкзаке есть тестовая медаль, попробуй временно положить её в паз 19 или 30, затем верни в 13–18 до сохранения.
-  **Прислать:** скрин окна героя; сколько пазов видно; работают ли подсказки; принимает ли слот 19/30 медаль; сместилась ли панель/перекрыла интерфейс.
+- [x] **T-24 · Codex · 18 слотов сетки работают** (2026-11-27). Владелец подтвердил: все 18 пазов видны, медаль в них надевается и снимается. Оформление пока не нравится; подпись при наведении показывала «Артефакт». Подсказка и вид слота требуют отдельной доработки.
 
 - [x] **T-25 · Codex · атлас Agent 1 → предмет в подтверждённом `mslot`** (2026-11-27). Владелец проверил: сообщение и +1 Intellect сработали по прежней Lua-логике, медаль вручную надевалась, но бонуса от предмета не было; вместо новой иконки отображался серый квадрат. Loose `TEX190` без KBMaster не подошёл; тест откатан. Подробности: [docs/AGENT1_ICON_INTEGRATION.md](docs/AGENT1_ICON_INTEGRATION.md).
 
@@ -130,138 +128,9 @@ powershell -ExecutionPolicy Bypass -File "<репо>\tools\Run-KBMorning.ps1"
 - [ ] **T-27 · Codex · автонадевание медали и запрет снятия**
   Предыдущий rank-II эксперимент полностью убран из тестовой копии по смене приоритета владельца. Сначала исследовать слот/API и правила экипировки; не запускать старый сценарий второго сундука. Когда появится конкретная сборка для проверки, добавить сюда точные шаги.
 
-# 📋 Что нужно от владельца (один список на всех агентов)
-
-Сюда агенты записывают всё, что может сделать только человек с игрой: запустить скрипт, проверить в игре, прислать файл, ответить на вопрос.
-Идея: прогнать **всё сразу за один заход**, а не по одному сообщению от каждого агента. Отметил `[x]`, прислал результат - агент разбирает и переносит пункт в «Закрыто».
-
-> **Агентам:** правила заполнения - в [AGENTS.md](AGENTS.md), раздел «Задачи для владельца». Новое - в конец нужного блока, ID по порядку (`T-NN` дело, `Q-NN` вопрос). Чужие пункты не удалять.
-
-## ⭐ Утром: ОДИН скрипт на всё (рекомендуется, T-19 · агент 5)
-
-Один запуск вместо блоков 1, 2, 3 и части 4. Игра **не меняется**: моды ставятся на КОПИЮ `KB The Legend EE` (~6 ГБ, скрипт спросит). Результат - один файл `Desktop\kb_morning_pack.zip`.
-```powershell
-powershell -ExecutionPolicy Bypass -File "<репо>\tools\Run-KBMorning.ps1"
-```
-Если игры не найдены автоматически: `-GamesRoot "C:\Program Files (x86)\Blefonix Studios"`. Прав администратора не нужно (основная игра только читается). Если копия уже есть - предложит использовать её.
-Что делает: пакет только-чтение (T-01, T-11, T-12, T-14) -> опись текстур (T-16) -> снимок основной игры -> копия -> установка `achievements-test`, `ach-lua` (вместо `lua-probe`), чистого UI v6 с кольцом загрузки (T-07), `map-stats-test` (T-08), `medal-slots-ui` (T-09), `lua-api-dump` (список функций Lua -> файл в zip) -> запускает копию, даёт короткий чек-лист, сам делает скриншоты (обратный отсчёт 8 с), задаёт вопросы (да/нет/текст) -> по желанию графический круг `gfx-preset` уровень 2 (T-10/T-18) -> zip.
-Вопросы в конце: AL-1..3 (медаль скриптом), AD-1 (окно APIDUMP), MS-1 (медаль на слоте или в рюкзаке при старте), T-07, T-08, T-09, FPS. Q-01, Q-02, Q-06 закрыты ответами владельца 2026-11-27. Остальное (Q-03, Q-05, Q-07, Q-08) - текстом в чате. Не покрывает T-17 (апскейл: нужны Python, texconv, Real-ESRGAN), T-13 (после T-08).
-Флаги: `-NoCopy` (только чтение), `-NoGame` (поставить моды без запуска и вопросов), `-SkipTextures` (быстрее на 3-5 минут), `-WithProbe` (старая проба вместо ach-lua), `-WithSlotsTest`.
-**Прислать:** `kb_morning_pack.zip`. Скрипт проверен только на тестовой папке в PowerShell 7 на Linux (все шаги, ответы, установка, откат); **на Windows 5.1 не запускался**, скриншоты и запуск игры - только там. Если что-то упало - в zip есть `run.log` и `results.txt` с причиной.
-
-## Как проходить (порядок, чтобы не ставить моды по кругу)
-0. **Сделай тестовую копию игры** (папку целиком, одну на все пробные моды). Блок 2 меняет файлы игры, у всех скриптов есть `uninstall.ps1` и бэкапы, но на копии спокойнее. Блоки 1, 3, 4 копии не требуют.
-1. Блок 1 (скрипты только на чтение) -> блок 2 (копия, один заход: новая игра, рюкзак, сундук, бой) -> блок 3 (основная игра 32:9) -> блок 4 (по желанию) -> блок 5 (вопросы, можно ответить текстом).
-2. Результаты можно прислать **одним сообщением**: номера пунктов (`T-03: да, предмет в рюкзаке`), файлы и скриншоты.
-
----
-
-## Блок 1. Скрипты только на чтение (игра не меняется)
-
-- [ ] **T-01 · агент 2 · `Find-KBText.ps1` - где сложность включает подсветку предметов на карте** (~5 мин)
-  ```powershell
-  powershell -ExecutionPolicy Bypass -File "<репо>\tools\Find-KBText.ps1" -GameDir "<папка KB The Legend EE>" -Pattern "difficult|hardness|diff_level|highlight|show_?item|item_?hint|map_?hint"
-  ```
-  Если совпадений слишком много, добавь `-SkipPath "quest_|arena_"`. Результат - `Desktop\kb_find.txt`.
-  **Прислать:** `kb_find.txt` (или первые ~200 строк). Контекст: [docs/MAP_ITEMS_SETTING.md](docs/MAP_ITEMS_SETTING.md), Issue #12.
-
-- [ ] **T-11 · Claude · достать файлы-образцы медалей и достижений из новых игр** (~5 мин, нужен Python; игры не меняются)
-  Из корня репо (подставь свои пути). Если имён нет в игре, скрипт просто ничего не найдёт:
-  ```
-  python tools\kb_extract.py "<D:\Games\KB>\Kings Bounty - Crossworlds" --out ref\crossworlds --name addon_rewards.lua medals.txt records.txt records_score_calc.txt
-  python tools\kb_extract.py "<D:\Games\KB>\KB The Legend EE" --out ref\legend --name records.txt records_score_calc.txt
-  python tools\kb_extract.py "<D:\Games\KB>\Kings Bounty Dark Side" --out ref\dark_side --name achievement_large_entourage.lu addon_rewards.lua achievements.txt records.txt
-  python tools\kb_extract.py "<D:\Games\KB>\King's Bounty Warriors of the North" --out ref\wotn --name addon_rewards.lua achievements.txt records.txt
-  ```
-  **Прислать:** папку `ref` одним zip (около 0,5 МБ). В репо эти файлы не кладём (это файлы игры). Контекст: [docs/SERIES_FINDINGS.md](docs/SERIES_FINDINGS.md).
-
-- [ ] **T-12 · агент 1 · достать родные иконки интерфейса для панели статистики** (~5 мин; игры не меняются; тот же `tools/extract_png.ps1`, ASCII)
-  Из папки со всеми играми (`C:\Program Files (x86)\Blefonix Studios`), подставь пути при необходимости:
-  ```powershell
-  Set-ExecutionPolicy -Scope Process Bypass -Force
-  & "<репо>\tools\extract_png.ps1" -Pattern "^(hero_bg18|records_.*|mainpanel_12|mana4_empty|rage1_empty|mana21_empty|rage2_empty)\.png$" -Kfs "KB The Legend EE\data\interface_textures.kfs"
-  $k = @(Get-ChildItem -Recurse -Filter interface_textures.kfs -Path "Kings Bounty - Crossworlds","Kings Bounty Crossworlds - red sands","King's Bounty Warriors of the North","Kings Bounty Dark Side" | ForEach-Object { $_.FullName })
-  & "<репо>\tools\extract_png.ps1" -Pattern "^(heroitem_medal_.*|heroitem_achievement.*|reward_.*|achievements_bar.*|hero_pet.*)\.png$" -Kfs $k
-  ```
-  **Прислать:** `Desktop\kb_png` одним zip. Зачем: вырезать из них значки атаки/защиты/ярости/маны и иконки медалей в стиле игры (мои нарисованные `mods/stats-panel/32_9-nsf/stat_*.png` - заглушки, выглядят простовато).
-
-- [ ] **T-14 · агент 3 · всё из блока 1 одной командой (заменяет запуск T-01, T-11 и T-12 по отдельности; Python не нужен)** (~5-10 мин, игры не меняются)
-  Запускать в папке, где лежат папки всех игр (например `C:\Program Files (x86)\Blefonix Studios`):
-  ```powershell
-  cd "C:\Program Files (x86)\Blefonix Studios"
-  powershell -ExecutionPolicy Bypass -File "<репо>\tools\Get-KBOwnerPack.ps1" -GamesRoot .
-  ```
-  Скрипт сам найдёт игры, достанет файлы-образцы медалей/наград/рекордов и русские тексты медалей (T-11), скрипты фамильяра из Red Sands и сторонние моды из `Legend\data\mods` (`.txt`, `.kfs`, список файлов), иконки интерфейса (T-12), поищет в Legend слова про сложность и подсветку (T-01) и соберёт `Desktop\kb_owner_pack.zip`.
-  **Прислать:** `kb_owner_pack.zip` одним файлом (обычно меньше 5 МБ). После него T-01, T-11, T-12 считаются выполненными.
-
-- [ ] **T-16 · Claude · опись текстур Legend** (~5 мин, нужен Python, игра не меняется)
-  ```
-  python tools\kb_texture_inventory.py "<D:\Games\KB>\KB The Legend EE" --out tex_inventory
-  ```
-  **Прислать:** `tex_inventory\SUMMARY.md` (маленький файл) и, по желанию, `inventory.csv`. Контекст: [docs/TEXTURES_UPSCALE.md](docs/TEXTURES_UPSCALE.md).
-
-- [ ] **T-20 · Claude · официальный билд Legend 2026 (Steam) для сравнения** (~30 мин, только если у тебя есть Legend в Steam; ничего не покупаем ради этого)
-  Контекст: в июне 2026 вышло официальное обновление с достижениями, широким экраном и камерой ([docs/LEGEND_OFFICIAL_ACHIEVEMENTS.md](docs/LEGEND_OFFICIAL_ACHIEVEMENTS.md)). Если у тебя есть Steam-копия: установи её **в отдельную папку** (не поверх нашей EE) на ветке по умолчанию; затем из корня репо:
-  ```
-  python tools\kb_manifest.py "<папка Steam-Legend>" --name legend_steam --out kb_manifests
-  python tools\kb_manifest.py "<D:\Games\KB>\KB The Legend EE" --name legend --out kb_manifests
-  python tools\kb_compare.py kb_manifests\legend.manifest.json kb_manifests\legend_steam.manifest.json --out report_legend_steam.md
-  ```
-  **Прислать:** `report_legend_steam.md` и папку `ref` из `python tools\kb_extract.py "<папка Steam-Legend>" --out ref\legend_steam --name achievements.txt records.txt` (если файлов нет, скрипт ничего не найдёт, это тоже ответ). Если Legend у тебя не в Steam, пропусти и ответь на Q-09.
-
-- [ ] **T-21 · Claude · вернуть KBMaster на копию и прислать файлы для разбора** (~20 мин; только тестовая КОПИЯ `KB_test_copy`, Python нужен; основная игра не меняется)
-  Зачем: [docs/KBMASTER_PLAN.md](docs/KBMASTER_PLAN.md) и [docs/MEDALS_DESIGN.md](docs/MEDALS_DESIGN.md). Без этих файлов я не могу сделать медали совместимыми с Master и не могу решить автонадевание.
-  1) **Верни три пары файлов Master в `data\mods` копии**: `KBMaster_1.3.1_for_1.7.kfs` + `.txt`, `mod_17_master_101_familiar.kfs` + `mod_17_Master_101_familiar.txt`, `mod_17_Master_129_add_exp_limit.kfs` + `.txt` (из резервной копии или первой установки; в снимке 25.11 они там были). Если резервной копии нет, напиши, откуда брал, я подскажу, где искать.
-  2) Из корня репо (подставь свои пути):
-  ```
-  python tools\kb_extract.py "C:\Users\NewHero\Desktop\KB_test_copy\KB The Legend EE" --out ref\kbmaster --name KBMaster_1.3.1_for_1.7.txt mod_17_Master_101_familiar.txt mod_17_Master_129_add_exp_limit.txt master_cfg_129.txt master_cfg_101.txt master_itm_101.txt master_tex_101.txt 129.mod Master_add_exp_limit.lua hero.txt config.txt
-  copy "C:\Users\NewHero\Desktop\KB_test_copy\KB The Legend EE\kb2026_apidump.txt" ref\kbmaster\
-  ```
-  **Прислать:** папку `ref\kbmaster` одним zip (около 0,1 МБ). Там же `kb2026_apidump.txt` (список Lua-функций: от него зависят автонадевание медали, замена при повышении ранга и окно «получена»). Это файлы игры и модов сообщества, в репо не кладём.
-  3) Если хочешь сразу проверить, что Master вернулся: запусти копию, открой окно героя и карту, скажи, есть ли кнопка Master и «избранные заклинания», есть ли наши 6 слотов и работает ли фамильяр.
-
-## Блок 2. Тестовая КОПИЯ игры: достижения и медали (один заход)
-
-Ставить по порядку, у каждого мода своя инструкция в README. Если игра перестала стартовать - снимать по одному в обратном порядке (`uninstall.ps1`).
-
-- [ ] **T-03 · агент 4 · `mods/achievements-test`** - если ещё не стоит на копии (на основной игре ты его уже ставил). [README](mods/achievements-test/README.md)
-
-- [x] **T-04 · агент 5 · `mods/medal-slots-test`** (нужен T-03). **СНЯТО (агент 5, 2026-11-27):** агент 1 подтвердил - стартовые предметы через `hero.txt` работают; тест не нужен. Мод исправлен на `propbits=quest` (движок отвергает `medal`); в утренний скрипт не входит (флаг `-WithSlotsTest`). [README](mods/medal-slots-test/README.md)
-  `.\install.ps1 -GameDir "<копия>\KB The Legend EE"` (от администратора, если игра в `Program Files`). **Новая игра**, затем в рюкзаке героя (стрелки под рядом инвентаря) смотреть «Тест: медаль, ранг 1».
-  **Прислать:** ответы на 4 пункта таблицы из README (запускается / медаль в рюкзаке / иконка+название+подсказка / не пропадает после сохранения).
-
-- [ ] **T-05 · агент 4 · `mods/lua-probe`**. [README](mods/lua-probe/README.md)
-  `.\install.ps1 -GameDir "<копия>\KB The Legend EE"`, загрузить сохранение, **подобрать сундук**. Один раз за запуск появится окно `PROBE ...`.
-  **Прислать:** скриншот или текст окна. Нет окна - так и напиши; вылет - пришли лог из папки игры.
-
-- [x] **T-06 · агент 4/5 · проверка `achievements-test`: «Высший маг»** - **СНЯТО (агент 5):** причина найдена агентом 1: движок молча отвергает `propbits=medal`, поэтому медаль не выдавалась; заменено проверкой `ach-lua` (AL-1..3 в утреннем скрипте).
-  В той же новой игре провести бой с хотя бы одним заклинанием, затем открыть рюкзак героя.
-  **Прислать:** есть ли предмет «Высший маг» (да / нет). Сообщения о получении быть не должно (в Legend нет такой формы), смотреть только рюкзак.
-
-- [ ] **T-17 · Claude · апскейл текстур: проба подмены и пробный прогон** (~30 мин + установка, только на КОПИИ игры; нужны Python+Pillow, `texconv.exe`, Real-ESRGAN ncnn-vulkan, ссылки в [docs/TEXTURES_UPSCALE.md](docs/TEXTURES_UPSCALE.md))
-  1) Проба: `python tools\kb_texture_upscale.py run --game "<копия>\KB The Legend EE" --work kbtex --texconv "<путь>\texconv.exe" --probe <имя.dds из inventory.csv, которое видно на карте>`; папку `kbtex\mod` положить в `data\mods\kb_tex_test\` копии игры. **Прислать:** покрасилась ли текстура в красный (да / нет / вылет).
-  2) Если «да»: `... run --scale 2 --limit 20 --upscaler "<путь>\realesrgan-ncnn-vulkan.exe"`, заменить папку мода. **Прислать:** 2-3 скриншота до/после (карта, замок, арена), число вылетов и FPS.
-  Если «нет» - так и напиши, пойдём в упаковку `.kfs`.
-
-- [ ] **T-18 · агент 4 · `mods/gfx-preset` - анизотропия 16x и тени** (~10 мин, КОПИЯ игры). [README](mods/gfx-preset/README.md)
-  `.\install.ps1 -GameDir "<копия>\KB The Legend EE" -Level 1` (потом, если ок, `-Level 2`). Запустить игру, посмотреть землю вдали и тени на карте и арене.
-  **Прислать:** запускается ли; 1-2 скриншота; FPS до/после, если есть; артефакты.
-
-- [ ] **T-23 · агент 4 · `mods/items-from-wotn` - 16 предметов из WotN** (~15 мин, КОПИЯ игры; нужна папка WotN). [README](mods/items-from-wotn/README.md)
-  `.\install.ps1 -GameDir "<копия>\KB The Legend EE" -WotnDir "<папка King's Bounty Warriors of the North>" -GiveStart`, новая игра, смотреть рюкзак.
-  **Прислать:** ответы на 4 пункта из README (запускается; названия/подсказки; надеваются и дают бонусы; бой без вылета).
-
-- [ ] **T-24 · агент 4 · `mods/medal-slots` + `mods/medals-grid` - 18 слотов медалей, компактно, подсказки при наведении** (~15 мин, КОПИЯ игры; заменяет `medals-panel`, T-22). [medal-slots](mods/medal-slots/README.md), [medals-grid](mods/medals-grid/README.md)
-  1) `mods/medal-slots\install.ps1 -GameDir "<копия>\KB The Legend EE" -TestMedals`  2) `mods/medals-grid\install.ps1 -GameDir "<копия>\KB The Legend EE"`, новая игра, окно героя.
-  **Прислать:** ответы на 5 пунктов из README `medals-grid` (скриншот окна героя и подсказки слота) + принимает ли слот 19..30 (если вылет - поставить `-Count 6`).
-
-- [x] **T-25 · Codex · атлас Agent 1 → предмет в подтверждённом `mslot`** (2026-11-27). Владелец проверил: сообщение и +1 Intellect сработали по прежней Lua-логике, медаль вручную надевалась, но бонуса от предмета не было; вместо новой иконки отображался серый квадрат. Loose `TEX190` без KBMaster не подошёл; тест откатан. Подробности: [docs/AGENT1_ICON_INTEGRATION.md](docs/AGENT1_ICON_INTEGRATION.md).
-
-- [x] **T-26 · Codex · игровое окно и бонус от надетой медали** (2026-11-27). Владелец подтвердил: штатное игровое уведомление срабатывает, медаль даёт +1 Intellect. Ручное снятие отдельно не уточнено. Следующий тест проверяет удаление/замену ранга.
-
-- [ ] **T-27 · Codex · повышение ранга и замена бонуса** (~10 мин, уже установлено только в тестовую копию)
-  Запусти `C:/Users/NewHero/Desktop/KB_test_copy/KB The Legend EE/kb.exe`, начни **новую игру**. Открой первый сундук; надень медаль I в слот 13–18 и проверь +1. Открой второй сундук: ожидается игровое уведомление о ранге II, старый предмет I должен удалиться, а новый предмет II появиться в рюкзаке. Надень II (в этот тест она может не переместиться автоматически): ожидается базовый интеллект +2, не +3. Проверь, исчез ли бонус I при удалении/замене и попал ли II в освободившийся слот сам.
-  **Прислать:** скрин после сундука II; были ли одновременно предметы I и II; интеллект после экипировки I, после получения II и после экипировки II; заполнился ли слот автоматически. Не нужно отдельно менять файлы при ошибке — напиши мне; для отката сохранены `.kb2026rank2.bak` у четырёх изменённых файлов.
+- [ ] **T-28 · Codex · проверить типовую подсказку медального слота** (после перезапуска игры)
+  В тестовой копии изменены `slot_bgs`: `mslot` теперь использует отдельную локализацию `hero_slot_mslot=Медаль`, а не ключ артефакта. Запусти игру заново, открой окно героя и наведи курсор на пустой паз 13–30.
+  **Прислать:** отображается ли «Медаль» вместо «Артефакт»; если нет — скрин подсказки. Уникальные описания достижений у каждого отдельного паза пока не подключены.
 
 ## Блок 3. Основная игра 32:9 (папка мода `data\mods\32_9-nsf`)
 
