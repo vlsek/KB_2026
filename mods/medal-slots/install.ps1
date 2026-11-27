@@ -25,11 +25,26 @@ $cs = $enc.GetString([IO.File]::ReadAllBytes($cfg))
 $hs = $enc.GetString([IO.File]::ReadAllBytes($hero))
 $needCfg = -not ($cs -match '(?m)^\s*mslot=')
 if ($needCfg -and -not ($cs -match '(?m)^\s*artefact=0x800000\r?$')) { throw 'config.txt: line artefact=0x800000 not found - different version, nothing changed.' }
-$needHero = -not ($hs -match '(?m)^\s*13=mslot')
+$lastSlot = 12 + $Count
+$oldSixComplete = $true
+for ($i = 13; $i -le 18; $i++) {
+  if ([regex]::Matches($hs, "(?m)^[ \t]*$i=mslot(?:\r?)[ \t]*$").Count -ne 3) { $oldSixComplete = $false }
+}
+$targetComplete = $true
+for ($i = 13; $i -le $lastSlot; $i++) {
+  if ([regex]::Matches($hs, "(?m)^[ \t]*$i=mslot(?:\r?)[ \t]*$").Count -ne 3) { $targetComplete = $false }
+}
+$hasAnyExtended = [regex]::IsMatch($hs, '(?m)^[ \t]*19=mslot(?:\r?)[ \t]*$')
+$correctMslotBg = [regex]::IsMatch($hs, '(?m)^[ \t]*mslot=inventory_slot_bg\d+\.png/hero_slot_mslot(?:\r?)[ \t]*$')
+$needHero = -not $targetComplete -or -not $correctMslotBg
 if ($needHero) {
-  $cnt = [regex]::Matches($hs, '(?m)^\s*8=artefact\r?$').Count
-  if ($cnt -ne 3) { throw "hero.txt: expected 3 class blocks with '8=artefact', found $cnt - different version, nothing changed." }
+  if (-not ($hs -match '(?m)^\s*8=artefact\r?$')) { throw 'hero.txt: line 8=artefact not found - different version, nothing changed.' }
   if (-not ($hs -match '(?m)^\s*artefact=inventory_slot_bg\d+\.png/hero_slot_artefact\r?$')) { throw 'hero.txt: slot_bgs line for artefact not found - nothing changed.' }
+  if (-not $targetComplete -and $oldSixComplete -and -not $hasAnyExtended) {
+    Write-Host "hero.txt: existing medal slots 13..18 found; will append slots 19..$lastSlot."
+  } elseif (-not $targetComplete -and $oldSixComplete -and $hasAnyExtended) {
+    throw "hero.txt: partial extended slot set found; expected all slots through $lastSlot in all 3 class blocks. Nothing changed."
+  }
 }
 function Backup($path) { $bak = "$path.kb2026ms.bak"; if (-not (Test-Path $bak)) { Copy-Item $path $bak; Write-Host "backup: $bak" } }
 
@@ -43,22 +58,43 @@ if ($needCfg) {
 # 2) hero.txt: slot type background + slots 13..(12+Count) in every class
 if ($needHero) {
   Backup $hero
-  $ins = ''
-  for ($i = 13; $i -le (12 + $Count); $i++) { $ins += "      $i=mslot`r`n" }
-  $hs = [regex]::Replace($hs, '(?m)^(\s*8=artefact\r?\n)', ('$1' + $ins))
-  $hs = [regex]::Replace($hs, '(?m)^(\s*artefact=(inventory_slot_bg\d+\.png)/hero_slot_artefact\r?\n)', ('$1  mslot=$2/hero_slot_mslot' + "`r`n"), 1)
-  [IO.File]::WriteAllBytes($hero, $enc.GetBytes($hs)); Write-Host "hero.txt: slots 13..$(12 + $Count) = mslot (3 classes) + slot_bgs"
-} else { Write-Host 'hero.txt: mslot slots already present' }
+  if (-not $targetComplete) {
+    $nl = if ($hs.Contains("`r`n")) { "`r`n" } else { "`n" }
+    if ($oldSixComplete -and -not $hasAnyExtended) {
+      $ins = ''
+      for ($i = 19; $i -le $lastSlot; $i++) { $ins += "      $i=mslot$nl" }
+      $pat = '(?m)^([ \t]*18=mslot)(?:\r?)[ \t]*$'
+      if ([regex]::Matches($hs, $pat).Count -ne 3) { throw 'hero.txt: expected 3 slot-18 lines; nothing changed.' }
+      $hs = [regex]::Replace($hs, $pat, ('$1' + $nl + $ins.TrimEnd("`r","`n")), 3)
+    } else {
+      $ins = ''
+      for ($i = 13; $i -le $lastSlot; $i++) { $ins += "      $i=mslot$nl" }
+      $hs = [regex]::Replace($hs, '(?m)^([ \t]*8=artefact)(?:\r?)[ \t]*$', ('$1' + $nl + $ins.TrimEnd("`r","`n")), 3)
+    }
+  }
+  if (-not $correctMslotBg) {
+    $map = '(?m)^([ \t]*mslot=inventory_slot_bg\d+\.png/)[^\r\n]*$'
+    if ([regex]::IsMatch($hs,$map)) {
+      $hs = [regex]::Replace($hs,$map,'$1hero_slot_mslot',1)
+    } else {
+      $artefactMap = '(?m)^([ \t]*artefact=inventory_slot_bg\d+\.png/hero_slot_artefact)(?:\r?)[ \t]*$'
+      if ([regex]::Matches($hs,$artefactMap).Count -ne 1) { throw 'hero.txt: cannot locate slot_bgs insertion point.' }
+      $hs = [regex]::Replace($hs,$artefactMap,('$1' + $nl + '  mslot=inventory_slot_bg8.png/hero_slot_mslot'),1)
+    }
+  }
+  [IO.File]::WriteAllBytes($hero, $enc.GetBytes($hs))
+  Write-Host "hero.txt: ensured slots 13..$lastSlot = mslot (3 classes) + medal tooltip mapping"
+} else { Write-Host "hero.txt: slots 13..$lastSlot and medal tooltip mapping already present" }
 
 # 3) hint text of the slot type
 $lt = [Text.Encoding]::Unicode.GetString([IO.File]::ReadAllBytes($lng))
-if (-not $lt.Contains($MB)) {
+if (-not ($lt -match '(?m)^hero_slot_mslot=')) {
   Backup $lng
-  $txt = "hero_slot_mslot=" + [string]::Join('', [char[]](0x41C,0x435,0x434,0x430,0x43B,0x44C,0x20,0x434,0x43E,0x441,0x442,0x438,0x436,0x435,0x43D,0x438,0x44F))
+  $txt = "hero_slot_mslot=" + [string]::Join('', [char[]](0x41C,0x435,0x434,0x430,0x43B,0x44C))
   $add = [Text.Encoding]::Unicode.GetBytes("`r`n$MB`r`n$txt`r`n$ME`r`n")
   $fs = [IO.File]::Open($lng,'Append'); $fs.Write($add,0,$add.Length); $fs.Close()
-  Write-Host 'rus_hero.lng: hero_slot_mslot added'
-}
+  Write-Host 'rus_hero.lng: hero_slot_mslot=Медаль added'
+} else { Write-Host 'rus_hero.lng: medal slot tooltip already present' }
 
 # 4) optional: 3 test medals with propbits=mslot (so the slots can be tried right away)
 if ($TestMedals) {
