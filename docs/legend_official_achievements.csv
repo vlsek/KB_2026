@@ -1,0 +1,46 @@
+﻿id,name_steam,condition_steam,counter,value,relation_to_our_list
+gold_1,Hedge Knight,Obtain 100.000 gold,gold,100000,proposal#3
+gold_2,Scrap Merchant,Obtain 500.000 gold,gold,500000,proposal#3
+gold_3,Walking Treasury,Obtain 1.000.000 gold,gold,1000000,proposal#3
+mana_1,Bookworm,Have 50 mana,mana,50,proposal#4
+mana_2,The Mage Who Lived,Have 75 mana,mana,75,proposal#4
+mana_3,Not Quite a God,Have 100 mana,mana,100,proposal#4
+rage_1,Barbarian,Have 50 rage,rage,50,proposal#5
+rage_2,Embraced the Fury,Have 75 rage,rage,75,proposal#5
+rage_3,There Is Only Rage,Have 100 rage,rage,100,proposal#5
+lead_1,Shepherd,Have 5.000 leadership,leadership,5000,proposal#2
+lead_2,Commander,Have 10.000 leadership,leadership,10000,proposal#2
+lead_3,Scourge of God,Have 15.000 leadership,leadership,15000,proposal#2
+lead_4,God of war,Have 20.000 leadership,leadership,20000,proposal#2
+lvl_0,Hats off!,Increase the level,level,2,proposal#1
+lvl_1,Bachelor,Reach level 10,level,10,proposal#1
+lvl_2,Master,Reach level 20,level,20,proposal#1
+lvl_3,Mr. Doctor,Reach level 30,level,30,proposal#1
+diff_easy,Easy walk,Complete the game on Easy difficulty,end of game,easy,new
+diff_normal,As planned,Complete the game on Normal difficulty,end of game,normal,new
+diff_hard,Just a scratch,Complete the game on Hard difficulty,end of game,hard,new
+diff_impossible,Impossibru,Complete the game on Impossible difficulty,end of game,impossible,new; WotN hardcore_gamer analog
+class_warrior,A Knight's Tale,Complete the game as a Warrior,end of game,warrior,new
+class_paladin,Sacred oath,Complete the game as a Paladin,end of game,paladin,new
+class_mage,Mastery of arcane,Complete the game as a Mage,end of game,mage,new
+no_loss_game,God bless you!,Complete the game without losing any troops,troops lost,0,new; WotN heartless analog
+flawless_battle,Flawless Victory,Win a battle without suffering any loses,battle result,1,proposal#18 (single battle)
+one_punch,Onepunchman,Deal more than 10.000 damage with a single attack,single hit,10000,proposal#10 (threshold fixed to 10000)
+legion,My name is Legion,Have at least 1.000 troops in the army,army size,1000,proposal#11
+leaderboard,Forget the list,Take the top spot on the leaderboard,records,1st,new
+marry_mirabella,Stolen heart,Marry Mirabella,marriage,Mirabella,"new, story"
+marry_feanora,It is Wednesday my friend,Marry Feanora,marriage,Feanora,"new, story"
+marry_rina,Necromancers dream,Marry Rina,marriage,Rina,"new, story"
+bluebeard,Bluebeard,Complete the game with six ex-wives,wives,6,proposal#7
+celibacy,Celibacy,Complete the game without having a wife and without any ex-wives,wives,0,new
+labyrinth,Snake pit,Visit the Labyrinth,location,Labyrinth,"new, hook"
+ultrax,Hic sunt dracones,Visit the dragon world of Ultrax,location,Ultrax,"new, hook, missable"
+orpheus,In the footsteps of Orpheus,Visit the World of the Dead,location,World of the Dead,"new, hook, main story"
+final_trial,Final Trial,Obtain the position of Royal Treasure Seeker,quest,-,"new, story"
+cupid,Cupid,Help Prince Carl get married,quest,-,"new, story"
+macguffin,MacGuffin,Obtain the Casket of Rage,quest,-,"new, story"
+whipping_boy,Whipping boy,Defeat the Orc Shaman,battle,Orc Shaman,"new, story"
+platinum,Platinum,Complete the game having completed at least 100 quests,quests,100,proposal#6
+on_a_wager,On a wager,Complete the game in no more than 30 days (in-game),days,30,proposal#8
+titanomachy,Titanomachy,"Defeat all bosses (Gaia, the Kraken, the Spider Queen) in story order",bosses,3,new; load-from-save does not count
+coming_of_age,Coming of Age,Launch the game after the 18th anniversary update,startup,-,not needed
