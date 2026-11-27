@@ -1,4 +1,5 @@
 # KB_2026 medal-slots-test (stage 1): gives a plain test medal item to the hero at the START of a NEW game.
+# v2: items use propbits=quest and the native icon heroitem_quest_medal.png (the engine rejects propbits=medal, found by agent 1).
 # Needs mods\achievements-test installed first (medal bit in config.txt, achievements.txt, icon).
 # Usage:  .\install.ps1 -GameDir "C:\Program Files (x86)\Blefonix Studios\KB The Legend EE"
 # Backups: *.kb2026mst.bak. Rollback: .\uninstall.ps1 -GameDir ...
@@ -28,12 +29,14 @@ function Backup($path) {
 # 1) items: append two plain medal items to achievements.txt
 Backup $ach
 $as = $enc.GetString([IO.File]::ReadAllBytes($ach))
-if ($as.Contains('medal_test_rank1')) { Write-Host 'achievements.txt: test items already present' }
-else {
-  $add = [IO.File]::ReadAllBytes((Join-Path $pay 'medal_items.txt'))
-  $fs = [IO.File]::Open($ach,'Append'); $fs.Write($add,0,$add.Length); $fs.Close()
-  Write-Host 'achievements.txt: test items added'
-}
+# remove an older version of the test items (it used propbits=medal, which the engine rejects), then add the current one
+$blockPat = '(?s)\r?\nmedal_test_rank[12] \{.*?\r?\n\}'
+$as = [regex]::Replace($as, $blockPat, '')
+$addBytes = [IO.File]::ReadAllBytes((Join-Path $pay 'medal_items.txt'))
+$addText = $enc.GetString($addBytes)
+if ($as.TrimEnd() -ne $as) { $as = $as.TrimEnd() + "`r`n" }
+[IO.File]::WriteAllBytes($ach, $enc.GetBytes($as + $addText))
+Write-Host 'achievements.txt: test items written (propbits=quest, native icon)'
 
 # 2) texts: append to rus_items.lng (UTF-16 LE)
 Backup $lng

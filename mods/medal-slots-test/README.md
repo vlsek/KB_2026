@@ -4,7 +4,7 @@
 Требует установленный `mods/achievements-test` (бит `medal` в `config.txt`, `achievements.txt`, иконка).
 
 ## Что делает
-1. В `achievements.txt` добавляет два простых предмета-медали `medal_test_rank1` и `medal_test_rank2` (`propbits=medal`, без условий `medc`, иконка от «Высшего мага»).
+1. В `achievements.txt` добавляет два простых предмета-медали `medal_test_rank1` и `medal_test_rank2` (v2: `propbits=quest`, родная иконка `heroitem_quest_medal.png`; движок отвергает `propbits=medal` - выяснил агент 1; старые блоки заменяются при повторной установке).
 2. Русские названия в `rus_items.lng`.
 3. В `hero.txt` кладёт `medal_test_rank1` в стартовые предметы всех трёх классов (`start/items`, в файле ровно три пустых блока `items {}`; если их не три - установка останавливается и ничего не меняет).
 Бэкапы: `*.kb2026mst.bak`. Откат: `uninstall.ps1`.
