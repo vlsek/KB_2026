@@ -1,25 +1,19 @@
-# Agent 1 medal art integration — findings and next test
+# Medal visuals and item progression — test status
 
-Status: **needs-test**. The source archive is user-provided as `KB_repo_updates_agent1.zip`; game-derived art binaries are not copied into the public repository.
+Status: **needs-test**. Agent 1's source archive remains user-provided; game-derived image binaries are not copied into the public repository.
 
-## Atlas attempt result
+## Agent 1 icon atlas
 
-The owner tested the loose `TEX190` map and `tex190.dds` on the GOG Legend test copy. The existing chest message and one-time +1 Intellect still worked, but the item required manual equipping and showed a gray square instead of art. Direct loose atlas loading did not work in this setup without KBMaster. The test `data/itextures.dat` and `data/tex190.dds` were removed; the item is back on the stock quest-medal image.
+The owner tested the loose `TEX190` map and `tex190.dds` on the GOG Legend copy. The reward and +1 Intellect from the earlier Lua prototype worked, but the medal showed a gray square. Direct loose atlas loading did not work without KBMaster. Those two loose files were removed; the test medal uses the stock quest-medal icon again.
 
-## Current test-copy setup
+## Confirmed item/popup path
 
-- The chest test medal still has `propbits=mslot`, so it can be manually placed into slots 13–18.
-- Its item definition now has `mods { intellect=count,1 }`; the old direct +1 Intellect Lua setter was removed to avoid applying the bonus twice.
-- The item hint says the +1 applies while worn. For this interim test the owner must equip it manually.
-- The system `Game.MessageBox` was replaced by the game's own `Game.InvokeMsgBox("warning", "<label=kb26_medal_unlocked>")` call. Legend scripts contain real examples of this form, and Russian localization keys were added in `rus_units_specials.lng`.
-- A test error uses the same in-game warning form. No `Scenario.formsolo` call was added.
+The owner confirmed that the Legend warning form opened in-game through `Game.InvokeMsgBox` and that the medal's item `mods { intellect=count,1 }` granted +1 while equipped. The direct Lua stat setter was removed. Current tooltip correctly says that the +1 applies while worn.
 
-Follow T-26 in `OWNER_TODO.md`: use a new game, open the nearby chest, confirm the native game popup, then manually equip the medal and check the +1 Intellect. Also note whether it can be removed and whether the stat bonus follows equip/removal.
+## Rank replacement test
 
-## Rollback
+T-27 is installed on the test copy but has not been run. First chest: grant rank I (+1). Next chest: call `Logic.hero_lu_item_del("kb26_medal_chest_rank1")`, grant rank II (+2), increment saved rank, then show the in-game popup. Rank II still requires manual equipment in this probe. The test checks whether deleting an equipped rank removes its bonus, whether rank II appears, and whether +2 replaces +1 rather than stacking to +3.
 
-Backups of `items.txt`, `logic_hero.lua`, `rus_items.lng`, and `rus_units_specials.lng` use `.kb2026popup.bak`. To restore the previously tested no-item/Lua-bonus prototype, restore `items.txt.kb2026agent1.bak` and the other three `.kb2026popup.bak` files. The temporary loose atlas files have already been removed. The original installation was never changed.
+Later-series scripts confirm `Logic.hero_lu_item_del(item)` is used to remove items, but behavior for an equipped `mslot` item is not yet proven in Legend. Automatic equipping and preventing manual removal remain unresolved.
 
-## Remaining work
-
-The bitmap style remains promising, but the loose atlas approach failed in Legend. The full Agent 1 KFS still depends on KBMaster, which is absent from the test copy, and should not be installed with its original Program Files installer. Automatic slot placement and preventing manual removal remain open; `Logic.hero_lu_item_del(item)` is confirmed in later-series scripts for deleting an old rank, but no auto-equip API has been established.
+Backups for the current rank-replacement test are `*.kb2026rank2.bak` beside the four changed files in the test copy. The original installation was not modified.
